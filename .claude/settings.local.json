@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(docker compose up *)",
-      "Bash(curl *)"
+      "Bash(curl *)",
+      "Bash(docker compose *)"
     ]
   },
   "enabledPlugins": {

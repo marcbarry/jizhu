@@ -3,7 +3,8 @@
 .dockerignore
 Dockerfile
 docker-compose.yml
-*.md
-decks
-docs
 LICENSE
+*.md
+docs
+scripts
+.github
