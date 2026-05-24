@@ -27,7 +27,7 @@ A Jizhu deck is a single JSON file served over HTTP(S). The deck's URL is its un
 | ------------ | ----------------------------- | -------- | ---------------------------------------------------------------------------------------- |
 | `title`      | string                        | yes      | Human-readable deck name shown in the UI.                                                |
 | `vocabulary` | object (group id → VocabItem[]) | no     | Named vocabulary groups that pattern-card slots can draw from. See [Vocabulary](#vocabulary). |
-| `units`      | array of Unit                 | yes      | Ordered list of units that group cards.                                                  |
+| `units`      | array of Unit                 | yes      | The units that group cards. Order in the array carries no meaning — units are not studied sequentially. |
 
 ## Unit
 
@@ -43,7 +43,7 @@ A Jizhu deck is a single JSON file served over HTTP(S). The deck's URL is its un
 | ------- | ------------- | -------- | ------------------------------------------------------------ |
 | `id`    | string        | yes      | Stable identifier for the unit, unique within the deck.      |
 | `title` | string        | yes      | Human-readable unit name.                                    |
-| `cards` | array of Card | yes      | Ordered list of cards belonging to this unit.                |
+| `cards` | array of Card | yes      | The cards belonging to this unit. Order in the array carries no meaning. |
 
 ## Card
 
@@ -160,4 +160,4 @@ A `VocabItem` is structurally identical to a literal `Token` — by design, so t
 
 - All text is UTF-8.
 - Pinyin uses tone marks (`wǒ`, `xǐhuan`) rather than tone numbers (`wo3`, `xi3huan`).
-- `tokens` should reconstruct the full phrase in order when concatenated.
+- `tokens` is the one place order is meaningful: concatenating tokens left-to-right should reconstruct the full phrase.
