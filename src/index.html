@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Jizhu — Prototype</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  /* ─── Tokens ─── */
+  :root {
+    --bg:        #ffffff;
+    --bg-2:      #f7f7f6;
+    --bg-3:      #f0eee9;
+    --ink:       #0a0a0a;
+    --ink-2:     #525252;
+    --ink-3:     #a3a3a3;
+    --ink-4:     #d4d4d3;
+    --rule:      #e7e7e6;
+    --rule-2:    #ededec;
+    --accent:    #2563eb;
+    --accent-2:  #eff6ff;
+    --pos:       #15803d;
+    --neg:       #b91c1c;
+  }
+
+  html, body { height: 100%; margin: 0; background: var(--bg-3); }
+  body { font-family: 'Inter', system-ui, sans-serif; color: var(--ink); }
+  button { font: inherit; color: inherit; background: transparent; border: 0; cursor: pointer; padding: 0; }
+  button:disabled { cursor: default; }
+  input { font: inherit; color: inherit; }
+
+  /* ─── Canvas backdrop (so prototype sits centered for inspection) ─── */
+  .canvas-pad {
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    padding: 24px;
+  }
+  .phone-mount {
+    transform-origin: center center;
+  }
+
+  /* ─── Phone shell ─── */
+  .phone {
+    width: 360px; height: 720px;
+    border-radius: 36px; overflow: hidden; position: relative;
+    background: var(--bg);
+    box-shadow:
+      0 0 0 1.5px rgba(0,0,0,0.18),
+      0 24px 60px -16px rgba(0,0,0,0.18),
+      0 8px 24px -6px rgba(0,0,0,0.08);
+  }
+  .phone-notch {
+    position: absolute; top: 10px; left: 50%; transform: translateX(-50%);
+    width: 92px; height: 26px; border-radius: 14px; background: #111; z-index: 30;
+  }
+  .phone-screen { position: absolute; inset: 0; display: flex; flex-direction: column; background: var(--bg); }
+  .phone-statusbar {
+    height: 44px; padding: 16px 24px 0;
+    display: flex; align-items: center; justify-content: space-between;
+    font: 600 13px/1 'Inter'; color: var(--ink); z-index: 20;
+  }
+  .phone-body { flex: 1; display: flex; flex-direction: column; min-height: 0; overflow: hidden; }
+
+  /* On real mobile: full-bleed app, no bezel */
+  @media (max-width: 640px) {
+    body { background: var(--bg); }
+    .canvas-pad { padding: 0; min-height: 100vh; }
+    .phone {
+      width: 100vw; height: 100vh; border-radius: 0;
+      box-shadow: none;
+    }
+    .phone-notch { display: none; }
+    .phone-statusbar { display: none; }
+  }
+
+  /* ─── Type ─── */
+  .sc      { font-family: 'Noto Sans SC', sans-serif; }
+  .mono    { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+  .tag     { font: 500 10px/1 'JetBrains Mono'; color: var(--ink-3); letter-spacing: 0.08em; text-transform: uppercase; }
+  .tag-on  { font: 500 10px/1 'JetBrains Mono'; color: var(--ink); letter-spacing: 0.08em; text-transform: uppercase; }
+
+  /* ─── Buttons ─── */
+  .btn-primary {
+    background: var(--ink); color: #fff; border-radius: 10px;
+    padding: 14px 20px; font: 500 15px/1 'Inter'; letter-spacing: -0.005em;
+    width: 100%; transition: opacity .12s, transform .12s;
+  }
+  .btn-primary:hover:not(:disabled) { opacity: 0.9; }
+  .btn-primary:active:not(:disabled) { transform: translateY(1px); }
+  .btn-secondary {
+    background: var(--bg); color: var(--ink); border: 1px solid var(--rule); border-radius: 10px;
+    padding: 13px 20px; font: 500 14px/1 'Inter'; width: 100%;
+  }
+  .btn-secondary:hover { border-color: var(--ink-3); }
+
+  /* ─── Grade pills ─── */
+  .grade {
+    border: 1px solid var(--rule); border-radius: 10px; padding: 10px 4px;
+    text-align: center; background: var(--bg); transition: border-color .12s, color .12s, background .12s;
+  }
+  .grade:hover:not(:disabled) { border-color: var(--ink-3); }
+  .grade:active:not(:disabled) { transform: translateY(1px); }
+  .grade .lbl { font: 500 13px/1 'Inter'; color: var(--ink); }
+  .grade .sub { font: 400 10px/1 'JetBrains Mono'; color: var(--ink-3); margin-top: 5px; }
+  .grade.again .lbl { color: var(--neg); }
+  .grade.again:hover:not(:disabled) { border-color: var(--neg); }
+  .grade.easy  { background: var(--ink); border-color: var(--ink); }
+  .grade.easy .lbl { color: #fff; }
+  .grade.easy .sub { color: rgba(255,255,255,0.55); }
+  .grade.easy:hover:not(:disabled) { opacity: 0.9; }
+
+  /* ─── Cards / panels ─── */
+  .panel { background: var(--bg); border: 1px solid var(--rule); border-radius: 14px; }
+  .panel-tight { background: var(--bg-2); border-radius: 10px; }
+  .divide-rule > * + * { border-top: 1px solid var(--rule); }
+
+  /* ─── Heat squares ─── */
+  .heat { width: 11px; height: 11px; border-radius: 2px; background: var(--bg-2); border: 1px solid var(--rule); display: inline-block; }
+  .heat.l1 { background: #e8e8e7; border-color: #dcdcdb; }
+  .heat.l2 { background: #b3b3b2; border-color: #a3a3a2; }
+  .heat.l3 { background: #525252; border-color: #424242; }
+  .heat.l4 { background: var(--ink); border-color: var(--ink); }
+  .heat.now { background: var(--accent); border-color: var(--accent); }
+
+  /* ─── Toggle ─── */
+  .toggle { width: 36px; height: 22px; border-radius: 999px; background: var(--ink-4);
+    display: inline-flex; align-items: center; padding: 2px; transition: background .15s; flex-shrink: 0; }
+  .toggle .knob { width: 18px; height: 18px; border-radius: 50%; background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2); transition: transform .15s; }
+  .toggle.on { background: var(--ink); }
+  .toggle.on .knob { transform: translateX(14px); }
+
+  /* ─── Stepper ─── */
+  .stepper-btn {
+    width: 28px; height: 28px; border-radius: 6px; border: 1px solid var(--rule);
+    font: 500 16px/1 'Inter'; color: var(--ink); background: var(--bg);
+    transition: border-color .12s;
+  }
+  .stepper-btn:hover:not(:disabled) { border-color: var(--ink-3); }
+  .stepper-btn:disabled { color: var(--ink-4); cursor: default; }
+
+  /* ─── Bar ─── */
+  .bar { height: 4px; background: var(--rule); border-radius: 2px; overflow: hidden; }
+  .bar > i { display: block; height: 100%; background: var(--ink); border-radius: 2px; }
+  .bar > i.accent { background: var(--accent); }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="vd-icons.jsx"></script>
+<script type="text/babel" src="vd-primitives.jsx"></script>
+<script type="text/babel" src="jz-data.jsx"></script>
+<script type="text/babel" src="jz-srs.jsx"></script>
+<script type="text/babel" src="jz-store.jsx"></script>
+<script type="text/babel" src="jz-home.jsx"></script>
+<script type="text/babel" src="jz-review.jsx"></script>
+<script type="text/babel" src="jz-meta.jsx"></script>
+<script type="text/babel" src="jz-app.jsx"></script>
+
+<script type="text/babel">
+  ReactDOM.createRoot(document.getElementById('root')).render(<Root />);
+</script>
+</body>
+</html>
