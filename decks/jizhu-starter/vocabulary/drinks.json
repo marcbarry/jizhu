@@ -1,5 +1,6 @@
 {
   "id": "drinks",
+  "description": "Basic drinks for meals and simple requests.",
   "items": [
     {
       "id": "",

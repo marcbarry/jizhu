@@ -1,6 +1,7 @@
 {
   "id": "at-the-restaurant",
   "title": "At the Restaurant",
+  "description": "Ordering food, choosing dishes, making simple requests, and paying.",
   "cards": [
     {
       "id": "",

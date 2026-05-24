@@ -1,5 +1,6 @@
 {
   "title": "Jizhu Starter",
+  "description": "Beginner Chinese foundations for first conversations, restaurants, hotels, travel, and getting around.",
   "vocabulary": {
     "vegetables": "jizhu-starter/vocabulary/vegetables.json",
     "meats": "jizhu-starter/vocabulary/meats.json",

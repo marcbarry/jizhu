@@ -1,5 +1,6 @@
 {
   "id": "places-in-town",
+  "description": "Common town and travel destinations used in location patterns.",
   "items": [
     {
       "id": "",

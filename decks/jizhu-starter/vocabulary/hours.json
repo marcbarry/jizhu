@@ -1,5 +1,6 @@
 {
   "id": "hours",
+  "description": "Clock-hour numbers used for meeting times.",
   "items": [
     {
       "id": "",

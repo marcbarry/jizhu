@@ -9,6 +9,7 @@ The manifest may either contain all deck data inline, or it may reference separa
 ```json
 {
   "title": "HSK 1 Core",
+  "description": "Beginner Chinese foundations for first conversations, travel, food, and getting around.",
   "vocabulary": {
     "vegetables": "hsk-1-core/vocabulary/vegetables.json"
   },
@@ -21,6 +22,7 @@ The manifest may either contain all deck data inline, or it may reference separa
 | Field        | Type                          | Required | Description                                                                              |
 | ------------ | ----------------------------- | -------- | ---------------------------------------------------------------------------------------- |
 | `title`      | string                        | yes      | Human-readable deck name shown in the UI.                                                |
+| `description` | string                       | no       | Short learner-facing summary of what the deck covers.                                    |
 | `vocabulary` | object (group id → VocabItem[] or string) | no | Named vocabulary groups that pattern-card slots can draw from. A string value is a relative URL to a vocabulary group file. See [Vocabulary](#vocabulary). |
 | `units`      | array of Unit or string       | yes      | The units that group cards. A string value is a relative URL to a unit file. Order in the array carries no meaning — units are not studied sequentially. |
 
@@ -47,6 +49,7 @@ In this layout, `decks/jizhu-starter.json` is the canonical deck URL. Files unde
 ```json
 {
   "id": "vegetables",
+  "description": "Vegetables and plant-based ingredients commonly seen on menus.",
   "items": [
     {
       "id": "8b03f4d1-3f0f-4a39-90df-6b7d4fb1d63d",
@@ -61,6 +64,7 @@ In this layout, `decks/jizhu-starter.json` is the canonical deck URL. Files unde
 | Field   | Type        | Required | Description                                      |
 | ------- | ----------- | -------- | ------------------------------------------------ |
 | `id`    | string      | yes      | Vocabulary group id. Must match the manifest key. |
+| `description` | string | no       | Short learner-facing summary of what this vocabulary group contains. |
 | `items` | VocabItem[] | yes      | Items belonging to this vocabulary group.        |
 
 ## Unit
@@ -69,15 +73,17 @@ In this layout, `decks/jizhu-starter.json` is the canonical deck URL. Files unde
 {
   "id": "greetings",
   "title": "Greetings",
+  "description": "Basic greetings, polite replies, and simple social openers.",
   "cards": []
 }
 ```
 
-| Field   | Type          | Required | Description                                                  |
-| ------- | ------------- | -------- | ------------------------------------------------------------ |
-| `id`    | string        | yes      | Stable identifier for the unit, unique within the deck.      |
-| `title` | string        | yes      | Human-readable unit name.                                    |
-| `cards` | array of Card | yes      | The cards belonging to this unit. Order in the array carries no meaning. |
+| Field         | Type          | Required | Description                                                  |
+| ------------- | ------------- | -------- | ------------------------------------------------------------ |
+| `id`          | string        | yes      | Stable identifier for the unit, unique within the deck.      |
+| `title`       | string        | yes      | Human-readable unit name.                                    |
+| `description` | string        | no       | Short learner-facing summary of what this unit focuses on.   |
+| `cards`       | array of Card | yes      | The cards belonging to this unit. Order in the array carries no meaning. |
 
 ## Card
 

@@ -1,5 +1,6 @@
 {
   "id": "ages",
+  "description": "Numbers used for saying someone's age.",
   "items": [
     {
       "id": "",

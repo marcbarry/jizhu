@@ -1,6 +1,7 @@
 {
   "id": "at-the-hotel",
   "title": "At the Hotel",
+  "description": "Hotel check-in, room requests, common problems, luggage, and checkout.",
   "cards": [
     {
       "id": "",

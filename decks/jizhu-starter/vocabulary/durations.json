@@ -1,5 +1,6 @@
 {
   "id": "durations",
+  "description": "Short time durations for waiting, travel, and simple plans.",
   "items": [
     {
       "id": "",

@@ -1,6 +1,7 @@
 {
   "id": "calendar-weather",
   "title": "Calendar & Weather",
+  "description": "Calendar words, dates, months, weather, and simple weather comments.",
   "cards": [
     {
       "id": "",

@@ -1,5 +1,6 @@
 {
   "id": "meats",
+  "description": "Meat, poultry, and egg items for ordering and menu reading.",
   "items": [
     {
       "id": "",

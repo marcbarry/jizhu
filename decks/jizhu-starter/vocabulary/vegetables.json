@@ -1,5 +1,6 @@
 {
   "id": "vegetables",
+  "description": "Vegetables and plant-based ingredients commonly seen on menus.",
   "items": [
     {
       "id": "",
