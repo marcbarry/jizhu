@@ -3,19 +3,19 @@
   "description": "Common beginner professions used in introduction patterns.",
   "items": [
     {
-      "id": "",
+      "id": "35aa2f83-7901-46a9-ad74-3c35b09cefe4",
       "hanzi": "学生",
       "pinyin": "xuésheng",
       "gloss": "student"
     },
     {
-      "id": "",
+      "id": "ebb7fb68-7e74-46a2-af21-ef0808dca6b8",
       "hanzi": "老师",
       "pinyin": "lǎoshī",
       "gloss": "teacher"
     },
     {
-      "id": "",
+      "id": "4d2167a0-b25b-429d-af9c-aaf77c8a5d2e",
       "hanzi": "医生",
       "pinyin": "yīshēng",
       "gloss": "doctor"

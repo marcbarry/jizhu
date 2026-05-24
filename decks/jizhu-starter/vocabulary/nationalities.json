@@ -3,19 +3,19 @@
   "description": "Nationalities used in simple self-introduction patterns.",
   "items": [
     {
-      "id": "",
+      "id": "656f2d9e-9b07-4f0f-b783-e14ff22bce00",
       "hanzi": "中国人",
       "pinyin": "Zhōngguó rén",
       "gloss": "Chinese"
     },
     {
-      "id": "",
+      "id": "b0684511-5866-483a-a8ba-99a2fce1be25",
       "hanzi": "美国人",
       "pinyin": "Měiguó rén",
       "gloss": "American"
     },
     {
-      "id": "",
+      "id": "7d6d9181-1348-41d6-a753-5d4e9e7134a2",
       "hanzi": "英国人",
       "pinyin": "Yīngguó rén",
       "gloss": "British"

@@ -3,37 +3,37 @@
   "description": "Fish and seafood items for restaurant and market situations.",
   "items": [
     {
-      "id": "",
+      "id": "757cc89f-8ccf-4b50-9f11-df88ce967a83",
       "hanzi": "鱼",
       "pinyin": "yú",
       "gloss": "fish"
     },
     {
-      "id": "",
+      "id": "a2e7185d-d4dc-4bb3-99c1-4c8ffead9c1d",
       "hanzi": "虾",
       "pinyin": "xiā",
       "gloss": "shrimp / prawn"
     },
     {
-      "id": "",
+      "id": "1c770763-2948-400f-a3af-c281e3952283",
       "hanzi": "螃蟹",
       "pinyin": "pángxiè",
       "gloss": "crab"
     },
     {
-      "id": "",
+      "id": "719e0739-46eb-44c1-8a0d-5f72435425c3",
       "hanzi": "鱿鱼",
       "pinyin": "yóuyú",
       "gloss": "squid"
     },
     {
-      "id": "",
+      "id": "739edbea-862d-4a3f-9e1c-d4e6ecbb8412",
       "hanzi": "蛤蜊",
       "pinyin": "gélí",
       "gloss": "clam"
     },
     {
-      "id": "",
+      "id": "43d79e6f-3125-4db5-a8d6-9ce98349e388",
       "hanzi": "扇贝",
       "pinyin": "shànbèi",
       "gloss": "scallop"

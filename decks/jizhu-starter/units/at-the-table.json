@@ -4,7 +4,7 @@
   "description": "Reacting to food, praising dishes, asking for a little more, and making a toast.",
   "cards": [
     {
-      "id": "",
+      "id": "76837912-8a23-4ba0-b503-4c77a96caf32",
       "hanzi": "闻起来很香。",
       "pinyin": "Wén qǐlai hěn xiāng.",
       "translation": "It smells delicious.",
@@ -17,7 +17,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "f57e29f3-e062-4ef0-aea4-a0bbc109cd52",
       "hanzi": "看起来很好吃。",
       "pinyin": "Kàn qǐlai hěn hǎochī.",
       "translation": "It looks delicious.",
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "5cda8f16-943c-46f3-bd00-acd8d412dd53",
       "hanzi": "很好吃。",
       "pinyin": "Hěn hǎochī.",
       "translation": "It's delicious.",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "296cec99-a33f-497c-b167-9964750e1d65",
       "hanzi": "好吃！",
       "pinyin": "Hǎochī!",
       "translation": "Delicious!",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "72eeee36-df39-4572-baf1-e556523cc817",
       "hanzi": "很好。",
       "pinyin": "Hěn hǎo.",
       "translation": "Very good.",
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "7781cbfb-4815-4e8c-ab0c-b2ee1d9be1b4",
       "hanzi": "这个菜很好。",
       "pinyin": "Zhège cài hěn hǎo.",
       "translation": "This dish is very good.",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "02aa15eb-1f96-4e79-be27-99ee9245beee",
       "hanzi": "我吃饱了，谢谢。",
       "pinyin": "Wǒ chī bǎo le, xièxie.",
       "translation": "I'm full, thank you.",
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "2e3569b7-b41a-47a4-a385-4c40a8892b43",
       "hanzi": "再来一点，谢谢。",
       "pinyin": "Zài lái yìdiǎn, xièxie.",
       "translation": "A little more, please.",
@@ -108,7 +108,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "687e1b50-8d55-4c74-867b-211081fcd212",
       "hanzi": "干杯！",
       "pinyin": "Gānbēi!",
       "translation": "Cheers!",

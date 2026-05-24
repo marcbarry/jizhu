@@ -3,61 +3,61 @@
   "description": "Common town and travel destinations used in location patterns.",
   "items": [
     {
-      "id": "",
+      "id": "2b485db6-be11-4fdc-8a9e-ebee2145ada4",
       "hanzi": "厕所",
       "pinyin": "cèsuǒ",
       "gloss": "bathroom"
     },
     {
-      "id": "",
+      "id": "abb7caef-3be8-4ddc-a818-65a2edfd6835",
       "hanzi": "地铁",
       "pinyin": "dìtiě",
       "gloss": "subway / metro"
     },
     {
-      "id": "",
+      "id": "6561d03c-160f-4074-8751-85640debf825",
       "hanzi": "火车站",
       "pinyin": "huǒchēzhàn",
       "gloss": "train station"
     },
     {
-      "id": "",
+      "id": "eeb9097e-36a9-4e74-84ae-8f73188a5fdd",
       "hanzi": "机场",
       "pinyin": "jīchǎng",
       "gloss": "airport"
     },
     {
-      "id": "",
+      "id": "a054be88-5446-4cd0-88ba-de25de533b69",
       "hanzi": "酒店",
       "pinyin": "jiǔdiàn",
       "gloss": "hotel"
     },
     {
-      "id": "",
+      "id": "84558947-fe3c-4bf5-b448-be146c5b2df9",
       "hanzi": "医院",
       "pinyin": "yīyuàn",
       "gloss": "hospital"
     },
     {
-      "id": "",
+      "id": "d94c75a4-852d-4314-b212-f36e71489483",
       "hanzi": "商店",
       "pinyin": "shāngdiàn",
       "gloss": "shop / store"
     },
     {
-      "id": "",
+      "id": "131acdbd-c9c3-40f4-ab33-e3c01d5ab7ae",
       "hanzi": "饭店",
       "pinyin": "fàndiàn",
       "gloss": "restaurant"
     },
     {
-      "id": "",
+      "id": "aed98929-063f-4636-adff-ea6e30c3c059",
       "hanzi": "学校",
       "pinyin": "xuéxiào",
       "gloss": "school"
     },
     {
-      "id": "",
+      "id": "cc1da189-61de-42ca-af79-19bd63671855",
       "hanzi": "家",
       "pinyin": "jiā",
       "gloss": "home"

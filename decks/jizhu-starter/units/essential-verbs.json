@@ -4,7 +4,7 @@
   "description": "High-frequency verbs, adverbs, negatives, and particles that support many beginner sentences.",
   "cards": [
     {
-      "id": "",
+      "id": "e850a8b1-2339-4570-ad57-19c4ed0b8b87",
       "hanzi": "是",
       "pinyin": "shì",
       "translation": "to be",
@@ -17,7 +17,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "4146aa8b-bf6d-47fa-a4da-64fa6c103814",
       "hanzi": "有",
       "pinyin": "yǒu",
       "translation": "to have / there is",
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "e0fce33a-36b6-4aa4-aa6f-f93594041d8b",
       "hanzi": "在",
       "pinyin": "zài",
       "translation": "to be at / in",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "e490767d-3379-46ba-928f-4e14d76b727d",
       "hanzi": "要",
       "pinyin": "yào",
       "translation": "to want / would like",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "687d568d-53f4-4d2b-87a0-cd81f8f1667c",
       "hanzi": "喜欢",
       "pinyin": "xǐhuan",
       "translation": "to like",
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "0c69c368-a456-40c6-82a8-c7bc87a59a8f",
       "hanzi": "爱",
       "pinyin": "ài",
       "translation": "to love",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "b5db8fdb-1534-45da-bdba-6348e55ecfc2",
       "hanzi": "去",
       "pinyin": "qù",
       "translation": "to go",
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "d14ea164-5f15-4dfe-8553-fc6bde9a2b9e",
       "hanzi": "来",
       "pinyin": "lái",
       "translation": "to come",
@@ -108,7 +108,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "3aebb470-1c0d-4377-bd31-89fd86f7ff7a",
       "hanzi": "回",
       "pinyin": "huí",
       "translation": "to return",
@@ -121,7 +121,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ce77c0a4-b586-49eb-9f68-f42ed4c6e8c4",
       "hanzi": "吃",
       "pinyin": "chī",
       "translation": "to eat",
@@ -134,7 +134,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "98546f5b-7fe8-424b-a5eb-ca79ebea8f6f",
       "hanzi": "喝",
       "pinyin": "hē",
       "translation": "to drink",
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "e5d2a28f-d388-44be-a498-adba42832f4a",
       "hanzi": "看",
       "pinyin": "kàn",
       "translation": "to look / watch",
@@ -160,7 +160,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "2b4fbbfb-fc41-4670-9f01-e6c6913a7e60",
       "hanzi": "看见",
       "pinyin": "kànjiàn",
       "translation": "to see",
@@ -173,7 +173,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "31bd1693-0f0d-4556-b696-d5176343b3df",
       "hanzi": "听",
       "pinyin": "tīng",
       "translation": "to listen",
@@ -186,7 +186,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "31e0d61b-2791-41a2-9d5b-cf3ff68b6089",
       "hanzi": "说",
       "pinyin": "shuō",
       "translation": "to speak",
@@ -199,7 +199,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "8d378f03-fdf4-4c44-a3f4-b3de4be53e02",
       "hanzi": "读",
       "pinyin": "dú",
       "translation": "to read",
@@ -212,7 +212,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "7a2273b1-d627-4085-b027-52ffab0a6e49",
       "hanzi": "写",
       "pinyin": "xiě",
       "translation": "to write",
@@ -225,7 +225,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "d0949d79-877a-4c47-bb67-66c7d60185e6",
       "hanzi": "叫",
       "pinyin": "jiào",
       "translation": "to be called / named",
@@ -238,7 +238,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "8b855cad-8f70-4d9e-aced-a0e0e9547523",
       "hanzi": "坐",
       "pinyin": "zuò",
       "translation": "to sit",
@@ -251,7 +251,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "744a99fa-e1df-4e85-9229-14b10e4a684e",
       "hanzi": "住",
       "pinyin": "zhù",
       "translation": "to live / reside",
@@ -264,7 +264,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ebe5a173-e62a-4e37-be75-29de57b3691b",
       "hanzi": "做",
       "pinyin": "zuò",
       "translation": "to do / make",
@@ -277,7 +277,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "3c5ce966-2fa2-44ad-8ae7-c430d47baed9",
       "hanzi": "开",
       "pinyin": "kāi",
       "translation": "to open",
@@ -290,7 +290,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "e47f4b1e-8db0-4b91-9b9c-90990933e3ff",
       "hanzi": "睡觉",
       "pinyin": "shuìjiào",
       "translation": "to sleep",
@@ -303,7 +303,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "cc6e3d1f-5390-49db-9493-e0a5967d8d02",
       "hanzi": "打电话",
       "pinyin": "dǎ diànhuà",
       "translation": "to make a phone call",
@@ -316,7 +316,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "820ea361-7a17-495d-90a2-03abc2fc460a",
       "hanzi": "懂",
       "pinyin": "dǒng",
       "translation": "to understand",
@@ -329,7 +329,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "3416dd79-15a1-4453-9e7a-651001c602d9",
       "hanzi": "认识",
       "pinyin": "rènshi",
       "translation": "to know / recognize people",
@@ -342,7 +342,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "d2702797-e810-44c3-9374-d71c36e3cb20",
       "hanzi": "学习",
       "pinyin": "xuéxí",
       "translation": "to study",
@@ -355,7 +355,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ca383909-4d18-419c-beed-e9b292d909ad",
       "hanzi": "工作",
       "pinyin": "gōngzuò",
       "translation": "to work",
@@ -368,7 +368,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "b72aa7b3-02d9-4bc3-9ee3-cf6646e5b2f8",
       "hanzi": "买",
       "pinyin": "mǎi",
       "translation": "to buy",
@@ -381,7 +381,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "f3ef00dc-8a9a-4df4-9da7-a073bfabba30",
       "hanzi": "问",
       "pinyin": "wèn",
       "translation": "to ask",
@@ -394,7 +394,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "7c1743b3-15fb-493b-8d78-b9228f17d721",
       "hanzi": "会",
       "pinyin": "huì",
       "translation": "to be able to (learned skill)",
@@ -407,7 +407,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "c68b34a3-b96d-4be6-b7dd-fdf5d48f3aa2",
       "hanzi": "能",
       "pinyin": "néng",
       "translation": "to be able to (capability / permission)",
@@ -420,7 +420,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "a6336cd7-e1f2-4800-a599-4d1c8d896344",
       "hanzi": "请",
       "pinyin": "qǐng",
       "translation": "please / to invite",
@@ -433,7 +433,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "17aa96cf-25fa-4bd3-8e58-e6b4ab427b83",
       "hanzi": "不",
       "pinyin": "bù",
       "translation": "not",
@@ -446,7 +446,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "f6ec5329-6ab2-4f78-81d5-970090b06885",
       "hanzi": "没有",
       "pinyin": "méiyǒu",
       "translation": "not (with have)",
@@ -459,7 +459,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "8528dd74-b211-40e9-93f9-2864cfd65232",
       "hanzi": "也",
       "pinyin": "yě",
       "translation": "also",
@@ -472,7 +472,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "2897721e-270e-4631-abf2-f286891ed8c8",
       "hanzi": "都",
       "pinyin": "dōu",
       "translation": "all / both",
@@ -485,7 +485,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "cfaf9f0b-e4e0-4af2-87ea-da0b485c01b8",
       "hanzi": "很",
       "pinyin": "hěn",
       "translation": "very",
@@ -498,7 +498,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "cc45eb69-23d1-4df1-b469-68c0b59f1729",
       "hanzi": "太",
       "pinyin": "tài",
       "translation": "too / excessively",
@@ -511,7 +511,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ea967a5a-ed2e-43b7-b6f3-b63f9516ebeb",
       "hanzi": "一点儿",
       "pinyin": "yìdiǎnr",
       "translation": "a little",
@@ -524,7 +524,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "d46ce76e-d5a2-4d07-9915-66f5f3c3ac24",
       "hanzi": "吗",
       "pinyin": "ma",
       "translation": "question particle - yes/no",
@@ -537,7 +537,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "f667afaa-4825-4e60-a529-3d05b1211296",
       "hanzi": "呢",
       "pinyin": "ne",
       "translation": "question particle - and you?",
@@ -550,7 +550,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "a8171d7d-f984-4197-b9c6-53dfccf3f17e",
       "hanzi": "的",
       "pinyin": "de",
       "translation": "possessive / modifier particle",
@@ -563,7 +563,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "6120ba11-0490-4705-91f6-07f7fea0b7c1",
       "hanzi": "了",
       "pinyin": "le",
       "translation": "completed-action / change-of-state particle",

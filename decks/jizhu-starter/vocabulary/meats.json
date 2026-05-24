@@ -3,37 +3,37 @@
   "description": "Meat, poultry, and egg items for ordering and menu reading.",
   "items": [
     {
-      "id": "",
+      "id": "b3b3e8b0-342d-4b24-b306-9436cbe8de73",
       "hanzi": "猪肉",
       "pinyin": "zhūròu",
       "gloss": "pork"
     },
     {
-      "id": "",
+      "id": "e28f0f6c-36c0-4d72-bd8b-9a4b53f9619c",
       "hanzi": "牛肉",
       "pinyin": "niúròu",
       "gloss": "beef"
     },
     {
-      "id": "",
+      "id": "de3d9a9c-e7ce-4940-b034-d74bbd82146e",
       "hanzi": "羊肉",
       "pinyin": "yángròu",
       "gloss": "lamb / mutton"
     },
     {
-      "id": "",
+      "id": "5b4ba114-bdae-4913-bb37-5371875d696f",
       "hanzi": "鸡肉",
       "pinyin": "jīròu",
       "gloss": "chicken"
     },
     {
-      "id": "",
+      "id": "46d6d38f-0196-41d3-9c7c-6d5c48078160",
       "hanzi": "鸭肉",
       "pinyin": "yāròu",
       "gloss": "duck"
     },
     {
-      "id": "",
+      "id": "6ad9bae8-9470-4c1e-8882-78f0a2469e76",
       "hanzi": "鸡蛋",
       "pinyin": "jīdàn",
       "gloss": "egg"

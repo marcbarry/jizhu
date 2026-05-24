@@ -4,7 +4,7 @@
   "description": "Basic greetings, polite replies, and simple social openers.",
   "cards": [
     {
-      "id": "",
+      "id": "e04f8eac-6ec0-420a-8070-4f1183264663",
       "hanzi": "你好。",
       "pinyin": "Nǐ hǎo.",
       "translation": "Hello.",
@@ -17,7 +17,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "28411c37-4609-4c4a-bd3a-382c705d6285",
       "hanzi": "喂？",
       "pinyin": "Wéi?",
       "translation": "Hello (on the phone).",
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "07ea7ef2-c4db-4a22-98a6-223cde05dafc",
       "hanzi": "再见。",
       "pinyin": "Zàijiàn.",
       "translation": "Goodbye.",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "f903a616-987d-41e7-8b99-eed376404508",
       "hanzi": "明天见。",
       "pinyin": "Míngtiān jiàn.",
       "translation": "See you tomorrow.",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "f4cfa8d2-5bbe-4292-8ec4-6a03cf45b305",
       "hanzi": "谢谢。",
       "pinyin": "Xièxie.",
       "translation": "Thank you.",
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "758a8ee1-92e9-4096-bbc7-4100ed3d83e5",
       "hanzi": "不客气。",
       "pinyin": "Bú kèqi.",
       "translation": "You're welcome.",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "243cfc3f-d27f-49cd-a26f-88bca074a87f",
       "hanzi": "对不起。",
       "pinyin": "Duìbuqǐ.",
       "translation": "Sorry.",
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "b43a0256-5fd3-4098-a1f0-2809f6c17eae",
       "hanzi": "没关系。",
       "pinyin": "Méi guānxi.",
       "translation": "It's nothing. / No problem.",
@@ -108,7 +108,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "5592acd2-8bb7-4395-a428-e5898e1c66ed",
       "hanzi": "请进。",
       "pinyin": "Qǐng jìn.",
       "translation": "Please come in.",
@@ -121,7 +121,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "e3432f73-3de5-4a24-b912-daaf04267978",
       "hanzi": "请坐。",
       "pinyin": "Qǐng zuò.",
       "translation": "Please sit down.",
@@ -134,7 +134,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "b527704b-8b97-4ebf-bf64-383cd18bdfd6",
       "hanzi": "你好吗？",
       "pinyin": "Nǐ hǎo ma?",
       "translation": "How are you?",
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "0352a266-fc9a-4ef2-80a2-c77d2c4615ea",
       "hanzi": "我很好，你呢？",
       "pinyin": "Wǒ hěn hǎo, nǐ ne?",
       "translation": "I am fine, and you?",

@@ -4,7 +4,7 @@
   "description": "Basic descriptive words for size, quantity, temperature, mood, and appearance.",
   "cards": [
     {
-      "id": "",
+      "id": "d96fc890-a470-4466-b570-772df9be4047",
       "hanzi": "好",
       "pinyin": "hǎo",
       "translation": "good",
@@ -17,7 +17,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "c846ccff-421e-4c7e-94f7-d52aa5f02427",
       "hanzi": "大",
       "pinyin": "dà",
       "translation": "big",
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "7921fef7-c050-4b7f-801b-cef2905c62c1",
       "hanzi": "小",
       "pinyin": "xiǎo",
       "translation": "small",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "1a96d22d-73dd-44de-96e7-ed0930ac0ab6",
       "hanzi": "多",
       "pinyin": "duō",
       "translation": "many / much",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "49e037fc-2b2d-4511-b9fc-0d9ba7723f71",
       "hanzi": "少",
       "pinyin": "shǎo",
       "translation": "few / little",
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "b63e58e3-3c4a-4884-992a-d257984a7bf5",
       "hanzi": "热",
       "pinyin": "rè",
       "translation": "hot",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "5820250b-9da5-402c-a63a-ebbbc52df9d1",
       "hanzi": "冷",
       "pinyin": "lěng",
       "translation": "cold",
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "23ee73a8-2278-47a6-ace8-2cb097bea319",
       "hanzi": "高兴",
       "pinyin": "gāoxìng",
       "translation": "happy / pleased",
@@ -108,7 +108,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "7bd18e86-cade-4ed9-b9c2-45bbc74e08ca",
       "hanzi": "漂亮",
       "pinyin": "piàoliang",
       "translation": "pretty / beautiful",

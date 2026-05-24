@@ -4,7 +4,7 @@
   "description": "Transport words, destinations, taxi requests, fares, and stops.",
   "cards": [
     {
-      "id": "",
+      "id": "a0432362-d49d-490a-af48-4c04d0624253",
       "hanzi": "飞机",
       "pinyin": "fēijī",
       "translation": "airplane",
@@ -17,7 +17,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "a8d4bb6d-7a05-4ad0-9ab0-5804e554195a",
       "hanzi": "出租车",
       "pinyin": "chūzūchē",
       "translation": "taxi",
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "1298fb55-afea-4a4c-bfee-f11f8ea6f170",
       "hanzi": "公共汽车",
       "pinyin": "gōnggòng qìchē",
       "translation": "bus",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "786f1d84-ebac-4c9b-a7a3-20aaec5d2c72",
       "hanzi": "地铁",
       "pinyin": "dìtiě",
       "translation": "subway / metro",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "2a5bac2d-a915-447d-a6ce-9f93f71ed643",
       "hanzi": "火车站",
       "pinyin": "huǒchēzhàn",
       "translation": "train station",
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "cf096a2e-2538-49e9-beb5-06eb89381146",
       "hanzi": "我想打车。",
       "pinyin": "Wǒ xiǎng dǎchē.",
       "translation": "I want to take a taxi.",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "54f2cd1a-8601-48dc-92c5-d719292ad18e",
       "hanzi": "火车站在哪儿？",
       "pinyin": "Huǒchēzhàn zài nǎr?",
       "translation": "Where is the train station.",
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "4fc8fd6f-6bfc-4ba3-8f3b-8ad16251b5d3",
       "hanzi": "请在这里停。",
       "pinyin": "Qǐng zài zhèlǐ tíng.",
       "translation": "Please stop here.",
@@ -108,7 +108,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "1e6aca86-689d-45e4-ab44-471951c27018",
       "hanzi": "我要去{place}。",
       "pinyin": "Wǒ yào qù {place}.",
       "translation": "I am going to {place}.",
@@ -129,7 +129,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "d73cde03-9eae-49d8-8fcc-bcf3a99ca943",
       "hanzi": "去{place}多少钱？",
       "pinyin": "Qù {place} duōshao qián?",
       "translation": "How much to {place}?",
@@ -155,7 +155,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "5f4e2bc2-9c49-41e6-9ca1-cf4037fb3e14",
       "hanzi": "请带我去{place}。",
       "pinyin": "Qǐng dài wǒ qù {place}.",
       "translation": "Please take me to {place}.",

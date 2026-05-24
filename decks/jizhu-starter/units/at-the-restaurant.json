@@ -4,7 +4,7 @@
   "description": "Ordering food, choosing dishes, making simple requests, and paying.",
   "cards": [
     {
-      "id": "",
+      "id": "6cd81d7d-e43d-48d5-a49e-b6f10a175428",
       "hanzi": "很难选。",
       "pinyin": "Hěn nán xuǎn.",
       "translation": "It's difficult to choose.",
@@ -17,7 +17,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "5255777a-a5ab-4845-a9a7-d4a5260745dc",
       "hanzi": "不好意思，我想得慢。",
       "pinyin": "Bù hǎoyìsi, wǒ xiǎng de màn.",
       "translation": "Sorry, I'm thinking slowly.",
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "47ad6ea7-1850-48d9-8146-84635583a105",
       "hanzi": "我还不知道点什么。",
       "pinyin": "Wǒ hái bù zhīdào diǎn shénme.",
       "translation": "I don't know what to order yet.",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "a9f7643a-f907-4dd9-8e0e-cfcd7c87a278",
       "hanzi": "我还不确定想要什么。",
       "pinyin": "Wǒ hái bù quèdìng xiǎng yào shénme.",
       "translation": "I'm not sure what I want yet.",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "1d377977-11ba-4734-aded-322a7c7c7561",
       "hanzi": "请给我{staple}。",
       "pinyin": "Qǐng gěi wǒ {staple}.",
       "translation": "Please can I have {staple}.",
@@ -77,7 +77,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "0569ada6-a822-4fb2-9b04-ee071923d312",
       "hanzi": "我想要有{staple}的。",
       "pinyin": "Wǒ xiǎng yào yǒu {staple} de.",
       "translation": "I'd like something with {staple}.",
@@ -103,7 +103,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "5d4b93ec-1132-4c3d-9728-e6254ed2ea27",
       "hanzi": "我想要有{vegetable}的。",
       "pinyin": "Wǒ xiǎng yào yǒu {vegetable} de.",
       "translation": "I'd like something with {vegetable}.",
@@ -129,7 +129,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "8718ddbb-ab60-4b8c-a453-0e2c87154403",
       "hanzi": "我想要有{meat}的。",
       "pinyin": "Wǒ xiǎng yào yǒu {meat} de.",
       "translation": "I'd like something with {meat}.",
@@ -155,7 +155,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "2dce56ce-3530-403d-a4cc-08df6fe02439",
       "hanzi": "我想喝{drink}。",
       "pinyin": "Wǒ xiǎng hē {drink}.",
       "translation": "I want to drink {drink}.",
@@ -176,7 +176,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "49567e86-7969-46a6-8e8b-c96e59bab113",
       "hanzi": "你想吃饭吗？",
       "pinyin": "Nǐ xiǎng chīfàn ma?",
       "translation": "Do you want to eat?",
@@ -189,7 +189,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "a5c653c0-5133-42ac-bcff-0626f7f336c6",
       "hanzi": "我饿了。",
       "pinyin": "Wǒ è le.",
       "translation": "I am hungry.",
@@ -202,7 +202,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "90a3ea9f-fdaa-4bf0-9f10-81ac751d5721",
       "hanzi": "多一点蔬菜，谢谢。",
       "pinyin": "Duō yìdiǎn shūcài, xièxie.",
       "translation": "Lots of vegetables, please.",
@@ -215,7 +215,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "d725a465-e1fd-4279-973a-b65a394cc578",
       "hanzi": "不要太辣，谢谢。",
       "pinyin": "Bú yào tài là, xièxie.",
       "translation": "Not too spicy, please.",
@@ -228,7 +228,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "8d7430f6-733b-48d2-a8f2-70c8fc9218b4",
       "hanzi": "这个辣吗？",
       "pinyin": "Zhège là ma?",
       "translation": "Is this spicy?",
@@ -241,7 +241,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "2b19ecc5-578f-4b97-831e-6ac7343477c5",
       "hanzi": "我不吃肉。",
       "pinyin": "Wǒ bù chī ròu.",
       "translation": "I don't eat meat.",
@@ -254,7 +254,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "6d8d5507-e722-4c3f-af32-d28b16811864",
       "hanzi": "我不要这个。",
       "pinyin": "Wǒ bú yào zhège.",
       "translation": "I don't want this.",
@@ -267,7 +267,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "4021654b-5812-40c7-9b8c-bdacbb13bda5",
       "hanzi": "我不要那个。",
       "pinyin": "Wǒ bú yào nàge.",
       "translation": "I don't want that.",
@@ -280,7 +280,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "a62e91d5-e1ac-4647-97a4-6c707be81c8b",
       "hanzi": "你能推荐一个吗？",
       "pinyin": "Nǐ néng tuījiàn yí ge ma?",
       "translation": "Can you recommend something?",
@@ -293,7 +293,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "698bf20b-87ee-4871-8a61-7c363e00d048",
       "hanzi": "我要跟他们一样的。",
       "pinyin": "Wǒ yào gēn tāmen yíyàng de.",
       "translation": "The same as theirs, please.",
@@ -306,7 +306,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "dbada3f9-7531-4301-b2d5-b3f93b774e4c",
       "hanzi": "再来一个。",
       "pinyin": "Zài lái yí ge.",
       "translation": "One more, please.",
@@ -319,7 +319,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "d86e4d6b-8646-4b59-87ac-6ef27fe02e90",
       "hanzi": "买单，谢谢。",
       "pinyin": "Mǎidān, xièxie.",
       "translation": "The bill, please.",
@@ -332,7 +332,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "0d4b97f9-e53d-4b63-b678-68d001c554d5",
       "hanzi": "可以手机支付吗？",
       "pinyin": "Kěyǐ shǒujī zhīfù ma?",
       "translation": "Can I pay by phone?",

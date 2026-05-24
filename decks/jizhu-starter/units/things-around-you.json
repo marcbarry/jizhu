@@ -4,7 +4,7 @@
   "description": "Common objects around home, school, technology, and simple identification phrases.",
   "cards": [
     {
-      "id": "",
+      "id": "e3a9e0ec-5c4b-49ef-a170-02e9f960c187",
       "hanzi": "书",
       "pinyin": "shū",
       "translation": "book",
@@ -17,7 +17,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "c743a335-4d56-4ad3-aaf9-c6e237a69d98",
       "hanzi": "字",
       "pinyin": "zì",
       "translation": "Chinese character",
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "0038015a-ac0c-4407-91a1-d988b24035f5",
       "hanzi": "衣服",
       "pinyin": "yīfu",
       "translation": "clothes",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "80a014d4-1f2b-4621-9c57-09142d199f16",
       "hanzi": "钱",
       "pinyin": "qián",
       "translation": "money",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "1230e1d5-52a8-437e-b499-fc697dc1e591",
       "hanzi": "杯子",
       "pinyin": "bēizi",
       "translation": "cup",
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "8c203fa0-d382-43e3-a9d1-027052a7c2d4",
       "hanzi": "桌子",
       "pinyin": "zhuōzi",
       "translation": "table",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "a38b4b4c-dfba-42bf-8c29-9b412c89f852",
       "hanzi": "椅子",
       "pinyin": "yǐzi",
       "translation": "chair",
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ad9928f9-14dd-4b33-8fbb-f7c471f7d195",
       "hanzi": "东西",
       "pinyin": "dōngxi",
       "translation": "thing / stuff",
@@ -108,7 +108,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "afb45495-b612-4512-b087-b9144acaea84",
       "hanzi": "猫",
       "pinyin": "māo",
       "translation": "cat",
@@ -121,7 +121,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "99b17b83-763c-434a-8e76-81e65421d827",
       "hanzi": "狗",
       "pinyin": "gǒu",
       "translation": "dog",
@@ -134,7 +134,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "e84b16cc-6bdb-4eba-927e-680cffbe0244",
       "hanzi": "电视",
       "pinyin": "diànshì",
       "translation": "television",
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "b64b51f6-cac4-449e-bd61-f2474a4aac5e",
       "hanzi": "电脑",
       "pinyin": "diànnǎo",
       "translation": "computer",
@@ -160,7 +160,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "54b6a6de-2db3-4ee1-9258-e5e3d4477173",
       "hanzi": "电话",
       "pinyin": "diànhuà",
       "translation": "telephone",
@@ -173,7 +173,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "54a2fa0a-2b40-4846-81b9-ce2a835c9d9b",
       "hanzi": "电影",
       "pinyin": "diànyǐng",
       "translation": "movie",
@@ -186,7 +186,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "4589b9ca-6aa6-47fb-b1a4-2496af28f7e1",
       "hanzi": "这本书很好。",
       "pinyin": "Zhè běn shū hěn hǎo.",
       "translation": "This book is good.",
@@ -199,7 +199,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "674e12e8-33ab-438a-b2c8-10124dfa68b3",
       "hanzi": "这是什么？",
       "pinyin": "Zhè shì shénme?",
       "translation": "What is this?",
@@ -212,7 +212,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "051d1700-916f-4e48-affa-802954781384",
       "hanzi": "这是谁的？",
       "pinyin": "Zhè shì shéi de?",
       "translation": "Whose is this?",

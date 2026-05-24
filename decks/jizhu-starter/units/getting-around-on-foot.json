@@ -4,7 +4,7 @@
   "description": "Walking directions, location words, map help, and basic lost-and-found survival phrases.",
   "cards": [
     {
-      "id": "",
+      "id": "9613be87-9667-4884-8c32-be426f18ab6f",
       "hanzi": "左边",
       "pinyin": "zuǒbian",
       "translation": "left",
@@ -17,7 +17,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "025d6e8f-ac5c-46f7-9359-440f88084f34",
       "hanzi": "右边",
       "pinyin": "yòubian",
       "translation": "right",
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "7dd781c8-96b5-4399-bf87-482464303998",
       "hanzi": "一直走",
       "pinyin": "yīzhí zǒu",
       "translation": "straight ahead",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "84d356f2-c8b1-4d5d-8cf0-14760932f773",
       "hanzi": "往回走",
       "pinyin": "wǎng huí zǒu",
       "translation": "turn around / go back",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "010019cc-797d-4156-8448-6ab1e6f0d35a",
       "hanzi": "这里",
       "pinyin": "zhèlǐ",
       "translation": "here",
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "6de05199-19c4-467c-b6d2-08d32b4854af",
       "hanzi": "那里",
       "pinyin": "nàlǐ",
       "translation": "there",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ee452290-c115-48b3-ad87-ae8b71cdbffc",
       "hanzi": "往{direction}。",
       "pinyin": "Wǎng {direction}.",
       "translation": "Turn {direction}.",
@@ -103,7 +103,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "f46aeb3c-191e-4a46-883f-aee424030626",
       "hanzi": "有多远？",
       "pinyin": "Yǒu duō yuǎn?",
       "translation": "How far is it?",
@@ -116,7 +116,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ce538e96-cdb4-4737-9437-2fe3c5fdb81d",
       "hanzi": "要多久？",
       "pinyin": "Yào duō jiǔ?",
       "translation": "How long does it take?",
@@ -129,7 +129,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "afecd5c4-3dd3-454a-8576-2c32b5b64ffe",
       "hanzi": "可以走路去吗？",
       "pinyin": "Kěyǐ zǒulù qù ma?",
       "translation": "Is it walkable?",
@@ -142,7 +142,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "e11e69bd-9339-4c2f-a5bc-3d3dbd39a0ad",
       "hanzi": "你能在地图上给我看吗？",
       "pinyin": "Nǐ néng zài dìtú shang gěi wǒ kàn ma?",
       "translation": "Can you show me on the map?",
@@ -155,7 +155,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "0ef0a6c5-d593-43e0-a33c-99620274a118",
       "hanzi": "我迷路了。",
       "pinyin": "Wǒ mílù le.",
       "translation": "I'm lost.",
@@ -168,7 +168,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "3d1a52b1-7e89-4e1a-a264-09007d1e9b8d",
       "hanzi": "厕所在哪儿？",
       "pinyin": "Cèsuǒ zài nǎr?",
       "translation": "Where is the bathroom?",
@@ -181,7 +181,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "bbd7f596-17a2-46c0-b0cd-1b9be2f508ac",
       "hanzi": "地铁在哪儿？",
       "pinyin": "Dìtiě zài nǎr?",
       "translation": "Where is the subway?",

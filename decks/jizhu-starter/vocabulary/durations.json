@@ -3,31 +3,31 @@
   "description": "Short time durations for waiting, travel, and simple plans.",
   "items": [
     {
-      "id": "",
+      "id": "f00020f6-0f66-4ce8-8dd1-f274ea6ae467",
       "hanzi": "一会儿",
       "pinyin": "yīhuìr",
       "gloss": "a moment"
     },
     {
-      "id": "",
+      "id": "8eb55d1c-6763-49a2-8fba-88fadb7d90b6",
       "hanzi": "几分钟",
       "pinyin": "jǐ fēnzhōng",
       "gloss": "a few minutes"
     },
     {
-      "id": "",
+      "id": "e95579f0-233e-49a8-9eba-ea95b5437a0d",
       "hanzi": "一个小时",
       "pinyin": "yí ge xiǎoshí",
       "gloss": "an hour"
     },
     {
-      "id": "",
+      "id": "499610cf-1b77-410f-8137-394d7290423f",
       "hanzi": "一天",
       "pinyin": "yì tiān",
       "gloss": "a day"
     },
     {
-      "id": "",
+      "id": "c97c0531-d8a0-4792-9586-f9eb0dd84941",
       "hanzi": "一个星期",
       "pinyin": "yí ge xīngqī",
       "gloss": "a week"

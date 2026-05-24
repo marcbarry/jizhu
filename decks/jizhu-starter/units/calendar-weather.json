@@ -4,7 +4,7 @@
   "description": "Calendar words, dates, months, weather, and simple weather comments.",
   "cards": [
     {
-      "id": "",
+      "id": "fcfb531e-8f58-4122-90c3-4e0979fb8345",
       "hanzi": "年",
       "pinyin": "nián",
       "translation": "year",
@@ -17,7 +17,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ce710eb9-70e3-406c-89ef-b10637feaeef",
       "hanzi": "月",
       "pinyin": "yuè",
       "translation": "month",
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "c4be3284-1989-4347-be4b-74513fbd0efa",
       "hanzi": "号",
       "pinyin": "hào",
       "translation": "day of the month",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "c6d1ebe2-34a2-4e13-b6c5-f5d8262f4cbc",
       "hanzi": "星期",
       "pinyin": "xīngqī",
       "translation": "week",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "cba8a4f1-d68a-4af4-b7f4-28293dd995a4",
       "hanzi": "天气",
       "pinyin": "tiānqì",
       "translation": "weather",
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "bef2137b-6b00-48d8-9585-c3a5aa81895a",
       "hanzi": "下雨",
       "pinyin": "xià yǔ",
       "translation": "to rain",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "126730f0-c4bf-428e-977d-e950c98a5d7b",
       "hanzi": "今天星期几？",
       "pinyin": "Jīntiān xīngqī jǐ?",
       "translation": "What day is today?",
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "603ec520-cca5-4bca-91a5-8f1a4d73eed6",
       "hanzi": "今天几月几号？",
       "pinyin": "Jīntiān jǐ yuè jǐ hào?",
       "translation": "What is the date today?",
@@ -108,7 +108,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "7e3dd22e-f5bf-4697-97a7-b012be84603a",
       "hanzi": "一月",
       "pinyin": "yī yuè",
       "translation": "one month / month 1",
@@ -121,7 +121,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "5fb33f2c-f22e-42c8-9bfb-1c35797eaac1",
       "hanzi": "二月",
       "pinyin": "èr yuè",
       "translation": "two month / month 2",
@@ -134,7 +134,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "5376c03d-d4bd-4fd5-b711-ecf1f1f5b267",
       "hanzi": "三月",
       "pinyin": "sān yuè",
       "translation": "three month / month 3",
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "28105b72-42d9-4c31-a020-ade332275b4b",
       "hanzi": "四月",
       "pinyin": "sì yuè",
       "translation": "four month / month 4",
@@ -160,7 +160,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "5214d41e-1f5d-4c46-8dc6-e6f3b66cd5b2",
       "hanzi": "五月",
       "pinyin": "wǔ yuè",
       "translation": "five month / month 5",
@@ -173,7 +173,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "59d7b9ef-7a5d-447b-86ef-b269582c09f9",
       "hanzi": "六月",
       "pinyin": "liù yuè",
       "translation": "six month / month 6",
@@ -186,7 +186,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "efeb83aa-89aa-47d8-a2c2-afe0c0a0dc46",
       "hanzi": "七月",
       "pinyin": "qī yuè",
       "translation": "seven month / month 7",
@@ -199,7 +199,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "09600ced-a38d-4fef-a01c-d339fca19392",
       "hanzi": "八月",
       "pinyin": "bā yuè",
       "translation": "eight month / month 8",
@@ -212,7 +212,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "446028ce-2667-4ea3-9380-cf28c96c663f",
       "hanzi": "九月",
       "pinyin": "jiǔ yuè",
       "translation": "nine month / month 9",
@@ -225,7 +225,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "f9eb1bb5-0633-4c45-9bfc-51a357527ff6",
       "hanzi": "十月",
       "pinyin": "shí yuè",
       "translation": "ten month / month 10",
@@ -238,7 +238,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "590c045a-9723-4069-9db3-7865eb357edf",
       "hanzi": "十一月",
       "pinyin": "shí yī yuè",
       "translation": "ten-one month / month 11",
@@ -251,7 +251,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "1e753459-e157-4353-97e4-37914686ab1b",
       "hanzi": "十二月",
       "pinyin": "shí èr yuè",
       "translation": "ten-two month / month 12",
@@ -264,7 +264,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "4c2c7ef0-1b0e-4d32-ae3a-e206b641d409",
       "hanzi": "今天很热。",
       "pinyin": "Jīntiān hěn rè.",
       "translation": "It's hot today.",
@@ -277,7 +277,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "2a178303-c0eb-49f5-9bdb-2294cb584878",
       "hanzi": "今天很冷。",
       "pinyin": "Jīntiān hěn lěng.",
       "translation": "It's cold today.",
@@ -290,7 +290,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "3723ba78-6f5e-489c-8f05-33b899540f78",
       "hanzi": "会下雨吗？",
       "pinyin": "Huì xià yǔ ma?",
       "translation": "Is it going to rain?",

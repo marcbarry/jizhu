@@ -4,7 +4,7 @@
   "description": "People, pronouns, names, nationalities, professions, and simple introductions.",
   "cards": [
     {
-      "id": "",
+      "id": "20caf491-a1b0-4027-91f1-96eeb086999c",
       "hanzi": "我",
       "pinyin": "wǒ",
       "translation": "I / me",
@@ -17,7 +17,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "9ccbb527-b7c8-474d-ad44-866f82642eb5",
       "hanzi": "你",
       "pinyin": "nǐ",
       "translation": "you (singular)",
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "189b2ab0-560b-4888-8246-f87319a7851e",
       "hanzi": "他",
       "pinyin": "tā",
       "translation": "he / him",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "3aef7a37-8fe3-473e-b30b-26def09aeb61",
       "hanzi": "她",
       "pinyin": "tā",
       "translation": "she / her",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "e992a66f-9af9-489a-8370-b186aceb74ea",
       "hanzi": "我们",
       "pinyin": "wǒmen",
       "translation": "we / us",
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "49f5061b-64ff-4110-8881-86ac73abb3d6",
       "hanzi": "你们",
       "pinyin": "nǐmen",
       "translation": "you (plural)",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "88f06dd2-219b-43c0-a336-3158d0ea554c",
       "hanzi": "他们",
       "pinyin": "tāmen",
       "translation": "they (mixed or masculine)",
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "0d089413-5752-46bf-bbab-81e8b7e96387",
       "hanzi": "她们",
       "pinyin": "tāmen",
       "translation": "they (feminine)",
@@ -108,7 +108,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "a69fcbe8-7a5d-4cd1-a0d3-201628de543f",
       "hanzi": "这",
       "pinyin": "zhè",
       "translation": "this",
@@ -121,7 +121,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "d7306177-b8af-479a-abb3-b839a7cfda8d",
       "hanzi": "那",
       "pinyin": "nà",
       "translation": "that",
@@ -134,7 +134,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "7500dae6-a538-4ef3-bf58-295a982cee19",
       "hanzi": "人",
       "pinyin": "rén",
       "translation": "person",
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "dee8a3b8-9e36-48b2-914b-a4386a698398",
       "hanzi": "名字",
       "pinyin": "míngzi",
       "translation": "name",
@@ -160,7 +160,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "47012545-6ba8-4491-b3e8-332423efabba",
       "hanzi": "朋友",
       "pinyin": "péngyou",
       "translation": "friend",
@@ -173,7 +173,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "54663ae4-f13d-4353-bc25-78d3bf6d44b4",
       "hanzi": "学生",
       "pinyin": "xuésheng",
       "translation": "student",
@@ -186,7 +186,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "29630d9f-de1a-46e5-9e05-02a6281c3633",
       "hanzi": "老师",
       "pinyin": "lǎoshī",
       "translation": "teacher",
@@ -199,7 +199,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "1041c760-4774-4e14-b211-12b7db495941",
       "hanzi": "同学",
       "pinyin": "tóngxué",
       "translation": "classmate",
@@ -212,7 +212,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "b0b5c35a-062f-4996-b26a-e5ebc0a6ba69",
       "hanzi": "医生",
       "pinyin": "yīshēng",
       "translation": "doctor",
@@ -225,7 +225,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "520e7880-0066-4020-8ca7-20f9d10c14ee",
       "hanzi": "先生",
       "pinyin": "xiānsheng",
       "translation": "Mr. / sir",
@@ -238,7 +238,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "9a3bd4c4-b810-4217-98a0-af5743953b15",
       "hanzi": "小姐",
       "pinyin": "xiǎojiě",
       "translation": "Miss",
@@ -251,7 +251,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "344b7f96-7d44-4397-bb92-844ef8138792",
       "hanzi": "中国",
       "pinyin": "Zhōngguó",
       "translation": "China",
@@ -264,7 +264,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "4ec63211-243b-48af-ab08-e999cba4d4d9",
       "hanzi": "北京",
       "pinyin": "Běijīng",
       "translation": "Beijing",
@@ -277,7 +277,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "adc6c5f9-6ac3-40d0-a87b-9b412fd02f46",
       "hanzi": "你叫什么名字？",
       "pinyin": "Nǐ jiào shénme míngzi?",
       "translation": "What is your name?",
@@ -290,7 +290,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "70264a07-b35a-4e38-9f53-ce59a0d04478",
       "hanzi": "你姓什么？",
       "pinyin": "Nǐ xìng shénme?",
       "translation": "What is your surname?",
@@ -303,7 +303,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "5833c0ed-7cc6-4132-a56a-f2259a9b0a6f",
       "hanzi": "很高兴认识你。",
       "pinyin": "Hěn gāoxìng rènshi nǐ.",
       "translation": "Nice to meet you.",
@@ -316,7 +316,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "352dd69f-0974-4602-8f09-7a2c5ee17e2e",
       "hanzi": "你是哪国人？",
       "pinyin": "Nǐ shì nǎ guó rén?",
       "translation": "Where are you from?",
@@ -329,7 +329,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "2540bfaf-2236-4526-b4eb-9f2a7d423f6a",
       "hanzi": "这是我的老师。",
       "pinyin": "Zhè shì wǒ de lǎoshī.",
       "translation": "This is my teacher.",
@@ -342,7 +342,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "a943f640-9e7f-446b-aaee-4b8130a93f84",
       "hanzi": "他是我的朋友。",
       "pinyin": "Tā shì wǒ de péngyou.",
       "translation": "He is my friend.",
@@ -355,7 +355,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "bc6b64e4-2398-4b25-b70e-81dd62cfd410",
       "hanzi": "我学中文。",
       "pinyin": "Wǒ xué Zhōngwén.",
       "translation": "I study Chinese.",
@@ -368,7 +368,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "15f1fee1-a837-4004-a1e2-6c40926052ae",
       "hanzi": "你住在哪儿？",
       "pinyin": "Nǐ zhù zài nǎr?",
       "translation": "Where do you live?",
@@ -381,7 +381,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "22cece6e-0df5-4034-ad39-d92c3a7268ef",
       "hanzi": "我住在北京。",
       "pinyin": "Wǒ zhù zài Běijīng.",
       "translation": "I live in Beijing.",
@@ -394,7 +394,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "e482051e-0587-460a-bb26-19139fb2cbf6",
       "hanzi": "我叫{name}。",
       "pinyin": "Wǒ jiào {name}.",
       "translation": "My name is {name}.",
@@ -415,7 +415,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "bcf93750-49b5-4d39-b89a-4ec325ced228",
       "hanzi": "我是{nationality}。",
       "pinyin": "Wǒ shì {nationality}.",
       "translation": "I am {nationality}.",
@@ -436,7 +436,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "73f89641-ee5f-4bf1-9200-b20fe438697b",
       "hanzi": "我是{profession}。",
       "pinyin": "Wǒ shì {profession}.",
       "translation": "I am a {profession}.",
@@ -457,7 +457,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "6732e60b-5ec2-46ea-bcb5-ec7e7c5607cc",
       "hanzi": "他是{profession}。",
       "pinyin": "Tā shì {profession}.",
       "translation": "He is a {profession}.",
@@ -478,7 +478,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "7afbf25c-a698-45fa-a54b-85502ac8f087",
       "hanzi": "我在{place}工作。",
       "pinyin": "Wǒ zài {place} gōngzuò.",
       "translation": "I work at {place}.",

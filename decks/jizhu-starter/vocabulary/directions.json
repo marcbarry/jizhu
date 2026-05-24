@@ -3,19 +3,19 @@
   "description": "Direction words used in walking and navigation patterns.",
   "items": [
     {
-      "id": "",
+      "id": "bb45230b-d9c7-43b0-ab6d-15301e82f2a7",
       "hanzi": "左",
       "pinyin": "zuǒ",
       "gloss": "left"
     },
     {
-      "id": "",
+      "id": "768a896f-e6b3-468c-8b7d-f19f481e47cd",
       "hanzi": "右",
       "pinyin": "yòu",
       "gloss": "right"
     },
     {
-      "id": "",
+      "id": "9d0e6ec9-dca8-408d-8239-9d9cf4334c35",
       "hanzi": "一直走",
       "pinyin": "yīzhí zǒu",
       "gloss": "straight ahead"

@@ -4,7 +4,7 @@
   "description": "Food, drink, ingredients, staples, seasonings, and menu vocabulary used by restaurant patterns.",
   "cards": [
     {
-      "id": "",
+      "id": "f221c41c-0d0e-47ad-911b-e7a0abd1adfa",
       "hanzi": "小白菜",
       "pinyin": "xiǎo báicài",
       "translation": "bok choy",
@@ -17,7 +17,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "a5468f0a-c8a8-48fe-91d3-05d682e7ef32",
       "hanzi": "大白菜",
       "pinyin": "dà báicài",
       "translation": "Chinese cabbage",
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "b5d7ade5-914a-4e42-a1e7-c6dd8800f377",
       "hanzi": "卷心菜",
       "pinyin": "juǎnxīncài",
       "translation": "cabbage",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "07aae298-2589-4d72-a7f4-18ad083bc796",
       "hanzi": "菠菜",
       "pinyin": "bōcài",
       "translation": "spinach",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "b3ebbadf-995c-4e36-8d83-1ed44316c1f8",
       "hanzi": "生菜",
       "pinyin": "shēngcài",
       "translation": "lettuce",
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "1b635bbc-0f4a-496a-a150-27df1c09586c",
       "hanzi": "西兰花",
       "pinyin": "xīlánhuā",
       "translation": "broccoli",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "beb22dec-bb9d-4bae-9546-cc7a4c0e5d44",
       "hanzi": "胡萝卜",
       "pinyin": "húluóbo",
       "translation": "carrot",
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "44841092-60f0-4464-95ee-9bca4be92c77",
       "hanzi": "土豆",
       "pinyin": "tǔdòu",
       "translation": "potato",
@@ -108,7 +108,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "b9d4062a-1cb3-446d-8147-e66046b95bd4",
       "hanzi": "红薯",
       "pinyin": "hóngshǔ",
       "translation": "sweet potato",
@@ -121,7 +121,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ef374a69-51a2-4c42-9703-0b9e0fa633b1",
       "hanzi": "西红柿",
       "pinyin": "xīhóngshì",
       "translation": "tomato",
@@ -134,7 +134,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "0cfa8f62-8f0d-4b9b-bc86-c684206485e8",
       "hanzi": "黄瓜",
       "pinyin": "huángguā",
       "translation": "cucumber",
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "3909e782-0e10-4fb0-a852-e189b6099c54",
       "hanzi": "茄子",
       "pinyin": "qiézi",
       "translation": "eggplant / aubergine",
@@ -160,7 +160,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "9066d12f-9fad-4390-b342-00ecb708771e",
       "hanzi": "甜椒",
       "pinyin": "tiánjiāo",
       "translation": "bell pepper",
@@ -173,7 +173,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "0b05ab8b-fd0a-45cf-863a-02ef28aca7a1",
       "hanzi": "辣椒",
       "pinyin": "làjiāo",
       "translation": "chili pepper",
@@ -186,7 +186,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "fa1b1411-2cad-4f4c-a934-0423a34af35a",
       "hanzi": "大蒜",
       "pinyin": "dàsuàn",
       "translation": "garlic",
@@ -199,7 +199,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "5a2d5f1d-5b0b-4d9a-ad9c-9eb245de9996",
       "hanzi": "姜",
       "pinyin": "jiāng",
       "translation": "ginger",
@@ -212,7 +212,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "d910f54a-8f9a-4d84-817b-9c1fa1b5ceac",
       "hanzi": "洋葱",
       "pinyin": "yángcōng",
       "translation": "onion",
@@ -225,7 +225,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "9b4e68cd-e4a4-4d77-9f81-affeeed21e99",
       "hanzi": "葱",
       "pinyin": "cōng",
       "translation": "spring onion / scallion",
@@ -238,7 +238,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "c4b94758-148c-4e8e-9ea4-71fa228f1412",
       "hanzi": "韭菜",
       "pinyin": "jiǔcài",
       "translation": "leek",
@@ -251,7 +251,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "27765b3b-63ef-4fe1-9718-0d2a4b604a22",
       "hanzi": "蘑菇",
       "pinyin": "mógu",
       "translation": "mushroom",
@@ -264,7 +264,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "03c9ee20-25be-4ad1-8596-33d343c55abc",
       "hanzi": "木耳",
       "pinyin": "mù'ěr",
       "translation": "wood ear mushroom",
@@ -277,7 +277,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "d8790ba1-350b-4ce6-88b1-66fc15b60003",
       "hanzi": "豆芽",
       "pinyin": "dòuyá",
       "translation": "bean sprouts",
@@ -290,7 +290,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "82411b6e-b944-4282-aa42-ad2d776bbb81",
       "hanzi": "四季豆",
       "pinyin": "sìjìdòu",
       "translation": "green beans",
@@ -303,7 +303,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "1748947b-7ea9-407c-8218-07fe8c710dfd",
       "hanzi": "荷兰豆",
       "pinyin": "hélándòu",
       "translation": "snow peas",
@@ -316,7 +316,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "f62a6623-864e-4d65-9820-581daddabb4a",
       "hanzi": "玉米",
       "pinyin": "yùmǐ",
       "translation": "corn",
@@ -329,7 +329,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "20f6a102-2539-4bf5-96b8-ec9105c02a28",
       "hanzi": "豆腐",
       "pinyin": "dòufu",
       "translation": "tofu",
@@ -342,7 +342,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "a1641435-5cf2-4d10-bb87-2411034a7a91",
       "hanzi": "海带",
       "pinyin": "hǎidài",
       "translation": "seaweed",
@@ -355,7 +355,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "86e398f5-9d31-4622-ba50-e95e0d7ab0f6",
       "hanzi": "猪肉",
       "pinyin": "zhūròu",
       "translation": "pork",
@@ -368,7 +368,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "bf0c600e-7261-4896-8da1-ddd5b4fb631d",
       "hanzi": "牛肉",
       "pinyin": "niúròu",
       "translation": "beef",
@@ -381,7 +381,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "63d4b034-f8d6-4f2b-8cb1-6b9779555869",
       "hanzi": "羊肉",
       "pinyin": "yángròu",
       "translation": "lamb / mutton",
@@ -394,7 +394,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "85bb0b51-b979-40fe-869e-640970e80102",
       "hanzi": "鸡肉",
       "pinyin": "jīròu",
       "translation": "chicken",
@@ -407,7 +407,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "91d77327-597c-4214-9533-2e8e6ed545d0",
       "hanzi": "鸭肉",
       "pinyin": "yāròu",
       "translation": "duck",
@@ -420,7 +420,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "6eb644be-2b98-4856-b92a-951de3a12aa6",
       "hanzi": "鸡蛋",
       "pinyin": "jīdàn",
       "translation": "egg",
@@ -433,7 +433,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "d7338411-aa29-41f7-aebc-55534e5a2801",
       "hanzi": "鱼",
       "pinyin": "yú",
       "translation": "fish",
@@ -446,7 +446,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "7dc7d68a-ff6b-48b0-9bb2-1c405f0b5a75",
       "hanzi": "虾",
       "pinyin": "xiā",
       "translation": "shrimp / prawn",
@@ -459,7 +459,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "59c65c7e-6788-4bc7-98d9-f9f364bb053d",
       "hanzi": "螃蟹",
       "pinyin": "pángxiè",
       "translation": "crab",
@@ -472,7 +472,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "c80fd02e-a732-4e44-8408-35ab89b7f6d8",
       "hanzi": "鱿鱼",
       "pinyin": "yóuyú",
       "translation": "squid",
@@ -485,7 +485,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "2548a9b0-9617-4184-8c53-c0efe86dcdcc",
       "hanzi": "蛤蜊",
       "pinyin": "gélí",
       "translation": "clam",
@@ -498,7 +498,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "dc45d7c5-b07e-4415-a585-a908844909ef",
       "hanzi": "扇贝",
       "pinyin": "shànbèi",
       "translation": "scallop",
@@ -511,7 +511,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "a0b27cb8-0103-4cca-8f87-3b2edb286322",
       "hanzi": "米饭",
       "pinyin": "mǐfàn",
       "translation": "rice",
@@ -524,7 +524,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ecbfb283-6e54-4dce-869c-f9f0d73c143d",
       "hanzi": "面条",
       "pinyin": "miàntiáo",
       "translation": "noodles",
@@ -537,7 +537,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "4228b740-6d54-49a9-88d5-535193ac62b8",
       "hanzi": "饺子",
       "pinyin": "jiǎozi",
       "translation": "dumplings",
@@ -550,7 +550,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "c9acb9e4-d726-40fe-b26d-da96f5f88fb2",
       "hanzi": "包子",
       "pinyin": "bāozi",
       "translation": "steamed bun",
@@ -563,7 +563,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "c4654b57-0ebc-4337-9732-59539897d784",
       "hanzi": "面包",
       "pinyin": "miànbāo",
       "translation": "bread",
@@ -576,7 +576,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "9809e99d-d871-434e-8294-a68e04ff7fab",
       "hanzi": "汤",
       "pinyin": "tāng",
       "translation": "soup",
@@ -589,7 +589,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "303d2a7e-c2b8-4e5e-95d7-b3d5147c4780",
       "hanzi": "酱油",
       "pinyin": "jiàngyóu",
       "translation": "soy sauce",
@@ -602,7 +602,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "8621553c-70d6-4897-85b4-990657d9bf96",
       "hanzi": "醋",
       "pinyin": "cù",
       "translation": "vinegar",
@@ -615,7 +615,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "4bb2d991-d917-42b9-8c2e-857758ef24b1",
       "hanzi": "辣椒油",
       "pinyin": "làjiāo yóu",
       "translation": "chili oil",
@@ -628,7 +628,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "a88819a5-37b4-435c-85ce-8294b05c7c7b",
       "hanzi": "糖",
       "pinyin": "táng",
       "translation": "sugar",
@@ -641,7 +641,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "94ed7d22-02bb-413a-8487-9c6cf16ec4df",
       "hanzi": "盐",
       "pinyin": "yán",
       "translation": "salt",
@@ -654,7 +654,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "bf0beb12-b8dc-4857-9b5c-f0dffe705bae",
       "hanzi": "胡椒",
       "pinyin": "hújiāo",
       "translation": "pepper",
@@ -667,7 +667,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "46cfc13b-82e3-4fce-bb70-d1815ed30158",
       "hanzi": "水",
       "pinyin": "shuǐ",
       "translation": "water",
@@ -680,7 +680,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "61e0c218-8715-42a8-87f2-81df44cb97fa",
       "hanzi": "茶",
       "pinyin": "chá",
       "translation": "tea",
@@ -693,7 +693,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "77f9cb93-48d9-4ebf-a509-ba53a55560bf",
       "hanzi": "水果",
       "pinyin": "shuǐguǒ",
       "translation": "fruit",
@@ -706,7 +706,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "a18871fb-3744-4014-a979-a05dd036d88f",
       "hanzi": "苹果",
       "pinyin": "píngguǒ",
       "translation": "apple",
@@ -719,7 +719,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "08fd4206-005b-4d47-8438-6c447f6f7b1b",
       "hanzi": "菜",
       "pinyin": "cài",
       "translation": "dish / cuisine",
@@ -732,7 +732,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "b5371c54-b4fe-4cf4-a929-dc1da6368543",
       "hanzi": "米饭",
       "pinyin": "mǐfàn",
       "translation": "meal / cooked rice",

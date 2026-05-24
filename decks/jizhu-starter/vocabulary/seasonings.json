@@ -3,37 +3,37 @@
   "description": "Common seasonings, sauces, and flavorings used with food.",
   "items": [
     {
-      "id": "",
+      "id": "ad4c8a09-f54e-49d7-a819-e93b42a56a64",
       "hanzi": "酱油",
       "pinyin": "jiàngyóu",
       "gloss": "soy sauce"
     },
     {
-      "id": "",
+      "id": "3232213d-93a1-4195-bc63-e51148a9829d",
       "hanzi": "醋",
       "pinyin": "cù",
       "gloss": "vinegar"
     },
     {
-      "id": "",
+      "id": "1c3e2928-0c38-4dc4-899e-8c395b19bc97",
       "hanzi": "辣椒油",
       "pinyin": "làjiāo yóu",
       "gloss": "chili oil"
     },
     {
-      "id": "",
+      "id": "99e5693f-d1c4-4250-93a7-e94dc945fcf9",
       "hanzi": "糖",
       "pinyin": "táng",
       "gloss": "sugar"
     },
     {
-      "id": "",
+      "id": "fef8e064-32b9-4390-93f2-556aa2e8bf8f",
       "hanzi": "盐",
       "pinyin": "yán",
       "gloss": "salt"
     },
     {
-      "id": "",
+      "id": "7fb4eaed-869b-4b59-a4c5-9fdf4aa7546d",
       "hanzi": "胡椒",
       "pinyin": "hújiāo",
       "gloss": "pepper"

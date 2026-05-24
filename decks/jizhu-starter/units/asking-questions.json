@@ -4,7 +4,7 @@
   "description": "Core question words and simple questions for prices, places, and destinations.",
   "cards": [
     {
-      "id": "",
+      "id": "0c62a834-5ca5-41f6-9e20-064e3e8823b8",
       "hanzi": "谁",
       "pinyin": "shéi",
       "translation": "who",
@@ -17,7 +17,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "133564c4-e183-4c96-875f-dc52ebfc49d1",
       "hanzi": "什么",
       "pinyin": "shénme",
       "translation": "what",
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "6d9ce2e2-58f6-4039-b3ae-97cb9f3b806f",
       "hanzi": "哪儿",
       "pinyin": "nǎr",
       "translation": "where",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "f13c32f0-aae4-4214-b33b-0485a8a2feb4",
       "hanzi": "哪",
       "pinyin": "nǎ",
       "translation": "which",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "c334eabc-f650-4887-915e-ca2428e89e2c",
       "hanzi": "怎么样",
       "pinyin": "zěnmeyàng",
       "translation": "how",
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "848db6e0-8860-4852-84a6-4538b25e85e5",
       "hanzi": "怎么样？",
       "pinyin": "zěnmeyàng?",
       "translation": "how about?",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "8f5565e0-7a9c-40eb-8eda-b3ba29a0a2f0",
       "hanzi": "几",
       "pinyin": "jǐ",
       "translation": "how many (small)",
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "d29d4c8e-909c-4d7d-b345-6138fca8fa7b",
       "hanzi": "多少",
       "pinyin": "duōshao",
       "translation": "how much / how many",
@@ -108,7 +108,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "eb9fa462-e6dd-43ef-908c-d8a80d50b617",
       "hanzi": "这个多少钱？",
       "pinyin": "Zhège duōshao qián?",
       "translation": "How much is this?",
@@ -121,7 +121,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "3845d18d-1d4c-41af-865b-89cc46b81f15",
       "hanzi": "你去哪儿？",
       "pinyin": "Nǐ qù nǎr?",
       "translation": "Where are you going?",
@@ -134,7 +134,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "819c6be6-73f7-4493-8ee1-4854bdff143d",
       "hanzi": "{place}在哪儿？",
       "pinyin": "{place} zài nǎr?",
       "translation": "Where is {place}?",

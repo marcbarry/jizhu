@@ -4,7 +4,7 @@
   "description": "Short polite responses for accepting, declining, thanking, and handling social offers.",
   "cards": [
     {
-      "id": "",
+      "id": "740914e0-8515-4ddc-a9e8-826fcb1e10f2",
       "hanzi": "不用了，谢谢。",
       "pinyin": "Bú yòng le, xièxie.",
       "translation": "No, thank you.",
@@ -17,7 +17,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "793de767-dbc1-4137-971c-653e4047dcd9",
       "hanzi": "好的，谢谢。",
       "pinyin": "Hǎo de, xièxie.",
       "translation": "Yes please, I appreciate that.",
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "1c4ed048-24b7-4e68-84a2-2ea7102e5301",
       "hanzi": "谢谢，你太好了。",
       "pinyin": "Xièxie, nǐ tài hǎo le.",
       "translation": "Thank you, you're very kind.",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "9f3cca81-680a-4ee5-8c36-9ac6920a132b",
       "hanzi": "太好了。",
       "pinyin": "Tài hǎo le.",
       "translation": "Great.",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "4f3ad12b-683d-409a-8f15-dafc2cd94b1e",
       "hanzi": "好。",
       "pinyin": "Hǎo.",
       "translation": "Good.",
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "cf43ac23-7af7-453e-b2f5-7d5041af1fd7",
       "hanzi": "可以。",
       "pinyin": "Kěyǐ.",
       "translation": "That's fine.",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "08f9e2e2-ef26-420d-ad7a-0865f6ec06d1",
       "hanzi": "我会努力。",
       "pinyin": "Wǒ huì nǔlì.",
       "translation": "I will work hard.",
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "c412b4fc-3c73-4689-8b4b-a9e2f001d379",
       "hanzi": "我不太抽烟。",
       "pinyin": "Wǒ bú tài chōuyān.",
       "translation": "I don't really smoke.",
@@ -108,7 +108,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "0e1c1bb8-af4b-46de-bef2-29b79a42c5c8",
       "hanzi": "我不太喝酒。",
       "pinyin": "Wǒ bú tài hējiǔ.",
       "translation": "I don't really drink.",
@@ -121,7 +121,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "1ae47fe0-c5d9-4979-b700-1f1039bbd108",
       "hanzi": "一点点就好。",
       "pinyin": "Yìdiǎndiǎn jiù hǎo.",
       "translation": "Just a little, please.",

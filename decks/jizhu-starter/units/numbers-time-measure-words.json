@@ -4,7 +4,7 @@
   "description": "Numbers, everyday time words, and common measure words used in beginner phrases.",
   "cards": [
     {
-      "id": "",
+      "id": "6f6d09cf-084f-4829-81ec-d2a3875909d0",
       "hanzi": "零",
       "pinyin": "líng",
       "translation": "zero",
@@ -17,7 +17,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "98ec32d5-ee48-4e78-b451-bb94e6896dd4",
       "hanzi": "一",
       "pinyin": "yī",
       "translation": "one",
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "385f37c4-7628-4043-aea1-e3b84a50ccd1",
       "hanzi": "二",
       "pinyin": "èr",
       "translation": "two",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "7df473d9-d6e3-4858-b6b3-3a539833e9e7",
       "hanzi": "三",
       "pinyin": "sān",
       "translation": "three",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "0cd88c93-bad3-42bb-811c-f18b2cfd9fca",
       "hanzi": "四",
       "pinyin": "sì",
       "translation": "four",
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "c9271dd2-915d-4859-ad0b-e9c0e87646a0",
       "hanzi": "五",
       "pinyin": "wǔ",
       "translation": "five",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "cecede26-8ece-484c-ad1a-a7c0ed06d337",
       "hanzi": "六",
       "pinyin": "liù",
       "translation": "six",
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "72de2da0-7398-43d5-b0b7-6971e7083ddd",
       "hanzi": "七",
       "pinyin": "qī",
       "translation": "seven",
@@ -108,7 +108,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "419a5e0e-a164-4535-ab48-c2d99cb24a3b",
       "hanzi": "八",
       "pinyin": "bā",
       "translation": "eight",
@@ -121,7 +121,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "c030963a-fd7d-41b7-a7b9-a908fb7dae8b",
       "hanzi": "九",
       "pinyin": "jiǔ",
       "translation": "nine",
@@ -134,7 +134,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "7c7ab0a9-820d-40cc-9d0a-03d55abe76c7",
       "hanzi": "十",
       "pinyin": "shí",
       "translation": "ten",
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "98db9883-70e0-4c3d-98d4-7bba804a8bbd",
       "hanzi": "个",
       "pinyin": "ge",
       "translation": "general measure word",
@@ -160,7 +160,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "d7716095-999b-4628-8f93-c860be52b971",
       "hanzi": "岁",
       "pinyin": "suì",
       "translation": "years old",
@@ -173,7 +173,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "0ae0dbec-d55f-4db2-abee-96c64a060acb",
       "hanzi": "本",
       "pinyin": "běn",
       "translation": "volume / measure word for books",
@@ -186,7 +186,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "d1faa93b-6b19-41f6-af4e-279e73255404",
       "hanzi": "些",
       "pinyin": "xiē",
       "translation": "some / a few",
@@ -199,7 +199,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "4df38077-5cd8-44a2-a340-c0a56df17a11",
       "hanzi": "块",
       "pinyin": "kuài",
       "translation": "piece / unit of currency",
@@ -212,7 +212,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "e70b3291-bf7d-4b20-b0d1-4cb9e7d045ac",
       "hanzi": "点",
       "pinyin": "diǎn",
       "translation": "o'clock",
@@ -225,7 +225,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "a76337cd-4e7c-463f-932e-e9ec5d0b7245",
       "hanzi": "分钟",
       "pinyin": "fēnzhōng",
       "translation": "minute",
@@ -238,7 +238,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "71d5f3f6-0882-45fe-aa49-5572175a1ae5",
       "hanzi": "时候",
       "pinyin": "shíhou",
       "translation": "time / moment",
@@ -251,7 +251,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "785272a5-e138-4844-b9f7-30753a36e345",
       "hanzi": "现在",
       "pinyin": "xiànzài",
       "translation": "now",
@@ -264,7 +264,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "0684a520-24b4-48cb-bb4b-e2f8e8e77c0c",
       "hanzi": "以后",
       "pinyin": "yǐhòu",
       "translation": "later",
@@ -277,7 +277,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "9426c98c-6cb2-4987-992a-c3ef5e2380ee",
       "hanzi": "快",
       "pinyin": "kuài",
       "translation": "soon",
@@ -290,7 +290,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "9fb41a5d-6460-47ee-af78-a98be58b2354",
       "hanzi": "刚才",
       "pinyin": "gāngcái",
       "translation": "earlier",
@@ -303,7 +303,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "dab02c2b-66a8-4ef3-8f2e-546b9ec9c186",
       "hanzi": "一会儿",
       "pinyin": "yīhuìr",
       "translation": "in a moment",
@@ -316,7 +316,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "f76f7d5f-a1bf-4228-b474-06f6d6bd677a",
       "hanzi": "今天",
       "pinyin": "jīntiān",
       "translation": "today",
@@ -329,7 +329,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "fad00aa1-c397-4875-b43f-2ac93a856c75",
       "hanzi": "明天",
       "pinyin": "míngtiān",
       "translation": "tomorrow",
@@ -342,7 +342,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "2d34c20d-bb6c-46bd-8161-a056bf0536e6",
       "hanzi": "昨天",
       "pinyin": "zuótiān",
       "translation": "yesterday",
@@ -355,7 +355,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "23662353-bb97-4a59-91d2-04f2ed57af22",
       "hanzi": "早上",
       "pinyin": "zǎoshang",
       "translation": "morning",
@@ -368,7 +368,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "cad9ed8f-b0d1-404c-9e5c-b979d425a1d2",
       "hanzi": "中午",
       "pinyin": "zhōngwǔ",
       "translation": "noon",
@@ -381,7 +381,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "bfa5a27f-ac0e-4e63-b8d3-dd89b3571ddb",
       "hanzi": "下午",
       "pinyin": "xiàwǔ",
       "translation": "afternoon",
@@ -394,7 +394,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "bf02e04a-3cff-4422-9146-bb90695caabc",
       "hanzi": "什么时候",
       "pinyin": "shénme shíhou",
       "translation": "when?",
@@ -407,7 +407,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "044e1727-56a1-4b17-ada4-caad9c011f07",
       "hanzi": "现在几点？",
       "pinyin": "Xiànzài jǐ diǎn?",
       "translation": "What time is it?",
@@ -420,7 +420,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "ff0ae9db-cdc3-47ea-84b9-311f2bcacf34",
       "hanzi": "还早。",
       "pinyin": "Hái zǎo.",
       "translation": "It's still early.",
@@ -433,7 +433,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "8393a599-1c8a-4722-ba4d-bb100beaad24",
       "hanzi": "很晚了。",
       "pinyin": "Hěn wǎn le.",
       "translation": "It's getting late.",
@@ -446,7 +446,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "c828b98e-7a76-41d3-9f33-13aa511cb462",
       "hanzi": "你多大？",
       "pinyin": "Nǐ duō dà?",
       "translation": "How old are you?",
@@ -459,7 +459,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "31d4f1d2-8bdb-4c41-b512-1c4891e6c1bf",
       "hanzi": "我{age}岁。",
       "pinyin": "Wǒ {age} suì.",
       "translation": "I am {age} years old.",

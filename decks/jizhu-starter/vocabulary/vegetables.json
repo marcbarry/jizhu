@@ -3,163 +3,163 @@
   "description": "Vegetables and plant-based ingredients commonly seen on menus.",
   "items": [
     {
-      "id": "",
+      "id": "c9809fcb-1b1a-47b3-b64b-1cc3304493ac",
       "hanzi": "小白菜",
       "pinyin": "xiǎo báicài",
       "gloss": "bok choy"
     },
     {
-      "id": "",
+      "id": "7e901b01-a937-419a-ad3e-a8150a5babf1",
       "hanzi": "大白菜",
       "pinyin": "dà báicài",
       "gloss": "Chinese cabbage"
     },
     {
-      "id": "",
+      "id": "ca8efae5-97aa-4256-85db-3d8f2eaf825e",
       "hanzi": "卷心菜",
       "pinyin": "juǎnxīncài",
       "gloss": "cabbage"
     },
     {
-      "id": "",
+      "id": "185369e0-f800-4c3d-9570-fbf6d8b12a92",
       "hanzi": "菠菜",
       "pinyin": "bōcài",
       "gloss": "spinach"
     },
     {
-      "id": "",
+      "id": "deb1f251-55d2-4f50-85df-c654819d16dd",
       "hanzi": "生菜",
       "pinyin": "shēngcài",
       "gloss": "lettuce"
     },
     {
-      "id": "",
+      "id": "3fa1fca2-bf32-4d97-9b0b-edd2b5b3d215",
       "hanzi": "西兰花",
       "pinyin": "xīlánhuā",
       "gloss": "broccoli"
     },
     {
-      "id": "",
+      "id": "cebe6fac-5a08-4c38-bddb-2c6b508e7ea4",
       "hanzi": "胡萝卜",
       "pinyin": "húluóbo",
       "gloss": "carrot"
     },
     {
-      "id": "",
+      "id": "6cabc669-9d4c-4126-84a9-202694f6eebf",
       "hanzi": "土豆",
       "pinyin": "tǔdòu",
       "gloss": "potato"
     },
     {
-      "id": "",
+      "id": "b742a9cd-7012-4880-b8ae-859e6e6d31ee",
       "hanzi": "红薯",
       "pinyin": "hóngshǔ",
       "gloss": "sweet potato"
     },
     {
-      "id": "",
+      "id": "9462a048-7965-4190-bb53-0d8cd3a35690",
       "hanzi": "西红柿",
       "pinyin": "xīhóngshì",
       "gloss": "tomato"
     },
     {
-      "id": "",
+      "id": "cacf99da-509e-4bdb-8eed-62bbe90ff602",
       "hanzi": "黄瓜",
       "pinyin": "huángguā",
       "gloss": "cucumber"
     },
     {
-      "id": "",
+      "id": "853c5bbe-015f-4ced-a58b-09f340841ddb",
       "hanzi": "茄子",
       "pinyin": "qiézi",
       "gloss": "eggplant / aubergine"
     },
     {
-      "id": "",
+      "id": "74708318-b5fa-49e9-8938-868effe2118d",
       "hanzi": "甜椒",
       "pinyin": "tiánjiāo",
       "gloss": "bell pepper"
     },
     {
-      "id": "",
+      "id": "f12e5e66-20d6-4c6c-a8e5-eef7e21dabb6",
       "hanzi": "辣椒",
       "pinyin": "làjiāo",
       "gloss": "chili pepper"
     },
     {
-      "id": "",
+      "id": "8e5e6f29-61ce-475d-b59b-deadd2dfc0a5",
       "hanzi": "大蒜",
       "pinyin": "dàsuàn",
       "gloss": "garlic"
     },
     {
-      "id": "",
+      "id": "a45c1405-0ecb-479d-b50b-ad59d24dc928",
       "hanzi": "姜",
       "pinyin": "jiāng",
       "gloss": "ginger"
     },
     {
-      "id": "",
+      "id": "f11ce46c-0170-4c06-9712-3226231461a7",
       "hanzi": "洋葱",
       "pinyin": "yángcōng",
       "gloss": "onion"
     },
     {
-      "id": "",
+      "id": "7c809061-dd2e-4095-944c-595a196ecdb2",
       "hanzi": "葱",
       "pinyin": "cōng",
       "gloss": "spring onion / scallion"
     },
     {
-      "id": "",
+      "id": "6535423d-7cd5-462c-9acd-8ed22518819e",
       "hanzi": "韭菜",
       "pinyin": "jiǔcài",
       "gloss": "leek"
     },
     {
-      "id": "",
+      "id": "c08b31ca-cfc6-4604-98ee-5b5f9bdd7dfe",
       "hanzi": "蘑菇",
       "pinyin": "mógu",
       "gloss": "mushroom"
     },
     {
-      "id": "",
+      "id": "65199e1c-00df-4d51-99b4-2437be2a6c43",
       "hanzi": "木耳",
       "pinyin": "mù'ěr",
       "gloss": "wood ear mushroom"
     },
     {
-      "id": "",
+      "id": "1cb0559f-ffd9-41ef-b568-f46b83d12946",
       "hanzi": "豆芽",
       "pinyin": "dòuyá",
       "gloss": "bean sprouts"
     },
     {
-      "id": "",
+      "id": "1009469d-0883-4cdc-97c9-3209aeaec338",
       "hanzi": "四季豆",
       "pinyin": "sìjìdòu",
       "gloss": "green beans"
     },
     {
-      "id": "",
+      "id": "19675a46-d029-4cc5-a541-95444de226a2",
       "hanzi": "荷兰豆",
       "pinyin": "hélándòu",
       "gloss": "snow peas"
     },
     {
-      "id": "",
+      "id": "363e86f2-d0fc-4af9-add4-85bc5214d1d5",
       "hanzi": "玉米",
       "pinyin": "yùmǐ",
       "gloss": "corn"
     },
     {
-      "id": "",
+      "id": "8a748287-c405-44d1-8844-a347d9f83743",
       "hanzi": "豆腐",
       "pinyin": "dòufu",
       "gloss": "tofu"
     },
     {
-      "id": "",
+      "id": "d6d678cb-8e27-4cda-ba93-aca13470f930",
       "hanzi": "海带",
       "pinyin": "hǎidài",
       "gloss": "seaweed"

@@ -4,7 +4,7 @@
   "description": "Hotel check-in, room requests, common problems, luggage, and checkout.",
   "cards": [
     {
-      "id": "",
+      "id": "a9e841cc-457f-4445-95d9-0003af926dec",
       "hanzi": "我有预订。",
       "pinyin": "Wǒ yǒu yùdìng.",
       "translation": "I have a reservation.",
@@ -17,7 +17,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "7d78ec93-b829-48eb-b269-fc7035b4849f",
       "hanzi": "我想办理入住。",
       "pinyin": "Wǒ xiǎng bànlǐ rùzhù.",
       "translation": "I'd like to check in.",
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "69784c08-3d2d-4da0-9540-05520f993b3d",
       "hanzi": "我想退房。",
       "pinyin": "Wǒ xiǎng tuìfáng.",
       "translation": "I'd like to check out.",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "82b7126d-d30b-418d-8a62-e8ec95b65ec9",
       "hanzi": "我叫{name}。",
       "pinyin": "Wǒ jiào {name}.",
       "translation": "My name is {name}.",
@@ -64,7 +64,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "937f399c-993e-441c-acee-0f73b54815d4",
       "hanzi": "这是我的护照。",
       "pinyin": "Zhè shì wǒ de hùzhào.",
       "translation": "Here is my passport.",
@@ -77,7 +77,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "d1a5a4f1-d934-4708-ad19-f804f2c03289",
       "hanzi": "有空房吗？",
       "pinyin": "Yǒu kòngfáng ma?",
       "translation": "Do you have any rooms available?",
@@ -90,7 +90,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "e3b87ce5-2b17-4a47-b5d5-55ac838c8e64",
       "hanzi": "我想要一间单人房。",
       "pinyin": "Wǒ xiǎng yào yì jiān dānrénfáng.",
       "translation": "I'd like a single room.",
@@ -103,7 +103,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "17c075a1-df30-4b9e-8c69-435375af9274",
       "hanzi": "我想要一间双人房。",
       "pinyin": "Wǒ xiǎng yào yì jiān shuāngrénfáng.",
       "translation": "I'd like a double room.",
@@ -116,7 +116,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "2eedd421-51fd-4fd0-bb10-43e78b7f01de",
       "hanzi": "住几晚？",
       "pinyin": "Zhù jǐ wǎn?",
       "translation": "For how many nights?",
@@ -129,7 +129,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "3601636f-63ac-4ec5-83df-5b30a770f6ff",
       "hanzi": "住{nights}晚。",
       "pinyin": "Zhù {nights} wǎn.",
       "translation": "For {nights} nights.",
@@ -155,7 +155,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "cb6d2afe-1f98-4695-982a-25786a6857e6",
       "hanzi": "每晚多少钱？",
       "pinyin": "Měi wǎn duōshao qián?",
       "translation": "How much per night?",
@@ -168,7 +168,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "d9b960f2-e219-4214-a35a-79e76ceb6dbf",
       "hanzi": "包括早餐吗？",
       "pinyin": "Bāokuò zǎocān ma?",
       "translation": "Is breakfast included?",
@@ -181,7 +181,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "cf7d7744-0f64-4346-8578-eb5768b71e9e",
       "hanzi": "早餐几点？",
       "pinyin": "Zǎocān jǐ diǎn?",
       "translation": "What time is breakfast?",
@@ -194,7 +194,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "d4e47a2e-2210-4aab-9ada-df21f039d1cc",
       "hanzi": "有无线网吗？",
       "pinyin": "Yǒu wúxiànwǎng ma?",
       "translation": "Is there Wi-Fi?",
@@ -207,7 +207,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "9dcd6f03-9609-44fe-a4d1-6173aaa98614",
       "hanzi": "无线网密码是什么？",
       "pinyin": "Wúxiànwǎng mìmǎ shì shénme?",
       "translation": "What is the Wi-Fi password?",
@@ -220,7 +220,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "bf2d0480-9cf4-4642-beda-b84b04178b87",
       "hanzi": "请给我钥匙。",
       "pinyin": "Qǐng gěi wǒ yàoshi.",
       "translation": "The key, please.",
@@ -233,7 +233,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "72327bb8-6833-4d81-b5f5-37c2eacb894a",
       "hanzi": "我的钥匙丢了。",
       "pinyin": "Wǒ de yàoshi diū le.",
       "translation": "I've lost my key.",
@@ -246,7 +246,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "b11023d6-2244-4e91-9936-e13bf1ad3a32",
       "hanzi": "房间太热了。",
       "pinyin": "Fángjiān tài rè le.",
       "translation": "The room is too hot.",
@@ -259,7 +259,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "2f753cf0-498c-42d1-8c59-495a1a2f8334",
       "hanzi": "房间太冷了。",
       "pinyin": "Fángjiān tài lěng le.",
       "translation": "The room is too cold.",
@@ -272,7 +272,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "c7dea3d3-e68a-4053-8365-aeb919b45a3d",
       "hanzi": "空调坏了。",
       "pinyin": "Kōngtiáo huài le.",
       "translation": "The air conditioning isn't working.",
@@ -285,7 +285,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "b23bf3df-c324-42a9-832f-5509567f85a3",
       "hanzi": "热水坏了。",
       "pinyin": "Rèshuǐ huài le.",
       "translation": "The hot water isn't working.",
@@ -298,7 +298,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "b6dca351-5ffe-42b2-aff1-c53ea4a2967d",
       "hanzi": "可以再给我一条毛巾吗？",
       "pinyin": "Kěyǐ zài gěi wǒ yì tiáo máojīn ma?",
       "translation": "Could I have another towel?",
@@ -311,7 +311,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "1384d393-155a-4f53-8194-23b1a76784e0",
       "hanzi": "可以再给我一点水吗？",
       "pinyin": "Kěyǐ zài gěi wǒ yìdiǎn shuǐ ma?",
       "translation": "Could I have more water?",
@@ -324,7 +324,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "1f065238-67cb-48b8-8465-b15c47432e9c",
       "hanzi": "什么时候退房？",
       "pinyin": "Shénme shíhou tuìfáng?",
       "translation": "When is checkout time?",
@@ -337,7 +337,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "98ddb3a8-4887-4a97-834d-9477307ff12a",
       "hanzi": "可以帮我叫出租车吗？",
       "pinyin": "Kěyǐ bāng wǒ jiào chūzūchē ma?",
       "translation": "Could you call me a taxi?",
@@ -350,7 +350,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "8b37e81d-0f2f-4bab-b251-28197e11cb36",
       "hanzi": "可以帮我看一下行李吗？",
       "pinyin": "Kěyǐ bāng wǒ kàn yíxià xíngli ma?",
       "translation": "Could you keep my bags?",
@@ -363,7 +363,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "fcfe49ed-6be2-46d3-a6aa-a585d05dbdc5",
       "hanzi": "我想把行李放在这里。",
       "pinyin": "Wǒ xiǎng bǎ xíngli fàng zài zhèlǐ.",
       "translation": "I'd like to leave my bags here.",
@@ -376,7 +376,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "a422d470-90a1-4fa6-b9a8-fe5ee48a3894",
       "hanzi": "我一会儿来拿。",
       "pinyin": "Wǒ yīhuìr lái ná.",
       "translation": "I'll pick them up later.",
@@ -389,7 +389,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "58976948-e80e-494b-bf74-19b0749b38c2",
       "hanzi": "谢谢你的帮助。",
       "pinyin": "Xièxie nǐ de bāngzhù.",
       "translation": "Thank you for your help.",

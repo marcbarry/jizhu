@@ -3,13 +3,13 @@
   "description": "Basic drinks for meals and simple requests.",
   "items": [
     {
-      "id": "",
+      "id": "20ce0ef0-613f-4919-8a0a-7e6f0730818c",
       "hanzi": "水",
       "pinyin": "shuǐ",
       "gloss": "water"
     },
     {
-      "id": "",
+      "id": "8da57839-ea24-4c2c-87c7-850843bbe9f6",
       "hanzi": "茶",
       "pinyin": "chá",
       "gloss": "tea"

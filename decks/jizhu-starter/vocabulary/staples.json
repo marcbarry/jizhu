@@ -3,37 +3,37 @@
   "description": "Staple foods such as rice, noodles, dumplings, bread, and soup.",
   "items": [
     {
-      "id": "",
+      "id": "2e98cf12-4cdf-43f3-8e87-96e2c3f5e1c6",
       "hanzi": "米饭",
       "pinyin": "mǐfàn",
       "gloss": "rice"
     },
     {
-      "id": "",
+      "id": "3c3f79ea-eeba-4517-a776-b1c91b1b1d65",
       "hanzi": "面条",
       "pinyin": "miàntiáo",
       "gloss": "noodles"
     },
     {
-      "id": "",
+      "id": "3c626061-309c-49f2-aad6-f3dea11f8c4c",
       "hanzi": "饺子",
       "pinyin": "jiǎozi",
       "gloss": "dumplings"
     },
     {
-      "id": "",
+      "id": "8d0bbcc0-9474-4d99-8c83-d43f4751fd82",
       "hanzi": "包子",
       "pinyin": "bāozi",
       "gloss": "steamed bun"
     },
     {
-      "id": "",
+      "id": "9b3e0cd8-1538-4466-9a47-05158f41a5f3",
       "hanzi": "面包",
       "pinyin": "miànbāo",
       "gloss": "bread"
     },
     {
-      "id": "",
+      "id": "a9fc19de-7d93-4901-9435-db04b609501e",
       "hanzi": "汤",
       "pinyin": "tāng",
       "gloss": "soup"
