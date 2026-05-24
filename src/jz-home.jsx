@@ -20,64 +20,75 @@ function Home() {
 
   return (
     <Phone>
-      {/* Wordmark */}
-      <div className="px-6 pt-2 flex items-center gap-2">
-        <BrandMark size={26} />
-        <span className="sc" style={{ fontSize: 16, fontWeight: 500 }}>记住</span>
-        <span style={{ fontSize: 14, color: 'var(--ink-3)' }}>· jì zhù</span>
-      </div>
-
-      <div className="flex-1 flex flex-col justify-center px-6">
-        <h1 style={{ fontSize: 38, lineHeight: 1.05, fontWeight: 600, letterSpacing: '-0.025em' }}>
-          Mandarin<br />flashcards.
+      {/* Hero — centered */}
+      <div className="flex-1 flex flex-col items-center justify-center px-8 text-center">
+        <h1 className="sc"
+            style={{
+              fontSize: 124,
+              lineHeight: 1,
+              fontWeight: 500,
+              color: 'var(--ink)',
+              letterSpacing: '0.02em',
+            }}>
+          记住
         </h1>
-        <p className="mt-4" style={{ fontSize: 15, lineHeight: 1.5, color: 'var(--ink-2)' }}>
-          Tap a character to hint just that one.<br />Hanzi optional.
+        <div style={{
+          marginTop: 14,
+          fontSize: 34,
+          fontWeight: 500,
+          color: 'var(--ink)',
+          letterSpacing: '-0.01em',
+        }}>
+          jì zhù
+        </div>
+        <p style={{
+          marginTop: 22,
+          fontSize: 14,
+          lineHeight: 1.5,
+          color: 'var(--ink-2)',
+          maxWidth: 220,
+        }}>
+          A a flashcard system built specifically for learning Chinese with Pinyin and Hanzi.
         </p>
 
-        <div className="mt-8 grid grid-cols-3" style={{ borderTop: '1px solid var(--rule)', borderBottom: '1px solid var(--rule)' }}>
-          {[["120","cards"],["8/day","new cap"],["SM-2","schedule"]].map(([n, l], i) => (
-            <div key={i} style={{ padding: '14px 12px', borderRight: i < 2 ? '1px solid var(--rule)' : 'none' }}>
-              <div className="mono" style={{ fontSize: 14, fontWeight: 500 }}>{n}</div>
-              <div className="tag" style={{ marginTop: 4 }}>{l}</div>
-            </div>
-          ))}
-        </div>
-
         {showInput && (
-          <div className="mt-6 space-y-2">
-            <div className="tag-on">Deck URL</div>
+          <div className="w-full mt-8" style={{ maxWidth: 280 }}>
             <input
               type="text"
               value={urlValue}
               onChange={(e) => setUrlValue(e.target.value)}
               placeholder="jizhu.app/d/starter.json"
-              className="w-full px-3 py-3 mono"
+              autoFocus
+              className="w-full px-3 py-3 mono text-center"
               style={{
                 border: '1px solid var(--rule)', borderRadius: 8, fontSize: 12,
                 color: 'var(--ink)', background: 'var(--bg)',
               }}
             />
-            <p style={{ fontSize: 11, color: 'var(--ink-3)' }}>
-              The prototype is offline-only — any URL loads the starter deck.
+            <p className="text-center" style={{ marginTop: 8, fontSize: 11, color: 'var(--ink-3)' }}>
+              Prototype loads the starter for any URL.
             </p>
           </div>
         )}
       </div>
 
+      {/* Footer buttons */}
       <div className="px-6 pb-8 space-y-2.5">
-        <button className="btn-primary flex items-center justify-center gap-2" onClick={start}>
-          Try the starter deck
-          <IconChevRight size={16} stroke={2.2} />
+        <button className="btn-primary" onClick={showInput ? loadFromUrl : start}>
+          {showInput ? 'Load this URL' : 'Try the starter deck'}
         </button>
-        {showInput ? (
-          <button className="btn-secondary" onClick={loadFromUrl}>Load this URL</button>
-        ) : (
-          <button className="btn-secondary flex items-center justify-center gap-2" onClick={() => setShowInput(true)}>
-            <IconLink size={15} />
-            Paste a deck URL
-          </button>
-        )}
+        <button onClick={() => setShowInput(s => !s)}
+                style={{
+                  background: 'transparent',
+                  color: 'var(--ink)',
+                  border: '1.5px dashed var(--ink-3)',
+                  borderRadius: 10,
+                  padding: '12.5px 20px',
+                  font: '500 14px/1 Inter',
+                  width: '100%',
+                }}>
+          {showInput ? 'Cancel' : 'Paste a deck URL...'}
+        </button>
       </div>
     </Phone>
   );
