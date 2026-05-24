@@ -7,6 +7,12 @@ A Jizhu deck is a single JSON file served over HTTP(S). The deck's URL is its un
 ```json
 {
   "title": "HSK 1 Core",
+  "vocabulary": {
+    "vegetables": [
+      { "hanzi": "青菜", "pinyin": "qīngcài", "gloss": "leafy greens" },
+      { "hanzi": "蘑菇", "pinyin": "mógu",    "gloss": "mushroom" }
+    ]
+  },
   "units": [
     {
       "id": "greetings",
@@ -17,10 +23,11 @@ A Jizhu deck is a single JSON file served over HTTP(S). The deck's URL is its un
 }
 ```
 
-| Field   | Type              | Required | Description                                  |
-| ------- | ----------------- | -------- | -------------------------------------------- |
-| `title` | string            | yes      | Human-readable deck name shown in the UI.    |
-| `units` | array of Unit     | yes      | Ordered list of units that group cards.      |
+| Field        | Type                          | Required | Description                                                                              |
+| ------------ | ----------------------------- | -------- | ---------------------------------------------------------------------------------------- |
+| `title`      | string                        | yes      | Human-readable deck name shown in the UI.                                                |
+| `vocabulary` | object (group id → VocabItem[]) | no     | Named vocabulary groups that pattern-card slots can draw from. See [Vocabulary](#vocabulary). |
+| `units`      | array of Unit                 | yes      | Ordered list of units that group cards.                                                  |
 
 ## Unit
 
@@ -66,13 +73,83 @@ A Jizhu deck is a single JSON file served over HTTP(S). The deck's URL is its un
 
 ## Token
 
-A token represents one meaningful unit of the phrase — typically a word, which may be one or more hanzi characters.
+A token represents one meaningful unit of the phrase — typically a word, which may be one or more hanzi characters. A token is either a **literal token** (fixed hanzi/pinyin/gloss) or a **slot token** (a placeholder filled at render time from a vocabulary group).
+
+### Literal token
 
 | Field    | Type   | Required | Description                                                  |
 | -------- | ------ | -------- | ------------------------------------------------------------ |
 | `hanzi`  | string | yes      | The hanzi for this token.                                    |
 | `pinyin` | string | yes      | The pinyin for this token, with tone marks.                  |
 | `gloss`  | string | yes      | Short English gloss for this token. Use ` / ` for multiple senses. |
+
+### Slot token
+
+| Field  | Type   | Required | Description                                                                                              |
+| ------ | ------ | -------- | -------------------------------------------------------------------------------------------------------- |
+| `slot` | string | yes      | Name of a slot declared in the parent card's `slots` map. No other fields — the slot's group supplies them. |
+
+## Pattern phrases (cards with slots)
+
+A pattern phrase is a card with one or more **slots** — placeholders that get filled by items from a shared vocabulary group. This lets a single card stand in for many concrete utterances ("I want rice", "I want noodles", "I want vegetables") without duplicating cards or tokens.
+
+A card becomes a pattern card simply by declaring a `slots` object — no separate `type` field. Slot placeholders in the card's `hanzi`, `pinyin`, and `translation` strings are written in curly braces, e.g. `{food}`.
+
+```json
+{
+  "id": "i-want-X",
+  "hanzi": "我要{food}",
+  "pinyin": "wǒ yào {food}",
+  "translation": "I want {food}",
+  "slots": {
+    "food": { "group": "vegetables" }
+  },
+  "tokens": [
+    { "hanzi": "我", "pinyin": "wǒ",  "gloss": "I" },
+    { "hanzi": "要", "pinyin": "yào", "gloss": "want" },
+    { "slot": "food" }
+  ]
+}
+```
+
+### Card-level fields (additions for pattern cards)
+
+| Field   | Type                       | Required           | Description                                                                                |
+| ------- | -------------------------- | ------------------ | ------------------------------------------------------------------------------------------ |
+| `slots` | object (slot name → Slot)  | only if card has slots | Maps each slot name used in this card to a Slot definition. Slot names are local to the card. |
+
+### Slot
+
+| Field   | Type   | Required | Description                                                                                  |
+| ------- | ------ | -------- | -------------------------------------------------------------------------------------------- |
+| `group` | string | yes      | Identifier of a vocabulary group defined at the deck's top-level `vocabulary` map.           |
+
+### Rendering rules
+
+- A slot in `hanzi` / `pinyin` / `translation` is rendered by substituting the selected `VocabItem`'s `hanzi` / `pinyin` / `gloss` respectively.
+- A slot token in `tokens` renders as a literal token using the selected `VocabItem`'s fields.
+- The same slot name appearing in multiple places (e.g. once in `hanzi` and once in `tokens`) is filled with the **same** `VocabItem` for that render.
+- The same group can be referenced by slots in different cards — that's the point.
+
+### Known limitations (v1)
+
+- A slot references exactly one group. Filtering or multi-group unions are not supported.
+- Tone sandhi at slot boundaries (e.g. `不` shifting before a 4th-tone infill) is not resolved automatically; authors should keep slot positions in tone-stable contexts where possible, or accept the simplification.
+- Progress tracking treats a pattern card as a single card; whether the SRS layer surfaces different infills on different reviews is a runtime/UI decision, not part of the deck spec.
+
+## Vocabulary
+
+Top-level `vocabulary` is an object mapping each **group id** (string) to an array of `VocabItem`s. Groups are shared across the deck — multiple pattern cards can reference the same group, and a future "vocabulary unit" feature could surface a group's items as cards directly.
+
+### VocabItem
+
+| Field    | Type   | Required | Description                                                          |
+| -------- | ------ | -------- | -------------------------------------------------------------------- |
+| `hanzi`  | string | yes      | The hanzi for this item.                                             |
+| `pinyin` | string | yes      | The pinyin for this item, with tone marks.                           |
+| `gloss`  | string | yes      | Short English gloss. Use ` / ` for multiple senses.                  |
+
+A `VocabItem` is structurally identical to a literal `Token` — by design, so the renderer can substitute one for the other without transformation.
 
 ## Identifiers and stability
 
