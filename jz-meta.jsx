@@ -34,9 +34,11 @@ function Settings() {
               value={settings.newCardsPerDay} min={0} max={50}
               onChange={(v) => updateSettings({ newCardsPerDay: v })} />
             <StepperRow label="Cards per session"
+              hint="One round between Start review and Session complete. Tap Start again for another batch."
               value={settings.cardsPerSession} min={1} max={100}
               onChange={(v) => updateSettings({ cardsPerSession: v })} />
             <ChoiceRow label="Pattern infill"
+              hint="On pattern cards: rotate cycles slot options in order, random picks one each time."
               value={settings.patternInfill}
               options={[['rotate','Rotate'], ['random','Random']]}
               onChange={(v) => updateSettings({ patternInfill: v })} last />
@@ -103,12 +105,15 @@ function StepperRow({ label, hint, value, min, max, step = 1, onChange, last }) 
   );
 }
 
-function ChoiceRow({ label, value, options, onChange, last }) {
+function ChoiceRow({ label, hint, value, options, onChange, last }) {
   return (
     <div style={{ padding: '14px 16px', borderBottom: last ? 'none' : '1px solid var(--rule)' }}>
-      <div className="flex items-center justify-between">
-        <div style={{ fontSize: 14, fontWeight: 500 }}>{label}</div>
-        <div className="flex gap-1" style={{ background: 'var(--bg-2)', borderRadius: 8, padding: 2 }}>
+      <div className="flex items-center justify-between gap-3">
+        <div style={{ minWidth: 0 }}>
+          <div style={{ fontSize: 14, fontWeight: 500 }}>{label}</div>
+          {hint && <div style={{ fontSize: 11, color: 'var(--ink-3)', marginTop: 2 }}>{hint}</div>}
+        </div>
+        <div className="flex gap-1 flex-shrink-0" style={{ background: 'var(--bg-2)', borderRadius: 8, padding: 2 }}>
           {options.map(([v, lbl]) => (
             <button key={v} onClick={() => onChange(v)}
                     style={{
