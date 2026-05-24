@@ -27,6 +27,10 @@ Defined at the deck level and referenced by slot tokens in pattern cards. The fo
 - `directions` — left, right, straight ahead.
 - `durations` — a moment, a few minutes, an hour, a day, a week.
 - `places-in-town` — bathroom, subway, train station, airport, hotel, hospital, shop, restaurant, school.
+- `person-names` — common example names used for practice cards.
+- `nationalities` — Chinese, American, British.
+- `ages` — one through ninety-nine.
+- `night-counts` — one through fourteen.
 
 ## Units
 
@@ -68,11 +72,11 @@ Mostly fixed phrases.
 - China
 - Beijing
 - What is your name?
-- My name is ___.
+- My name is `{person-names}`. *(pattern, slot → `person-names`)*
 - What is your surname?
 - Nice to meet you.
 - Where are you from?
-- I am Chinese / American / British.
+- I am `{nationalities}`. *(pattern, slot → `nationalities`)*
 - This is my teacher.
 - He is my friend.
 
@@ -101,7 +105,7 @@ Numbers 0–10, everyday time words, and the five HSK 1 measure words taught in 
 - It's still early.
 - It's getting late.
 - How old are you?
-- I am ___ years old.
+- I am `{ages}` years old. *(pattern, slot → `ages`)*
 
 ### Asking Questions
 
@@ -298,13 +302,13 @@ Check-in, check-out, and the small requests in between.
 - I have a reservation.
 - I'd like to check in.
 - I'd like to check out.
-- My name is ___.
+- My name is `{person-names}`. *(pattern, slot → `person-names`)*
 - Here is my passport.
 - Do you have any rooms available?
 - I'd like a single room.
 - I'd like a double room.
 - For how many nights?
-- For ___ nights.
+- For `{night-counts}` nights. *(pattern, slot → `night-counts`)*
 - How much per night?
 - Is breakfast included?
 - What time is breakfast?
