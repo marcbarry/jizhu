@@ -375,38 +375,48 @@
     },
     {
       "id": "d46ce76e-d5a2-4d07-9915-66f5f3c3ac24",
-      "hanzi": "吗",
-      "pinyin": "ma",
-      "translation": "question particle - yes/no",
+      "hanzi": "可以吗？",
+      "pinyin": "Kěyǐ ma?",
+      "translation": "Is that okay?",
       "tokens": [
-        { "hanzi": "吗", "pinyin": "ma", "gloss": "question particle - yes/no" }
+        { "hanzi": "可", "pinyin": "kě", "gloss": "can / may" },
+        { "hanzi": "以", "pinyin": "yǐ", "gloss": "by means of" },
+        { "hanzi": "吗？", "pinyin": "ma", "gloss": "(yes/no question particle)" }
       ]
     },
     {
       "id": "f667afaa-4825-4e60-a529-3d05b1211296",
-      "hanzi": "呢",
-      "pinyin": "ne",
-      "translation": "question particle - and you?",
+      "hanzi": "这个呢？",
+      "pinyin": "Zhège ne?",
+      "translation": "What about this one?",
       "tokens": [
-        { "hanzi": "呢", "pinyin": "ne", "gloss": "question particle - and you?" }
+        { "hanzi": "这", "pinyin": "zhè", "gloss": "this" },
+        { "hanzi": "个", "pinyin": "ge", "gloss": "(measure word)" },
+        { "hanzi": "呢？", "pinyin": "ne", "gloss": "what about?" }
       ]
     },
     {
       "id": "a8171d7d-f984-4197-b9c6-53dfccf3f17e",
-      "hanzi": "的",
-      "pinyin": "de",
-      "translation": "possessive / modifier particle",
+      "hanzi": "这是我的",
+      "pinyin": "Zhè shì wǒ de",
+      "translation": "This is mine",
       "tokens": [
-        { "hanzi": "的", "pinyin": "de", "gloss": "possessive / modifier particle" }
+        { "hanzi": "这", "pinyin": "zhè", "gloss": "this" },
+        { "hanzi": "是", "pinyin": "shì", "gloss": "to be" },
+        { "hanzi": "我", "pinyin": "wǒ", "gloss": "I / me" },
+        { "hanzi": "的", "pinyin": "de", "gloss": "(possessive)" }
       ]
     },
     {
       "id": "6120ba11-0490-4705-91f6-07f7fea0b7c1",
-      "hanzi": "了",
-      "pinyin": "le",
-      "translation": "completed-action / change-of-state particle",
+      "hanzi": "够了，谢谢",
+      "pinyin": "Gòu le, xièxie",
+      "translation": "That's enough, thank you",
       "tokens": [
-        { "hanzi": "了", "pinyin": "le", "gloss": "completed-action / change-of-state particle" }
+        { "hanzi": "够", "pinyin": "gòu", "gloss": "enough" },
+        { "hanzi": "了，", "pinyin": "le", "gloss": "(change of state)" },
+        { "hanzi": "谢", "pinyin": "xiè", "gloss": "thank" },
+        { "hanzi": "谢", "pinyin": "xie", "gloss": "thank" }
       ]
     }
   ]

@@ -104,19 +104,30 @@
     },
     {
       "id": "98db9883-70e0-4c3d-98d4-7bba804a8bbd",
-      "hanzi": "个",
-      "pinyin": "ge",
-      "translation": "general measure word",
+      "hanzi": "请给我一个袋子",
+      "pinyin": "Qǐng gěi wǒ yí ge dàizi",
+      "translation": "Please give me a bag",
       "tokens": [
-        { "hanzi": "个", "pinyin": "ge", "gloss": "general measure word" }
+        { "hanzi": "请", "pinyin": "qǐng", "gloss": "please" },
+        { "hanzi": "给", "pinyin": "gěi", "gloss": "give" },
+        { "hanzi": "我", "pinyin": "wǒ", "gloss": "me" },
+        { "hanzi": "一", "pinyin": "yí", "gloss": "one / a" },
+        { "hanzi": "个", "pinyin": "ge", "gloss": "(measure word)" },
+        { "hanzi": "袋", "pinyin": "dài", "gloss": "bag" },
+        { "hanzi": "子", "pinyin": "zi", "gloss": "(noun suffix)" }
       ]
     },
     {
       "id": "d7716095-999b-4628-8f93-c860be52b971",
-      "hanzi": "岁",
-      "pinyin": "suì",
-      "translation": "years old",
+      "hanzi": "他{age}岁",
+      "pinyin": "Tā {age} suì",
+      "translation": "He is {age} years old",
+      "slots": {
+        "age": { "generator": "mandarin-number", "range": [10, 99] }
+      },
       "tokens": [
+        { "hanzi": "他", "pinyin": "tā", "gloss": "he / him" },
+        { "slot": "age" },
         { "hanzi": "岁", "pinyin": "suì", "gloss": "years old" }
       ]
     },
@@ -182,20 +193,32 @@
     },
     {
       "id": "4df38077-5cd8-44a2-a340-c0a56df17a11",
-      "hanzi": "块",
-      "pinyin": "kuài",
-      "translation": "piece / unit of currency",
+      "hanzi": "这个{price}块钱",
+      "pinyin": "Zhège {price} kuài qián",
+      "translation": "This is {price} yuan",
+      "slots": {
+        "price": { "generator": "mandarin-number", "range": [10, 300] }
+      },
       "tokens": [
-        { "hanzi": "块", "pinyin": "kuài", "gloss": "piece / unit of currency" }
+        { "hanzi": "这", "pinyin": "zhè", "gloss": "this" },
+        { "hanzi": "个", "pinyin": "ge", "gloss": "(measure word)" },
+        { "slot": "price" },
+        { "hanzi": "块", "pinyin": "kuài", "gloss": "kuai / yuan" },
+        { "hanzi": "钱", "pinyin": "qián", "gloss": "money" }
       ]
     },
     {
       "id": "e70b3291-bf7d-4b20-b0d1-4cb9e7d045ac",
-      "hanzi": "点",
-      "pinyin": "diǎn",
-      "translation": "o'clock",
+      "hanzi": "现在{hour}点",
+      "pinyin": "Xiànzài {hour} diǎn",
+      "translation": "It is {hour} o'clock now",
+      "slots": {
+        "hour": { "generator": "mandarin-number", "range": [1, 12] }
+      },
       "tokens": [
-        { "hanzi": "点", "pinyin": "diǎn", "gloss": "o'clock / dot" }
+        { "hanzi": "现在", "pinyin": "xiànzài", "gloss": "now" },
+        { "slot": "hour" },
+        { "hanzi": "点", "pinyin": "diǎn", "gloss": "o'clock" }
       ]
     },
     {
