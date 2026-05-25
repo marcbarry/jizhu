@@ -1,6 +1,6 @@
 # 记住 (jì zhù • "jee joo")
 
-Jizhu (from 记住 — *to remember*) is a flashcard system designed for learning Chinese through Pinyin and phonetic pronunciation.
+Jizhu (from 记住 — *to remember*) is a static, minimal flashcard system designed for learning Chinese through Pinyin and phonetic pronunciation.
 
 Hanzi can be hidden so you can focus purely on speaking — drilling Pinyin, tones and pronunciation as flashcards rather than getting stuck on characters.
 
@@ -8,7 +8,9 @@ The default starter deck builds on HSK-1 foundations and extends into practical 
 
 Open the app: **[https://marcbarry.github.io/jee-joo/](https://marcbarry.github.io/jee-joo/)**
 
-## Make your own deck
+*Progress against your deck is saved in your browser's local storage so won't follow to a different browser or a private/incognito window, but remains until you clear site data. Nothing is uploaded to a server.*
+
+## Make your own decks
 
 A deck is a JSON file formatted according to the [docs/spec/deck.md](docs/spec/deck.md) hosted somewhere on the web. Write the file, put it online, and paste the URL into Jìzhù.
 
