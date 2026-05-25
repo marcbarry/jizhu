@@ -212,7 +212,14 @@ function useRoute() { return React.useContext(RouteCtx); }
 function RouterProvider({ children }) {
   const [route, setRoute] = React.useState(() => {
     const h = window.location.hash.replace('#', '');
-    return h || 'home';
+    if (h) return h;
+    // Cold load with no route — if we have a remembered deck, land on its
+    // landing page instead of Home. JzProvider's autoload picks up from here.
+    if (readJSON(STORAGE.lastDeckUrl, null)) {
+      window.location.hash = 'deck';
+      return 'deck';
+    }
+    return 'home';
   });
   React.useEffect(() => {
     const onHash = () => setRoute(window.location.hash.replace('#', '') || 'home');
