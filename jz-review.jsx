@@ -235,7 +235,7 @@ function PatternCard({ card, onGrade, setLastInfill, cardState, settings, idxInS
         return (
           <span key={i} style={{
             display: 'inline-block', minWidth: filledMinWidth,
-            padding: '0 8px', borderBottom: '2px solid var(--ink)', color: 'var(--ink-4)',
+            padding: '0 8px', color: 'var(--ink-4)',
           }}>{blankPlaceholder}</span>
         );
       }
@@ -297,6 +297,8 @@ function PatternCard({ card, onGrade, setLastInfill, cardState, settings, idxInS
                  border: '1px solid var(--accent)',
                  borderRadius: 12,
                  padding: '16px 18px',
+                 marginTop: 24,
+                 marginBottom: 24,
                }}>
             <span className="tag" style={{ color: 'var(--accent)' }}>Missing word</span>
             <span style={{ fontSize: 24, fontWeight: 650, color: 'var(--accent)' }}>"{target.gloss}"</span>
@@ -317,12 +319,12 @@ function PatternCard({ card, onGrade, setLastInfill, cardState, settings, idxInS
       </div>
 
       {/* Options */}
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-2 gap-2">
         {card.slot.options.map((o, i) => {
           const isPick = chosen === i;
           const isAnswer = chosen != null && i === targetIdx;
           const dimWrong = chosen != null && !isPick && !isAnswer;
-          let style = { padding: '22px 12px', textAlign: 'center', transition: 'border-color .15s, background .15s', minHeight: 124 };
+          let style = { padding: '12px 10px', textAlign: 'center', transition: 'border-color .15s, background .15s', minHeight: 88 };
           if (isAnswer)       style = { ...style, borderColor: 'var(--pos)', background: '#f0fdf4' };
           else if (isPick)    style = { ...style, borderColor: 'var(--neg)', background: '#fef2f2' };
           else if (dimWrong)  style = { ...style, opacity: 0.4 };
@@ -330,27 +332,23 @@ function PatternCard({ card, onGrade, setLastInfill, cardState, settings, idxInS
             <button key={i} className="panel" style={style} onClick={() => pick(i)} disabled={chosen != null}>
               {settings.showHanzi ? (
                 <>
-                  <div className="sc" style={{ fontSize: 46, fontWeight: 500, lineHeight: 1 }}>{o.char}</div>
-                  <div style={{ fontSize: 17, color: 'var(--ink-2)', marginTop: 10 }}>{pinyinSpaced(o.pinyin)}</div>
+                  <div className="sc" style={{ fontSize: 34, fontWeight: 500, lineHeight: 1 }}>{o.char}</div>
+                  <div style={{ fontSize: 14, color: 'var(--ink-2)', marginTop: 6 }}>{pinyinSpaced(o.pinyin)}</div>
                 </>
               ) : (
                 <>
-                  <div className="sc" style={{ fontSize: 20, fontWeight: 400, lineHeight: 1, color: 'var(--ink-3)' }}>{o.char}</div>
-                  <div style={{ fontSize: 32, fontWeight: 500, marginTop: 8, color: 'var(--ink)' }}>{pinyinSpaced(o.pinyin)}</div>
+                  <div className="sc" style={{ fontSize: 16, fontWeight: 400, lineHeight: 1, color: 'var(--ink-3)' }}>{o.char}</div>
+                  <div style={{ fontSize: 24, fontWeight: 500, marginTop: 6, color: 'var(--ink)' }}>{pinyinSpaced(o.pinyin)}</div>
                 </>
               )}
-              <div style={{ fontSize: 13, color: 'var(--accent)', fontStyle: 'italic', marginTop: 6 }}>"{sayAs(o.pinyin)}"</div>
+              <div style={{ fontSize: 11, color: 'var(--accent)', fontStyle: 'italic', marginTop: 4 }}>"{sayAs(o.pinyin)}"</div>
             </button>
           );
         })}
       </div>
 
       <div className="pt-4 pb-6">
-        {chosen != null
-          ? <GradeRow onGrade={onGrade} />
-          : <div className="text-center" style={{ fontSize: 11, color: 'var(--ink-3)', padding: '14px 0' }}>
-              Pick an option to reveal the full sentence
-            </div>}
+        {chosen != null && <GradeRow onGrade={onGrade} />}
       </div>
     </div>
   );

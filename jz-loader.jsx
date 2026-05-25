@@ -86,6 +86,26 @@ function toMemCard(card, vocabulary) {
   const slotName = slotNames[0];
   const slotDef = card.slots[slotName];
   const groupItems = vocabulary[slotDef.group] || [];
+  const options = groupItems.map(vocabItemToToken);
+
+  // Proper-noun groups (person names, etc.) carry a gloss that is just the
+  // pinyin transliteration. Pick-the-word offers no semantic discrimination
+  // there — the learner is matching syllables, not meaning — so demote to a
+  // phrase card with the first option baked into the template.
+  if (options.length > 0 && options.every(isProperNounOption)) {
+    const filler = options[0];
+    const tokens = (card.tokens || []).map(t => {
+      const mem = toMemToken(t);
+      if (mem.slot) return { char: filler.char, pinyin: filler.pinyin, gloss: filler.gloss };
+      return mem;
+    });
+    return {
+      kind: 'phrase',
+      id: card.id,
+      translation: fillSlotInText(card.translation ?? '', slotName, filler.gloss),
+      tokens,
+    };
+  }
 
   return {
     kind: 'pattern',
@@ -95,9 +115,19 @@ function toMemCard(card, vocabulary) {
     slot: {
       id: slotName,
       group: slotDef.group,
-      options: groupItems.map(vocabItemToToken),
+      options,
     },
   };
+}
+
+function isProperNounOption(opt) {
+  if (!opt?.gloss || !opt?.pinyin) return false;
+  const norm = s => stripTones(s).replace(/\s+/g, '').toLowerCase();
+  return norm(opt.gloss) === norm(opt.pinyin);
+}
+
+function fillSlotInText(text, slotName, value) {
+  return text.replace(new RegExp(`\\{${slotName}\\}`, 'g'), value);
 }
 
 function validateManifest(m, url) {
