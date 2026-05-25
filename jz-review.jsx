@@ -7,7 +7,7 @@ function ReviewTopBar({ progress, onExit }) {
       <button className="flex items-center gap-1.5" onClick={onExit}
               style={{ color: 'var(--ink-2)', fontSize: 13, fontWeight: 500 }}>
         <IconChevLeft size={18} />
-        <span style={{ fontSize: 11, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.06em' }}>Exit</span>
+        <span style={{ fontSize: 11, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.06em' }}>Pause</span>
       </button>
       <div className="flex items-center gap-2.5">
         <div className="bar" style={{ width: 64 }}>

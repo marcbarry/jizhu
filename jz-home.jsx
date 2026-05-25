@@ -130,7 +130,7 @@ function Home() {
 }
 
 function DeckLanding() {
-  const { deck, progress, settings, newAllowance, reviewAllowance, daily, studyMore } = useStore();
+  const { deck, progress, settings, newAllowance, reviewAllowance, daily, studyMore, session } = useStore();
   const { go } = useRoute();
   const [expandedUnits, setExpandedUnits] = React.useState(() => new Set());
 
@@ -149,6 +149,17 @@ function DeckLanding() {
 
   const stats = deckStats(deck.cards, progress);
   const queue = buildQueue(deck.cards, progress, { newAllowance, reviewAllowance });
+
+  // Detect an in-flight session so the primary button reads "Resume" instead
+  // of "Start review" when the user paused mid-deck. Idx > 0 means at least
+  // one card was graded; we also confirm every saved cardId still exists in
+  // the current deck (a deck swap or content edit invalidates the session).
+  const byId = React.useMemo(() => new Map(deck.cards.map(c => [c.id, c])), [deck]);
+  const inFlight = !!(session
+    && session.idx > 0
+    && session.idx < session.cardIds.length
+    && session.cardIds.every(id => byId.has(id)));
+  const remaining = inFlight ? session.cardIds.length - session.idx : queue.length;
 
   return (
     <Phone>
@@ -189,10 +200,17 @@ function DeckLanding() {
 
         <div className="mt-5">
           <button className="btn-primary flex items-center justify-center gap-2"
-                  onClick={() => queue.length && go('review')}
-                  disabled={!queue.length}
-                  style={queue.length ? {} : { opacity: 0.4 }}>
-            {queue.length ? (
+                  onClick={() => (inFlight || queue.length) && go('review')}
+                  disabled={!inFlight && !queue.length}
+                  style={(inFlight || queue.length) ? {} : { opacity: 0.4 }}>
+            {inFlight ? (
+              <>
+                <span style={{ lineHeight: 1 }}>Resume</span>
+                <span className="mono" style={{ fontSize: 12, opacity: 0.6, lineHeight: 1 }}>
+                  · {remaining} left
+                </span>
+              </>
+            ) : queue.length ? (
               <>
                 <span style={{ lineHeight: 1 }}>Start review</span>
                 <span className="mono" style={{ fontSize: 12, opacity: 0.6, lineHeight: 1 }}>
