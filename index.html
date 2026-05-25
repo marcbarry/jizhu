@@ -170,6 +170,18 @@
 <script type="text/babel" src="jz-meta.jsx"></script>
 <script type="text/babel" src="jz-app.jsx"></script>
 
+<script>
+  // Cache-bust local .jsx sources. Babel reads `src` on DOMContentLoaded, so
+  // mutating the attributes here (synchronously, before that event fires) makes
+  // every reload fetch fresh — sidesteps iOS Safari's aggressive caching of
+  // type="text/babel" sources during prototype iteration.
+  for (const s of document.querySelectorAll('script[type="text/babel"][src]')) {
+    const raw = s.getAttribute('src');
+    const sep = raw.includes('?') ? '&' : '?';
+    s.setAttribute('src', raw + sep + 'v=' + Date.now());
+  }
+</script>
+
 <script type="text/babel">
   ReactDOM.createRoot(document.getElementById('root')).render(<Root />);
 </script>
