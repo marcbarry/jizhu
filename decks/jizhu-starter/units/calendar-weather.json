@@ -74,6 +74,69 @@
       ]
     },
     {
+      "id": "afd33cd9-a367-4088-a187-3e13167b042f",
+      "hanzi": "星期一",
+      "pinyin": "xīngqī yī",
+      "translation": "Monday",
+      "tokens": [
+        { "hanzi": "星期一", "pinyin": "xīngqī yī", "gloss": "Monday" }
+      ]
+    },
+    {
+      "id": "5859d58c-fa8f-4ce3-9d33-b40da81dd175",
+      "hanzi": "星期二",
+      "pinyin": "xīngqī èr",
+      "translation": "Tuesday",
+      "tokens": [
+        { "hanzi": "星期二", "pinyin": "xīngqī èr", "gloss": "Tuesday" }
+      ]
+    },
+    {
+      "id": "90bfca0f-5042-4dcd-b265-12094b6d7f32",
+      "hanzi": "星期三",
+      "pinyin": "xīngqī sān",
+      "translation": "Wednesday",
+      "tokens": [
+        { "hanzi": "星期三", "pinyin": "xīngqī sān", "gloss": "Wednesday" }
+      ]
+    },
+    {
+      "id": "808cd314-52ca-4c30-a4e9-2ddef1b6b6f5",
+      "hanzi": "星期四",
+      "pinyin": "xīngqī sì",
+      "translation": "Thursday",
+      "tokens": [
+        { "hanzi": "星期四", "pinyin": "xīngqī sì", "gloss": "Thursday" }
+      ]
+    },
+    {
+      "id": "b0afb516-baee-486a-abc2-23edaf0de395",
+      "hanzi": "星期五",
+      "pinyin": "xīngqī wǔ",
+      "translation": "Friday",
+      "tokens": [
+        { "hanzi": "星期五", "pinyin": "xīngqī wǔ", "gloss": "Friday" }
+      ]
+    },
+    {
+      "id": "6b30b9ed-bda7-4d70-aa44-b69ff3c961d7",
+      "hanzi": "星期六",
+      "pinyin": "xīngqī liù",
+      "translation": "Saturday",
+      "tokens": [
+        { "hanzi": "星期六", "pinyin": "xīngqī liù", "gloss": "Saturday" }
+      ]
+    },
+    {
+      "id": "a0f0f74a-d46c-4713-b60c-c82010e37050",
+      "hanzi": "星期日",
+      "pinyin": "xīngqī rì",
+      "translation": "Sunday",
+      "tokens": [
+        { "hanzi": "星期日", "pinyin": "xīngqī rì", "gloss": "Sunday" }
+      ]
+    },
+    {
       "id": "603ec520-cca5-4bca-91a5-8f1a4d73eed6",
       "hanzi": "今天几月几号？",
       "pinyin": "Jīntiān jǐ yuè jǐ hào?",

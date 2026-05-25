@@ -4,7 +4,8 @@
       "Bash(docker compose up *)",
       "Bash(curl *)",
       "Bash(docker compose *)",
-      "PowerShell(1..8 | ForEach-Object { [guid]::NewGuid\\(\\).ToString\\(\\) })"
+      "PowerShell(1..* | ForEach-Object { [guid]::NewGuid\\(\\).ToString\\(\\) })",
+      "PowerShell(Out-Null *)"
     ]
   },
   "enabledPlugins": {
