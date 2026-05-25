@@ -53,6 +53,9 @@ const OVERRIDES = {
   // 名字 — second syllable is neutral-tone, so the buzzed-i "dzrr" softens to
   // a schwa. Rules can't tell tone from bare pinyin, so this stays an override.
   mingzi: 'ming-dzuh',
+  // Bare 'r' is the erhua suffix (儿) when it appears as its own token —
+  // pronounced as a short "er", not a bare consonant.
+  r: 'er',
 };
 
 // Strip sentence punctuation around a pinyin syllable.
