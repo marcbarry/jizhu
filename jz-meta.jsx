@@ -29,7 +29,7 @@ function Settings() {
             <span className="tag">app-wide</span>
           </div>
           <div className="panel">
-            <StepperRow label="New cards / day"
+            <StepperRow label="New cards per day"
               hint={`${daily.newSeen} seen today · ${newAllowance} left.`}
               value={settings.newCardsPerDay} min={0} max={50}
               onChange={(v) => updateSettings({ newCardsPerDay: v })} />
@@ -57,7 +57,7 @@ function Settings() {
                 <div className="mono" style={{ fontSize: 11, color: 'var(--ink-3)', marginTop: 2 }}>{deck.url}</div>
               </div>
               <div style={{ padding: '14px 16px', borderTop: '1px solid var(--rule)' }}>
-                <button onClick={() => { if (confirm('Reset your progress for this deck?')) resetDeckProgress(); }}
+                <button onClick={() => { if (confirm('Reset your progress for this deck?')) { resetDeckProgress(); go('home'); } }}
                         style={{ fontSize: 14, fontWeight: 500, color: 'var(--neg)' }}>
                   Reset progress
                 </button>
