@@ -306,7 +306,7 @@ function PatternCard({ card, onGrade, setLastInfill, cardState, settings, idxInS
         ) : (
           <div className="text-center">
             <div style={{ fontSize: 24, fontWeight: 550 }}>
-              "I {target.gloss}{target.gloss.endsWith('e') ? 'd' : 'ed'}." {/* tiny English-ish */}
+              "{(card.translation || '').replace(new RegExp(`\\{${card.slot.id}\\}`, 'g'), target.gloss)}"
             </div>
             <div className="mt-3 flex items-center justify-center gap-1.5"
                  style={{ fontSize: 14, color: isCorrect ? 'var(--pos)' : 'var(--neg)', fontWeight: 600 }}>
