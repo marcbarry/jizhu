@@ -119,37 +119,37 @@ function PhraseCard({ card, onGrade }) {
   }
 
   return (
-    <div className="flex-1 flex flex-col px-5 pt-8">
-      <div className="flex-1 flex flex-col justify-evenly min-h-0">
-        <div className="flex items-end justify-center" style={{ gap: '22px 12px', flexWrap: 'wrap' }}>
-          {card.tokens.map((t, i) => (
-            <button key={i} onClick={() => hintToken(i)}>
-              <HintToken
-                char={t.char} pinyin={t.pinyin} say={sayAs(t.pinyin)} gloss={t.gloss}
-                hinted={hinted[i]} hanziOff={!settings.showHanzi}
-              />
-            </button>
-          ))}
-        </div>
-
-        {/* Translation reveal — clicking also hints every token.
-            minHeight keeps the button the same height in both states so the
-            centered tokens above don't shift when the text size changes. */}
-        <button className="mx-1 flex items-center justify-between"
-                onClick={revealAll}
-                style={{
-                  border: '1px solid var(--rule)', borderRadius: 10,
-                  padding: '18px 20px', background: 'var(--bg)',
-                  minHeight: 72,
-                }}>
-          <span className="tag">Translation</span>
-          {transRevealed
-            ? <span style={{ fontSize: 22, fontWeight: 500, color: 'var(--ink)', lineHeight: '28px', textAlign: 'right' }}>{card.translation}</span>
-            : <span className="flex items-center gap-1.5" style={{ fontSize: 16, color: 'var(--ink-2)', fontWeight: 500, lineHeight: '24px' }}>
-                Tap to reveal <IconChevRight size={14} stroke={2} />
-              </span>}
-        </button>
+    <div className="flex-1 flex flex-col px-5 pt-10">
+      <div className="flex items-end justify-center" style={{ gap: '22px 12px', flexWrap: 'wrap' }}>
+        {card.tokens.map((t, i) => (
+          <button key={i} onClick={() => hintToken(i)}>
+            <HintToken
+              char={t.char} pinyin={t.pinyin} say={sayAs(t.pinyin)} gloss={t.gloss}
+              hinted={hinted[i]} hanziOff={!settings.showHanzi}
+            />
+          </button>
+        ))}
       </div>
+
+      {/* Translation reveal — clicking also hints every token.
+          minHeight keeps the button the same height in both states so the
+          tokens above don't shift when the text size changes. */}
+      <button className="mt-10 mx-1 flex items-center justify-between"
+              onClick={revealAll}
+              style={{
+                border: '1px solid var(--rule)', borderRadius: 10,
+                padding: '18px 20px', background: 'var(--bg)',
+                minHeight: 72,
+              }}>
+        <span className="tag">Translation</span>
+        {transRevealed
+          ? <span style={{ fontSize: 22, fontWeight: 500, color: 'var(--ink)', lineHeight: '28px', textAlign: 'right' }}>{card.translation}</span>
+          : <span className="flex items-center gap-1.5" style={{ fontSize: 16, color: 'var(--ink-2)', fontWeight: 500, lineHeight: '24px' }}>
+              Tap to reveal <IconChevRight size={14} stroke={2} />
+            </span>}
+      </button>
+
+      <div className="flex-1" />
 
       <div className="pb-6">
         <GradeRow onGrade={onGrade} />

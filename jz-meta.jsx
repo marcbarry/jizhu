@@ -57,7 +57,7 @@ function Settings() {
                 <div className="mono" style={{ fontSize: 11, color: 'var(--ink-3)', marginTop: 2 }}>{deck.url}</div>
               </div>
               <div style={{ padding: '14px 16px', borderTop: '1px solid var(--rule)' }}>
-                <button onClick={() => { if (confirm('Reset all SRS progress for this deck?')) resetDeckProgress(); }}
+                <button onClick={() => { if (confirm('Reset your progress for this deck?')) resetDeckProgress(); }}
                         style={{ fontSize: 14, fontWeight: 500, color: 'var(--neg)' }}>
                   Reset progress
                 </button>

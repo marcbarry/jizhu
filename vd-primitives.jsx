@@ -96,25 +96,27 @@ function HintToken({ char, pinyin, say, gloss, hinted = false, hanziOff = false 
     );
   }
 
+  // Hanzi-test mode — hanzi anchored at top; all reveal info stacks underneath it
+  // so pinyin + pronunciation + gloss read as a vertical column under the character.
   return (
     <span className="flex flex-col items-center" style={{ padding: '0 8px', minWidth: 112 }}>
-      <span style={{
-        height: 23, fontSize: 19, fontWeight: 500, color: 'var(--ink-2)', lineHeight: 1,
-        opacity: hinted ? 1 : 0,
-      }}>{pinyin}</span>
       <span className="sc" style={{
-        fontSize: 88, lineHeight: 1, marginTop: 10, color: 'var(--ink)',
+        fontSize: 88, lineHeight: 1, color: 'var(--ink)',
         fontWeight: 500,
         borderBottom: hinted ? '1.5px solid transparent' : '1.5px dotted var(--ink-4)',
         paddingBottom: 3,
       }}>{char}</span>
       <span style={{
-        fontSize: 14, fontWeight: 500, color: 'var(--accent)', marginTop: 10,
-        height: 18, lineHeight: 1, fontStyle: 'italic',
+        marginTop: 24, height: 23, fontSize: 19, fontWeight: 500, color: 'var(--ink-2)', lineHeight: 1,
+        opacity: hinted ? 1 : 0,
+      }}>{pinyin}</span>
+      <span style={{
+        marginTop: 12, height: 18, fontSize: 14, fontWeight: 500, color: 'var(--accent)',
+        lineHeight: 1, fontStyle: 'italic',
         opacity: hinted ? 1 : 0,
       }}>"{say}"</span>
       <span style={{
-        fontSize: 14, color: 'var(--ink-3)', marginTop: 6, height: 18, lineHeight: 1,
+        marginTop: 14, height: 18, fontSize: 14, color: 'var(--ink-3)', lineHeight: 1,
         opacity: hinted ? 1 : 0,
       }}>{gloss}</span>
     </span>
