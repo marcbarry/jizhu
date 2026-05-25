@@ -23,6 +23,20 @@ function Home() {
 
   return (
     <Phone>
+      <div style={{
+        position: 'relative',
+        flex: 1, display: 'flex', flexDirection: 'column', minHeight: 0,
+      }}>
+        <a href="https://github.com/marcbarry/jee-joo"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="View source on GitHub"
+           style={{
+             position: 'absolute', top: 14, right: 14, zIndex: 10,
+             color: 'var(--ink-2)', display: 'inline-flex',
+           }}>
+          <IconGitHub size={20} />
+        </a>
+
       {/* Hero — centered */}
       <div className="flex-1 flex flex-col items-center justify-center px-8 text-center">
         <h1 className="sc"
@@ -49,9 +63,9 @@ function Home() {
           fontSize: 14,
           lineHeight: 1.5,
           color: 'var(--ink-2)',
-          maxWidth: 420,
+          maxWidth: 350,
         }}>
-          A flashcard system designed for learning Chinese through Pinyin and phonetic pronunciation.
+          A minimal flashcard system designed for learning Chinese through Pinyin and phonetic pronunciation.
         </p>
 
         {showInput && (
@@ -109,6 +123,7 @@ function Home() {
             </button>
           </>
         )}
+      </div>
       </div>
     </Phone>
   );
