@@ -284,7 +284,10 @@ function PatternCard({ card, onGrade, setLastInfill, cardState, settings, idxInS
               }}>{pinyinSentence}</div>
             </>
           )}
-          <div style={{ fontSize: 16, color: 'var(--accent)', fontStyle: 'italic', marginTop: 16, lineHeight: 1.35 }}>
+          <div style={{
+            fontSize: 16, color: 'var(--accent)', fontStyle: 'italic', marginTop: 16, lineHeight: 1.35,
+            opacity: chosen != null ? 1 : 0,
+          }}>
             "{sayRow}"
           </div>
         </div>
@@ -341,7 +344,10 @@ function PatternCard({ card, onGrade, setLastInfill, cardState, settings, idxInS
                   <div style={{ fontSize: 24, fontWeight: 500, marginTop: 3, color: 'var(--ink)', lineHeight: 1.1 }}>{pinyinSpaced(o.pinyin)}</div>
                 </>
               )}
-              <div style={{ fontSize: 11, color: 'var(--accent)', fontStyle: 'italic', marginTop: 2, lineHeight: 1.1 }}>"{sayAs(o.pinyin)}"</div>
+              <div style={{
+                fontSize: 11, color: 'var(--accent)', fontStyle: 'italic', marginTop: 2, lineHeight: 1.1,
+                opacity: chosen != null ? 1 : 0,
+              }}>"{sayAs(o.pinyin)}"</div>
             </button>
           );
         })}

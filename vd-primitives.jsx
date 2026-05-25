@@ -92,6 +92,8 @@ function HintToken({ char, pinyin, say, gloss, hinted = false, hanziOff = false 
         <span style={{
           fontSize: 14, fontWeight: 500, color: 'var(--accent)', marginTop: 10,
           height: 18, lineHeight: 1, fontStyle: 'italic',
+          opacity: hinted ? 1 : 0,
+          ...(hinted ? null : hideFromSelect),
         }}>"{say}"</span>
         <span style={{
           fontSize: 14, color: 'var(--ink-3)', marginTop: 6, height: 18, lineHeight: 1,
