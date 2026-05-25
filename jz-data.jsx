@@ -50,6 +50,17 @@ const JQXY = new Set(['j', 'q', 'x', 'y']);
 // Whole-syllable overrides for cases where the rule output reads awkwardly to
 // English speakers. Keep this small — the rules cover the vast majority.
 const OVERRIDES = {
+  // Common compact multi-syllable words with neutral-tone reductions.
+  xiexie: 'shyeh-shyeh',
+  zaijian: 'dzeye-jyen',
+  duibuqi: 'dway-boo-chee',
+  keqi: 'kuh-chee',
+  'bu keqi': 'boo kuh-chee',
+  bukeqi: 'boo kuh-chee',
+  xuesheng: 'shweh-shung',
+  mingzi: 'ming-dzuh',
+  pengyou: 'pung-yo',
+  laoshi: 'laow-shrr',
   // w-/y- bare syllables
   wu: 'oo',
   yi: 'ee',
@@ -109,16 +120,46 @@ function splitSyllable(bare) {
   return ['', bare];
 }
 
-// Pinyin (with or without tone marks) → English approximation.
-function sayAs(pinyin) {
-  if (!pinyin) return '';
-  // A multi-syllable phrase falls back to per-syllable lookup. Pinyin in our
-  // decks is mostly one token = one syllable, but we handle space-separated
-  // input defensively.
-  if (/\s/.test(pinyin)) {
-    return pinyin.split(/\s+/).map(sayAs).join(' ');
+function isKnownSyllable(bare) {
+  if (!bare) return false;
+  if (OVERRIDES[bare]) return true;
+  const normalized = normalizeYW(bare);
+  if (OVERRIDES[normalized]) return true;
+  const [initial, rawFinal] = splitSyllable(normalized);
+  let final = rawFinal;
+  if (JQXY.has(initial) && final.startsWith('u')) {
+    final = 'ü' + final.slice(1);
+  }
+  return final === 'i' && BUZZED_I_INITIALS.has(initial) || Object.prototype.hasOwnProperty.call(FINAL_MAP, final);
+}
+
+function splitCompactPinyin(bare) {
+  const memo = new Map();
+
+  function walk(start) {
+    if (start === bare.length) return [];
+    if (memo.has(start)) return memo.get(start);
+
+    const maxLen = Math.min(6, bare.length - start);
+    for (let len = maxLen; len >= 1; len--) {
+      const piece = bare.slice(start, start + len);
+      if (!isKnownSyllable(piece)) continue;
+      const rest = walk(start + len);
+      if (rest) {
+        const result = [piece, ...rest];
+        memo.set(start, result);
+        return result;
+      }
+    }
+
+    memo.set(start, null);
+    return null;
   }
 
+  return walk(0);
+}
+
+function sayAsSyllable(pinyin) {
   const bare = normalizeYW(stripTones(pinyin));
   if (!bare) return '';
 
@@ -141,6 +182,74 @@ function sayAs(pinyin) {
   return initialSound + finalSound;
 }
 
+// Pinyin (with or without tone marks) → English approximation.
+function sayAs(pinyin) {
+  if (!pinyin) return '';
+  // A multi-syllable phrase falls back to per-syllable lookup. Pinyin in our
+  // decks is mostly one token = one syllable, but we handle space-separated
+  // input defensively.
+  if (/\s/.test(pinyin)) {
+    const barePhrase = pinyin.split(/\s+/).map(stripTones).join(' ');
+    if (OVERRIDES[barePhrase]) return OVERRIDES[barePhrase];
+    return pinyin.split(/\s+/).map(sayAs).join(' ');
+  }
+
+  const bare = stripTones(pinyin);
+  if (OVERRIDES[bare]) return OVERRIDES[bare];
+  const compact = splitCompactPinyin(bare);
+  if (compact && compact.length > 1) {
+    return compact.map(sayAsSyllable).join('-');
+  }
+  return sayAsSyllable(pinyin);
+}
+
+// Split a compact pinyin token like "Duìbuqǐ" into its syllables preserving
+// tone marks and trailing punctuation — used for display so multi-syllable
+// tokens read as "Duì bu qǐ" instead of one run-on string. Reuses the same
+// syllable detector as sayAs, so the boundaries line up with pronunciation.
+function splitPinyinSyllables(s) {
+  if (!s) return [];
+
+  // Honour any explicit separators the deck author included.
+  if (/\s/.test(s)) {
+    return s.split(/\s+/).filter(Boolean).flatMap(splitPinyinSyllables);
+  }
+
+  // Detach trailing punctuation so the splitter only sees the linguistic part.
+  const m = s.match(/^(.*?)([.,!?;:。？！、，；：]*)$/);
+  const main = m ? m[1] : s;
+  const tail = m ? m[2] : '';
+  if (!main) return [s];
+
+  const bare = stripTones(main);
+  const parts = splitCompactPinyin(bare);
+
+  // If the splitter can't decompose (single syllable, or unrecognised string),
+  // return the whole token as-is rather than mangling it.
+  if (!parts || parts.length <= 1) {
+    return [s];
+  }
+
+  // stripTones is char-by-char (with outer punctuation removed), so bare maps
+  // 1:1 to slices of `main`. Walking by part lengths recovers the original
+  // characters (including tone marks) per syllable.
+  const result = [];
+  let pos = 0;
+  for (const part of parts) {
+    result.push(main.slice(pos, pos + part.length));
+    pos += part.length;
+  }
+  if (tail && result.length) {
+    result[result.length - 1] += tail;
+  }
+  return result;
+}
+
+// Convenience: pinyin string with syllables space-separated.
+function pinyinSpaced(s) {
+  return splitPinyinSyllables(s).join(' ');
+}
+
 // Render a pattern card with a specific infill chosen (used during review)
 function renderPattern(card, infillIdx) {
   const fill = card.slot.options[infillIdx];
@@ -151,7 +260,7 @@ function renderPattern(card, infillIdx) {
 }
 
 function tokensToPinyin(tokens) {
-  return tokens.map(t => t.pinyin).join(' ');
+  return tokens.map(t => pinyinSpaced(t.pinyin)).join(' ');
 }
 function tokensToSay(tokens) {
   return tokens.map(t => sayAs(t.pinyin)).join(' ');
@@ -159,5 +268,6 @@ function tokensToSay(tokens) {
 
 Object.assign(window, {
   sayAs, stripTones, renderPattern,
+  splitPinyinSyllables, pinyinSpaced,
   tokensToPinyin, tokensToSay,
 });
