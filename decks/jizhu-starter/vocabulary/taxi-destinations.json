@@ -1,0 +1,54 @@
+{
+  "id": "taxi-destinations",
+  "description": "Destinations that make sense as taxi rides (fares, drop-offs).",
+  "items": [
+    {
+      "id": "b6369e82-cd24-48bd-8c61-2c78c16443f8",
+      "hanzi": "机场",
+      "pinyin": "jīchǎng",
+      "gloss": "airport"
+    },
+    {
+      "id": "b8495ec4-60cb-4415-bb2f-b03268a69019",
+      "hanzi": "酒店",
+      "pinyin": "jiǔdiàn",
+      "gloss": "hotel"
+    },
+    {
+      "id": "3d91744d-f118-40fd-a9df-1bba296f8c13",
+      "hanzi": "火车站",
+      "pinyin": "huǒchēzhàn",
+      "gloss": "train station"
+    },
+    {
+      "id": "d0575dc0-5144-4fbc-bd12-a211909e41ff",
+      "hanzi": "医院",
+      "pinyin": "yīyuàn",
+      "gloss": "hospital"
+    },
+    {
+      "id": "c0c78f33-96fb-4cd2-8b79-4e4a56377722",
+      "hanzi": "饭店",
+      "pinyin": "fàndiàn",
+      "gloss": "restaurant"
+    },
+    {
+      "id": "9ae573a6-bceb-4be7-a22c-7e8e4f4bff1e",
+      "hanzi": "学校",
+      "pinyin": "xuéxiào",
+      "gloss": "school"
+    },
+    {
+      "id": "3585fc9a-926e-497b-a921-9094b3c18662",
+      "hanzi": "商店",
+      "pinyin": "shāngdiàn",
+      "gloss": "shop / store"
+    },
+    {
+      "id": "a02f547c-2787-43e6-9f21-cef43563b875",
+      "hanzi": "家",
+      "pinyin": "jiā",
+      "gloss": "home"
+    }
+  ]
+}
