@@ -9,11 +9,8 @@
       "pinyin": "Nǐ hǎo",
       "translation": "Hello",
       "tokens": [
-        {
-          "hanzi": "你好",
-          "pinyin": "Nǐ hǎo",
-          "gloss": "Hello"
-        }
+        { "hanzi": "你", "pinyin": "nǐ",  "gloss": "you" },
+        { "hanzi": "好", "pinyin": "hǎo", "gloss": "good" }
       ]
     },
     {
@@ -22,11 +19,7 @@
       "pinyin": "Wéi?",
       "translation": "Hello (on the phone)",
       "tokens": [
-        {
-          "hanzi": "喂？",
-          "pinyin": "Wéi?",
-          "gloss": "Hello (on the phone)"
-        }
+        { "hanzi": "喂？", "pinyin": "wéi", "gloss": "hello (on the phone)" }
       ]
     },
     {
@@ -35,11 +28,8 @@
       "pinyin": "Zàijiàn",
       "translation": "Goodbye",
       "tokens": [
-        {
-          "hanzi": "再见",
-          "pinyin": "Zàijiàn",
-          "gloss": "Goodbye"
-        }
+        { "hanzi": "再", "pinyin": "zài",  "gloss": "again" },
+        { "hanzi": "见", "pinyin": "jiàn", "gloss": "see" }
       ]
     },
     {
@@ -48,11 +38,9 @@
       "pinyin": "Míngtiān jiàn",
       "translation": "See you tomorrow",
       "tokens": [
-        {
-          "hanzi": "明天见",
-          "pinyin": "Míngtiān jiàn",
-          "gloss": "See you tomorrow"
-        }
+        { "hanzi": "明", "pinyin": "míng", "gloss": "bright" },
+        { "hanzi": "天", "pinyin": "tiān", "gloss": "day" },
+        { "hanzi": "见", "pinyin": "jiàn", "gloss": "see" }
       ]
     },
     {
@@ -61,11 +49,8 @@
       "pinyin": "Xièxie",
       "translation": "Thank you",
       "tokens": [
-        {
-          "hanzi": "谢谢",
-          "pinyin": "Xièxie",
-          "gloss": "Thank you"
-        }
+        { "hanzi": "谢", "pinyin": "xiè", "gloss": "thank" },
+        { "hanzi": "谢", "pinyin": "xie", "gloss": "thank" }
       ]
     },
     {
@@ -74,11 +59,9 @@
       "pinyin": "Bú kèqi",
       "translation": "You're welcome",
       "tokens": [
-        {
-          "hanzi": "不客气",
-          "pinyin": "Bú kèqi",
-          "gloss": "You're welcome"
-        }
+        { "hanzi": "不", "pinyin": "bú", "gloss": "not" },
+        { "hanzi": "客", "pinyin": "kè", "gloss": "guest" },
+        { "hanzi": "气", "pinyin": "qi", "gloss": "air / breath" }
       ]
     },
     {
@@ -87,11 +70,9 @@
       "pinyin": "Duìbuqǐ",
       "translation": "Sorry",
       "tokens": [
-        {
-          "hanzi": "对不起",
-          "pinyin": "Duìbuqǐ",
-          "gloss": "Sorry"
-        }
+        { "hanzi": "对", "pinyin": "duì", "gloss": "right / correct" },
+        { "hanzi": "不", "pinyin": "bu",  "gloss": "not" },
+        { "hanzi": "起", "pinyin": "qǐ",  "gloss": "rise / start" }
       ]
     },
     {
@@ -100,11 +81,9 @@
       "pinyin": "Méi guānxi",
       "translation": "It's nothing. / No problem",
       "tokens": [
-        {
-          "hanzi": "没关系",
-          "pinyin": "Méi guānxi",
-          "gloss": "It's nothing. / No problem"
-        }
+        { "hanzi": "没", "pinyin": "méi",  "gloss": "not (have)" },
+        { "hanzi": "关", "pinyin": "guān", "gloss": "close / relate" },
+        { "hanzi": "系", "pinyin": "xi",   "gloss": "tie / relation" }
       ]
     },
     {
@@ -113,11 +92,8 @@
       "pinyin": "Qǐng jìn",
       "translation": "Please come in",
       "tokens": [
-        {
-          "hanzi": "请进",
-          "pinyin": "Qǐng jìn",
-          "gloss": "Please come in"
-        }
+        { "hanzi": "请", "pinyin": "qǐng", "gloss": "please" },
+        { "hanzi": "进", "pinyin": "jìn",  "gloss": "enter" }
       ]
     },
     {
@@ -126,11 +102,8 @@
       "pinyin": "Qǐng zuò",
       "translation": "Please sit down",
       "tokens": [
-        {
-          "hanzi": "请坐",
-          "pinyin": "Qǐng zuò",
-          "gloss": "Please sit down"
-        }
+        { "hanzi": "请", "pinyin": "qǐng", "gloss": "please" },
+        { "hanzi": "坐", "pinyin": "zuò",  "gloss": "sit" }
       ]
     },
     {
@@ -139,11 +112,9 @@
       "pinyin": "Nǐ hǎo ma?",
       "translation": "How are you?",
       "tokens": [
-        {
-          "hanzi": "你好吗？",
-          "pinyin": "Nǐ hǎo ma?",
-          "gloss": "How are you?"
-        }
+        { "hanzi": "你",   "pinyin": "nǐ",  "gloss": "you" },
+        { "hanzi": "好",   "pinyin": "hǎo", "gloss": "good" },
+        { "hanzi": "吗？", "pinyin": "ma",  "gloss": "(question)" }
       ]
     },
     {
@@ -152,11 +123,11 @@
       "pinyin": "Wǒ hěn hǎo, nǐ ne?",
       "translation": "I am fine, and you?",
       "tokens": [
-        {
-          "hanzi": "我很好，你呢？",
-          "pinyin": "Wǒ hěn hǎo, nǐ ne?",
-          "gloss": "I am fine, and you?"
-        }
+        { "hanzi": "我",   "pinyin": "wǒ",  "gloss": "I" },
+        { "hanzi": "很",   "pinyin": "hěn", "gloss": "very" },
+        { "hanzi": "好，", "pinyin": "hǎo", "gloss": "good" },
+        { "hanzi": "你",   "pinyin": "nǐ",  "gloss": "you" },
+        { "hanzi": "呢？", "pinyin": "ne",  "gloss": "(and you?)" }
       ]
     }
   ]
