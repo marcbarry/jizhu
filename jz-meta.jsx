@@ -37,7 +37,7 @@ function Settings() {
               hint="How many cards to study in one round. After this many you'll see a 'done for now' screen — tap Start review again to do another round."
               value={settings.cardsPerSession} min={1} max={100}
               onChange={(v) => updateSettings({ cardsPerSession: v })} />
-            <ChoiceRow label="Pattern infill"
+            <ChoiceRow label="Fill-in-the-blank order"
               hint="Some cards are sentences with a missing word, like 'Please give me ___'. Rotate fills the blank with each option in order; Random shuffles them."
               value={settings.patternInfill}
               options={[['rotate','Rotate'], ['random','Random']]}
@@ -88,9 +88,9 @@ function ToggleRow({ label, hint, on, onChange, last }) {
 
 function StepperRow({ label, hint, value, min, max, step = 1, onChange, last }) {
   return (
-    <div className="flex items-center justify-between"
+    <div className="flex items-center justify-between gap-3"
          style={{ padding: '14px 16px', borderBottom: last ? 'none' : '1px solid var(--rule)' }}>
-      <div style={{ minWidth: 0 }}>
+      <div style={{ minWidth: 0, paddingRight: 4 }}>
         <div style={{ fontSize: 14, fontWeight: 500 }}>{label}</div>
         {hint && <div style={{ fontSize: 11, color: 'var(--ink-3)', marginTop: 2 }}>{hint}</div>}
       </div>
