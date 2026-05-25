@@ -85,6 +85,21 @@ function toMemCard(card, vocabulary) {
 
   const slotName = slotNames[0];
   const slotDef = card.slots[slotName];
+  const generator = normalizeSlotGenerator(slotDef, card.id, slotName);
+
+  if (generator) {
+    return {
+      kind: 'pattern',
+      id: card.id,
+      translation: card.translation ?? '',
+      template: (card.tokens || []).map(toMemToken),
+      slot: {
+        id: slotName,
+        generator,
+      },
+    };
+  }
+
   const groupItems = vocabulary[slotDef.group] || [];
   const options = groupItems.map(vocabItemToToken);
 
@@ -118,6 +133,34 @@ function toMemCard(card, vocabulary) {
       options,
     },
   };
+}
+
+function normalizeSlotGenerator(slotDef, cardId, slotName) {
+  if (!slotDef?.generator) return null;
+  if (slotDef.generator !== 'mandarin-number') {
+    throwSchema(`Card ${cardId} slot "${slotName}" uses unsupported generator "${slotDef.generator}".`);
+  }
+
+  const range = normalizeMandarinNumberRange(slotDef.range);
+  if (!range) {
+    throwSchema(`Card ${cardId} slot "${slotName}" has an invalid mandarin-number range.`);
+  }
+
+  return { kind: 'mandarin-number', range };
+}
+
+function normalizeMandarinNumberRange(range) {
+  if (!Array.isArray(range) || range.length !== 2) return null;
+  const min = Number(range[0]);
+  const max = Number(range[1]);
+  if (!Number.isInteger(min) || !Number.isInteger(max) || min < 0 || max > window.MANDARIN_NUMBER_MAX || min > max) return null;
+  return [min, max];
+}
+
+function throwSchema(message) {
+  const err = new Error(message);
+  err.kind = 'schema';
+  throw err;
 }
 
 function isProperNounOption(opt) {

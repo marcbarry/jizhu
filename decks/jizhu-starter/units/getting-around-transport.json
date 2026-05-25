@@ -148,6 +148,38 @@
         { "hanzi": "去", "pinyin": "qù",   "gloss": "go" },
         { "slot": "place" }
       ]
+    },
+    {
+      "id": "28377b5f-6866-4cd3-b6f7-81d4ee383322",
+      "hanzi": "去机场要{minutes}分钟",
+      "pinyin": "Qù jīchǎng yào {minutes} fēnzhōng",
+      "translation": "It takes {minutes} minutes to the airport",
+      "slots": {
+        "minutes": { "generator": "mandarin-number", "range": [10, 90] }
+      },
+      "tokens": [
+        { "hanzi": "去", "pinyin": "qù", "gloss": "go" },
+        { "hanzi": "机场", "pinyin": "jīchǎng", "gloss": "airport" },
+        { "hanzi": "要", "pinyin": "yào", "gloss": "need / take" },
+        { "slot": "minutes" },
+        { "hanzi": "分钟", "pinyin": "fēnzhōng", "gloss": "minutes" }
+      ]
+    },
+    {
+      "id": "981a503a-d943-4609-81b0-31a790e29907",
+      "hanzi": "去机场要{fare}块",
+      "pinyin": "Qù jīchǎng yào {fare} kuài",
+      "translation": "It costs {fare} kuai to the airport",
+      "slots": {
+        "fare": { "generator": "mandarin-number", "range": [10, 300] }
+      },
+      "tokens": [
+        { "hanzi": "去", "pinyin": "qù", "gloss": "go" },
+        { "hanzi": "机场", "pinyin": "jīchǎng", "gloss": "airport" },
+        { "hanzi": "要", "pinyin": "yào", "gloss": "need / cost" },
+        { "slot": "fare" },
+        { "hanzi": "块", "pinyin": "kuài", "gloss": "kuai / yuan" }
+      ]
     }
   ]
 }

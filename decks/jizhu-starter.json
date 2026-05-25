@@ -26,7 +26,6 @@
     "taxi-destinations": "jizhu-starter/vocabulary/taxi-destinations.json",
     "person-names": "jizhu-starter/vocabulary/person-names.json",
     "nationalities": "jizhu-starter/vocabulary/nationalities.json",
-    "ages": "jizhu-starter/vocabulary/ages.json",
     "hours": "jizhu-starter/vocabulary/hours.json",
     "night-counts": "jizhu-starter/vocabulary/night-counts.json",
     "professions": "jizhu-starter/vocabulary/professions.json"

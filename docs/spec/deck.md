@@ -182,14 +182,37 @@ A card becomes a pattern card simply by declaring a `slots` object — no separa
 
 ### Slot
 
-| Field   | Type   | Required | Description                                                                                  |
-| ------- | ------ | -------- | -------------------------------------------------------------------------------------------- |
-| `group` | string | yes      | Identifier of a vocabulary group defined at the deck's top-level `vocabulary` map.           |
+| Field       | Type             | Required | Description                                                                                  |
+| ----------- | ---------------- | -------- | -------------------------------------------------------------------------------------------- |
+| `group`     | string           | conditional | Identifier of a vocabulary group defined at the deck's top-level `vocabulary` map. Required for vocabulary-backed slots. |
+| `generator` | string           | conditional | Identifier of a runtime generator. Required for generated slots. Currently supported: `mandarin-number`. |
+| `range`     | array of numbers | for `mandarin-number` | Inclusive integer range for generated Mandarin numbers. Supported values are `0` through `99999`. |
+
+### Generated number slots
+
+For mechanical number ranges, use a generated slot instead of authoring a large vocabulary file. The slot renders like a normal vocabulary slot, but the app creates a small answer set for each review.
+
+```json
+{
+  "id": "31d4f1d2-8bdb-4c41-b512-1c4891e6c1bf",
+  "hanzi": "我{age}岁",
+  "pinyin": "Wǒ {age} suì",
+  "translation": "I am {age} years old",
+  "slots": {
+    "age": { "generator": "mandarin-number", "range": [10, 99] }
+  },
+  "tokens": [
+    { "hanzi": "我", "pinyin": "wǒ",  "gloss": "I" },
+    { "slot": "age" },
+    { "hanzi": "岁", "pinyin": "suì", "gloss": "years old" }
+  ]
+}
+```
 
 ### Rendering rules
 
-- A slot in `hanzi` / `pinyin` / `translation` is rendered by substituting the selected `VocabItem`'s `hanzi` / `pinyin` / `gloss` respectively.
-- A slot token in `tokens` renders as a literal token using the selected `VocabItem`'s fields.
+- A slot in `hanzi` / `pinyin` / `translation` is rendered by substituting the selected `VocabItem` or generated option's `hanzi` / `pinyin` / `gloss` respectively.
+- A slot token in `tokens` renders as a literal token using the selected `VocabItem` or generated option's fields.
 - The same slot name appearing in multiple places (e.g. once in `hanzi` and once in `tokens`) is filled with the **same** `VocabItem` for that render.
 - The same group can be referenced by slots in different cards — that's the point.
 

@@ -414,6 +414,21 @@
         { "hanzi": "帮", "pinyin": "bāng", "gloss": "help" },
         { "hanzi": "助", "pinyin": "zhù",  "gloss": "assist / aid" }
       ]
+    },
+    {
+      "id": "6052c915-6371-4307-9517-9f360135009b",
+      "hanzi": "我住{nights}晚",
+      "pinyin": "Wǒ zhù {nights} wǎn",
+      "translation": "I am staying {nights} nights",
+      "slots": {
+        "nights": { "generator": "mandarin-number", "range": [3, 30] }
+      },
+      "tokens": [
+        { "hanzi": "我", "pinyin": "wǒ", "gloss": "I" },
+        { "hanzi": "住", "pinyin": "zhù", "gloss": "stay / live" },
+        { "slot": "nights" },
+        { "hanzi": "晚", "pinyin": "wǎn", "gloss": "night" }
+      ]
     }
   ]
 }

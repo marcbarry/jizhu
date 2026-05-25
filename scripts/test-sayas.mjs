@@ -6,13 +6,17 @@ import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
 
 const here = dirname(fileURLToPath(import.meta.url));
-const src = readFileSync(resolve(here, '..', 'jz-data.jsx'), 'utf8');
+const src = [
+  readFileSync(resolve(here, '..', 'jz-generator-mandarin-number.jsx'), 'utf8'),
+  readFileSync(resolve(here, '..', 'jz-data.jsx'), 'utf8'),
+].join('\n');
 
 const win = {};
 new Function('window', src)(win);
 const {
   sayAs, stripTones, splitPinyinSyllables, pinyinSpaced,
   tokensToPinyin, tokensToSay, renderPattern,
+  mandarinNumberToken, generatedSlotOptions, generatedSlotSize,
 } = win;
 
 let pass = 0, fail = 0;
@@ -246,6 +250,38 @@ group('renderPattern — slot infill and answer', () => {
   ]);
   eq('idx 0 answer', r0.answer, { hanzi: '机场', pinyin: 'jīchǎng' });
   eq('idx 1 answer', renderPattern(card, 1).answer, { hanzi: '酒店', pinyin: 'jiǔdiàn' });
+});
+
+group('mandarinNumberToken - generated Mandarin number tokens', () => {
+  eq('0', mandarinNumberToken(0), { id: 'number:0', char: '\u96f6', pinyin: 'l\u00edng', gloss: '0', value: 0 });
+  eq('10', mandarinNumberToken(10), { id: 'number:10', char: '\u5341', pinyin: 'sh\u00ed', gloss: '10', value: 10 });
+  eq('23', mandarinNumberToken(23), { id: 'number:23', char: '\u4e8c\u5341\u4e09', pinyin: '\u00e8r sh\u00ed s\u0101n', gloss: '23', value: 23 });
+  eq('105', mandarinNumberToken(105), { id: 'number:105', char: '\u4e00\u767e\u96f6\u4e94', pinyin: 'y\u012b b\u01cei l\u00edng w\u01d4', gloss: '105', value: 105 });
+  eq('440', mandarinNumberToken(440), { id: 'number:440', char: '\u56db\u767e\u56db\u5341', pinyin: 's\u00ec b\u01cei s\u00ec sh\u00ed', gloss: '440', value: 440 });
+  eq('999', mandarinNumberToken(999), { id: 'number:999', char: '\u4e5d\u767e\u4e5d\u5341\u4e5d', pinyin: 'ji\u01d4 b\u01cei ji\u01d4 sh\u00ed ji\u01d4', gloss: '999', value: 999 });
+  eq('1000', mandarinNumberToken(1000), { id: 'number:1000', char: '\u4e00\u5343', pinyin: 'y\u012b qi\u0101n', gloss: '1000', value: 1000 });
+  eq('1001', mandarinNumberToken(1001), { id: 'number:1001', char: '\u4e00\u5343\u96f6\u4e00', pinyin: 'y\u012b qi\u0101n l\u00edng y\u012b', gloss: '1001', value: 1001 });
+  eq('1010', mandarinNumberToken(1010), { id: 'number:1010', char: '\u4e00\u5343\u96f6\u4e00\u5341', pinyin: 'y\u012b qi\u0101n l\u00edng y\u012b sh\u00ed', gloss: '1010', value: 1010 });
+  eq('1100', mandarinNumberToken(1100), { id: 'number:1100', char: '\u4e00\u5343\u4e00\u767e', pinyin: 'y\u012b qi\u0101n y\u012b b\u01cei', gloss: '1100', value: 1100 });
+  eq('9999', mandarinNumberToken(9999), { id: 'number:9999', char: '\u4e5d\u5343\u4e5d\u767e\u4e5d\u5341\u4e5d', pinyin: 'ji\u01d4 qi\u0101n ji\u01d4 b\u01cei ji\u01d4 sh\u00ed ji\u01d4', gloss: '9999', value: 9999 });
+  eq('10000', mandarinNumberToken(10000), { id: 'number:10000', char: '\u4e00\u4e07', pinyin: 'y\u012b w\u00e0n', gloss: '10000', value: 10000 });
+  eq('10001', mandarinNumberToken(10001), { id: 'number:10001', char: '\u4e00\u4e07\u96f6\u4e00', pinyin: 'y\u012b w\u00e0n l\u00edng y\u012b', gloss: '10001', value: 10001 });
+  eq('10100', mandarinNumberToken(10100), { id: 'number:10100', char: '\u4e00\u4e07\u96f6\u4e00\u767e', pinyin: 'y\u012b w\u00e0n l\u00edng y\u012b b\u01cei', gloss: '10100', value: 10100 });
+  eq('12034', mandarinNumberToken(12034), { id: 'number:12034', char: '\u4e00\u4e07\u4e8c\u5343\u96f6\u4e09\u5341\u56db', pinyin: 'y\u012b w\u00e0n \u00e8r qi\u0101n l\u00edng s\u0101n sh\u00ed s\u00ec', gloss: '12034', value: 12034 });
+  eq('99999', mandarinNumberToken(99999), { id: 'number:99999', char: '\u4e5d\u4e07\u4e5d\u5343\u4e5d\u767e\u4e5d\u5341\u4e5d', pinyin: 'ji\u01d4 w\u00e0n ji\u01d4 qi\u0101n ji\u01d4 b\u01cei ji\u01d4 sh\u00ed ji\u01d4', gloss: '99999', value: 99999 });
+});
+
+group('generatedSlotOptions - target plus distractors', () => {
+  const generator = { kind: 'mandarin-number', range: [20, 22] };
+  const options = generatedSlotOptions(generator, 21, 'rotate', 4);
+  eq('size', options.length, 3);
+  eq('range size', generatedSlotSize(generator), 3);
+  eq('one target', options.filter(o => o.target).length, 1);
+  eq('target rotates from last value', options.find(o => o.target).value, 22);
+  eq('unique option values', new Set(options.map(o => o.value)).size, 3);
+  eq('stale last value starts at range minimum',
+    generatedSlotOptions(generator, 2, 'rotate', 4).find(o => o.target).value,
+    20);
 });
 
 // ─── results ──────────────────────────────────────────────────────────────

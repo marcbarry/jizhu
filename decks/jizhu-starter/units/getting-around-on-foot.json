@@ -172,6 +172,37 @@
         { "hanzi": "哪",   "pinyin": "nǎ",   "gloss": "where / which" },
         { "hanzi": "里？", "pinyin": "lǐ",   "gloss": "inside / place" }
       ]
+    },
+    {
+      "id": "0693962f-c825-453f-ac87-c0c64b7583e7",
+      "hanzi": "往北走{meters}米",
+      "pinyin": "Wǎng běi zǒu {meters} mǐ",
+      "translation": "Walk {meters} meters north",
+      "slots": {
+        "meters": { "generator": "mandarin-number", "range": [10, 999] }
+      },
+      "tokens": [
+        { "hanzi": "往", "pinyin": "wǎng", "gloss": "toward" },
+        { "hanzi": "北", "pinyin": "běi", "gloss": "north" },
+        { "hanzi": "走", "pinyin": "zǒu", "gloss": "walk" },
+        { "slot": "meters" },
+        { "hanzi": "米", "pinyin": "mǐ", "gloss": "meter" }
+      ]
+    },
+    {
+      "id": "17f5803b-72ca-4641-bccc-f49b180ee14b",
+      "hanzi": "还有{distance}公里",
+      "pinyin": "Hái yǒu {distance} gōnglǐ",
+      "translation": "There are {distance} kilometers left",
+      "slots": {
+        "distance": { "generator": "mandarin-number", "range": [3, 999] }
+      },
+      "tokens": [
+        { "hanzi": "还", "pinyin": "hái", "gloss": "still / yet" },
+        { "hanzi": "有", "pinyin": "yǒu", "gloss": "have / there is" },
+        { "slot": "distance" },
+        { "hanzi": "公里", "pinyin": "gōnglǐ", "gloss": "kilometer" }
+      ]
     }
   ]
 }

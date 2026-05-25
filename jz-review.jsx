@@ -193,20 +193,28 @@ function PhraseCard({ card, onGrade }) {
 
 function PatternCard({ card, onGrade, setLastInfill, cardState, settings, idxInSession, sessionTotal }) {
   // Pick the target infill based on settings + last-shown
-  const targetIdx = React.useMemo(() => {
+  const { options, targetIdx } = React.useMemo(() => {
     const last = cardState?.lastInfillIdx;
+    if (card.slot.generator) {
+      const generated = generatedSlotOptions(card.slot.generator, last, settings.patternInfill, 4);
+      return {
+        options: generated,
+        targetIdx: Math.max(0, generated.findIndex(o => o.target)),
+      };
+    }
+
     const N = card.slot.options.length;
     if (settings.patternInfill === 'random') {
-      if (last == null) return Math.floor(Math.random() * N);
+      if (last == null) return { options: card.slot.options, targetIdx: Math.floor(Math.random() * N) };
       let pick;
       do { pick = Math.floor(Math.random() * N); } while (N > 1 && pick === last);
-      return pick;
+      return { options: card.slot.options, targetIdx: pick };
     }
     // rotate
-    return last == null ? 0 : (last + 1) % N;
+    return { options: card.slot.options, targetIdx: last == null ? 0 : (last + 1) % N };
   }, [card.id]);
 
-  const target = card.slot.options[targetIdx];
+  const target = options[targetIdx];
 
   const [chosen, setChosen] = React.useState(null); // index or null
 
@@ -253,7 +261,7 @@ function PatternCard({ card, onGrade, setLastInfill, cardState, settings, idxInS
   function pick(i) {
     if (chosen != null) return;
     setChosen(i);
-    setLastInfill(card.id, targetIdx);
+    setLastInfill(card.id, card.slot.generator ? target.value : targetIdx);
   }
 
   const isCorrect = chosen === targetIdx;
@@ -323,7 +331,7 @@ function PatternCard({ card, onGrade, setLastInfill, cardState, settings, idxInS
 
       {/* Options */}
       <div className="grid grid-cols-2 gap-2">
-        {card.slot.options.map((o, i) => {
+        {options.map((o, i) => {
           const isPick = chosen === i;
           const isAnswer = chosen != null && i === targetIdx;
           const dimWrong = chosen != null && !isPick && !isAnswer;

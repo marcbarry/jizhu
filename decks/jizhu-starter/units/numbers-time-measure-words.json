@@ -348,12 +348,41 @@
       "pinyin": "Wǒ {age} suì",
       "translation": "I am {age} years old",
       "slots": {
-        "age": { "group": "ages" }
+        "age": { "generator": "mandarin-number", "range": [10, 99] }
       },
       "tokens": [
         { "hanzi": "我", "pinyin": "wǒ",  "gloss": "I" },
         { "slot": "age" },
         { "hanzi": "岁", "pinyin": "suì", "gloss": "years old" }
+      ]
+    },
+    {
+      "id": "47dd088f-7400-4751-9c9b-cb04b703ce23",
+      "hanzi": "{minutes}分钟以后",
+      "pinyin": "{minutes} fēnzhōng yǐhòu",
+      "translation": "in {minutes} minutes",
+      "slots": {
+        "minutes": { "generator": "mandarin-number", "range": [5, 60] }
+      },
+      "tokens": [
+        { "slot": "minutes" },
+        { "hanzi": "分钟", "pinyin": "fēnzhōng", "gloss": "minutes" },
+        { "hanzi": "以后", "pinyin": "yǐhòu", "gloss": "after / later" }
+      ]
+    },
+    {
+      "id": "f62f8f73-0c30-4903-ac05-1aa99a908ea9",
+      "hanzi": "要{hours}个小时",
+      "pinyin": "Yào {hours} ge xiǎoshí",
+      "translation": "It takes {hours} hours",
+      "slots": {
+        "hours": { "generator": "mandarin-number", "range": [3, 12] }
+      },
+      "tokens": [
+        { "hanzi": "要", "pinyin": "yào", "gloss": "need / take" },
+        { "slot": "hours" },
+        { "hanzi": "个", "pinyin": "ge", "gloss": "(measure word)" },
+        { "hanzi": "小时", "pinyin": "xiǎoshí", "gloss": "hour" }
       ]
     }
   ]
