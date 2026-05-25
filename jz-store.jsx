@@ -8,7 +8,7 @@ const STORAGE = {
 };
 
 const DEFAULT_SETTINGS = {
-  showHanzi: true,         // true → test on hanzi · false → test on pinyin (hanzi stays visible, dim)
+  showHanzi: false,        // true → test on hanzi · false → test on pinyin (hanzi stays visible, dim)
   newCardsPerDay: 8,       // app-wide
   cardsPerSession: 20,
   patternInfill: 'rotate', // 'rotate' | 'random'
