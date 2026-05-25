@@ -149,7 +149,7 @@ function PhraseCard({ card, onGrade }) {
             </span>}
       </button>
 
-      <div className="flex-1" />
+      <div className="flex-1" style={{ minHeight: 24 }} />
 
       <div className="pb-6">
         <GradeRow onGrade={onGrade} />
