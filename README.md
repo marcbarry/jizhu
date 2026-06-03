@@ -6,7 +6,7 @@ Hanzi can be hidden so you can focus purely on speaking — drilling Pinyin, ton
 
 The default starter deck builds on HSK-1 foundations and extends into practical travel and conversation units: greetings, ordering at restaurants, food vocabulary, checking into hotels, getting around on foot and by transport, telling time, and making plans.
 
-**Open the app: [https://marcbarry.github.io/jizhu/](https://marcbarry.github.io/Jizhu/)**
+**Open the app: [https://marcbarry.github.io/jizhu/](https://marcbarry.github.io/jizhu/)**
 
 *Progress against your deck is saved in your browser's local storage so won't follow to a different browser or a private/incognito window, but remains until you clear site data. Nothing is uploaded to a server.*
 
