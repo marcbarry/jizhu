@@ -1,89 +1,106 @@
 {
   "id": "adjectives",
   "title": "Adjectives",
-  "description": "Basic descriptive words for size, quantity, temperature, mood, and appearance.",
+  "description": "Basic descriptive words taught in simple 'X 很 …' sentences.",
   "cards": [
     {
       "id": "d96fc890-a470-4466-b570-772df9be4047",
-      "hanzi": "好",
-      "pinyin": "hǎo",
-      "translation": "good",
+      "hanzi": "我很好",
+      "pinyin": "Wǒ hěn hǎo",
+      "translation": "I'm well",
       "tokens": [
-        { "hanzi": "好", "pinyin": "hǎo", "gloss": "good" }
+        { "hanzi": "我", "pinyin": "wǒ",  "gloss": "I" },
+        { "hanzi": "很", "pinyin": "hěn", "gloss": "very" },
+        { "hanzi": "好", "pinyin": "hǎo", "gloss": "good / well" }
       ]
     },
     {
       "id": "c846ccff-421e-4c7e-94f7-d52aa5f02427",
-      "hanzi": "大",
-      "pinyin": "dà",
-      "translation": "big",
+      "hanzi": "中国很大",
+      "pinyin": "Zhōngguó hěn dà",
+      "translation": "China is big",
       "tokens": [
-        { "hanzi": "大", "pinyin": "dà", "gloss": "big" }
+        { "hanzi": "中国", "pinyin": "Zhōngguó", "gloss": "China" },
+        { "hanzi": "很",   "pinyin": "hěn",      "gloss": "very" },
+        { "hanzi": "大",   "pinyin": "dà",       "gloss": "big" }
       ]
     },
     {
       "id": "7921fef7-c050-4b7f-801b-cef2905c62c1",
-      "hanzi": "小",
-      "pinyin": "xiǎo",
-      "translation": "small",
+      "hanzi": "这个很小",
+      "pinyin": "Zhège hěn xiǎo",
+      "translation": "This one is small",
       "tokens": [
+        { "hanzi": "这", "pinyin": "zhè",  "gloss": "this" },
+        { "hanzi": "个", "pinyin": "ge",   "gloss": "(measure word)" },
+        { "hanzi": "很", "pinyin": "hěn",  "gloss": "very" },
         { "hanzi": "小", "pinyin": "xiǎo", "gloss": "small" }
       ]
     },
     {
       "id": "1a96d22d-73dd-44de-96e7-ed0930ac0ab6",
-      "hanzi": "多",
-      "pinyin": "duō",
-      "translation": "many / much",
+      "hanzi": "人很多",
+      "pinyin": "Rén hěn duō",
+      "translation": "There are many people",
       "tokens": [
+        { "hanzi": "人", "pinyin": "rén", "gloss": "people" },
+        { "hanzi": "很", "pinyin": "hěn", "gloss": "very" },
         { "hanzi": "多", "pinyin": "duō", "gloss": "many / much" }
       ]
     },
     {
       "id": "49e037fc-2b2d-4511-b9fc-0d9ba7723f71",
-      "hanzi": "少",
-      "pinyin": "shǎo",
-      "translation": "few / little",
+      "hanzi": "钱很少",
+      "pinyin": "Qián hěn shǎo",
+      "translation": "There's very little money",
       "tokens": [
+        { "hanzi": "钱", "pinyin": "qián", "gloss": "money" },
+        { "hanzi": "很", "pinyin": "hěn",  "gloss": "very" },
         { "hanzi": "少", "pinyin": "shǎo", "gloss": "few / little" }
       ]
     },
     {
       "id": "b63e58e3-3c4a-4884-992a-d257984a7bf5",
-      "hanzi": "热",
-      "pinyin": "rè",
-      "translation": "hot",
+      "hanzi": "今天很热",
+      "pinyin": "Jīntiān hěn rè",
+      "translation": "Today is hot",
       "tokens": [
-        { "hanzi": "热", "pinyin": "rè", "gloss": "hot" }
+        { "hanzi": "今天", "pinyin": "jīntiān", "gloss": "today" },
+        { "hanzi": "很",   "pinyin": "hěn",     "gloss": "very" },
+        { "hanzi": "热",   "pinyin": "rè",      "gloss": "hot" }
       ]
     },
     {
       "id": "5820250b-9da5-402c-a63a-ebbbc52df9d1",
-      "hanzi": "冷",
-      "pinyin": "lěng",
-      "translation": "cold",
+      "hanzi": "水很冷",
+      "pinyin": "Shuǐ hěn lěng",
+      "translation": "The water is cold",
       "tokens": [
+        { "hanzi": "水", "pinyin": "shuǐ", "gloss": "water" },
+        { "hanzi": "很", "pinyin": "hěn",  "gloss": "very" },
         { "hanzi": "冷", "pinyin": "lěng", "gloss": "cold" }
       ]
     },
     {
       "id": "23ee73a8-2278-47a6-ace8-2cb097bea319",
-      "hanzi": "高兴",
-      "pinyin": "gāoxìng",
-      "translation": "happy / pleased",
+      "hanzi": "我很高兴",
+      "pinyin": "Wǒ hěn gāoxìng",
+      "translation": "I'm happy",
       "tokens": [
-        { "hanzi": "高", "pinyin": "gāo",  "gloss": "tall / high" },
-        { "hanzi": "兴", "pinyin": "xìng", "gloss": "interest / mood" }
+        { "hanzi": "我",   "pinyin": "wǒ",      "gloss": "I" },
+        { "hanzi": "很",   "pinyin": "hěn",     "gloss": "very" },
+        { "hanzi": "高兴", "pinyin": "gāoxìng", "gloss": "happy / pleased" }
       ]
     },
     {
       "id": "7bd18e86-cade-4ed9-b9c2-45bbc74e08ca",
-      "hanzi": "漂亮",
-      "pinyin": "piàoliang",
-      "translation": "pretty / beautiful",
+      "hanzi": "她很漂亮",
+      "pinyin": "Tā hěn piàoliang",
+      "translation": "She is pretty",
       "tokens": [
-        { "hanzi": "漂", "pinyin": "piào",  "gloss": "elegant / pretty" },
-        { "hanzi": "亮", "pinyin": "liang", "gloss": "bright" }
+        { "hanzi": "她",   "pinyin": "tā",        "gloss": "she" },
+        { "hanzi": "很",   "pinyin": "hěn",       "gloss": "very" },
+        { "hanzi": "漂亮", "pinyin": "piàoliang", "gloss": "pretty / beautiful" }
       ]
     }
   ]

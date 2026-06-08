@@ -241,6 +241,39 @@ function pinyinSpaced(s) {
   return splitPinyinSyllables(s).join(' ');
 }
 
+// Split a token whose pinyin spans multiple space-separated words into one
+// sub-token per word, slicing the hanzi by syllable count (each hanzi is one
+// syllable). Single-word tokens are returned unchanged. Per-word glosses
+// aren't available from a phrase, so the pieces carry an empty gloss — the
+// full-sentence translation conveys the meaning instead.
+function splitWordTokens(token) {
+  if (!token) return [token];
+  // An authored per-word breakdown wins — it carries real per-word glosses
+  // that the space/syllable heuristic below can't recover.
+  if (Array.isArray(token.tokens) && token.tokens.length) {
+    return token.tokens.map(t => ({
+      char: t.char ?? '',
+      pinyin: t.pinyin ?? '',
+      gloss: t.gloss ?? '',
+    }));
+  }
+  if (typeof token.pinyin !== 'string') return [token];
+  const words = token.pinyin.trim().split(/\s+/).filter(Boolean);
+  if (words.length <= 1) return [token];
+  const chars = Array.from(token.char || '');
+  const out = [];
+  let pos = 0;
+  for (const w of words) {
+    const n = splitPinyinSyllables(w).length || 1;
+    out.push({ ...token, char: chars.slice(pos, pos + n).join(''), pinyin: w, gloss: '' });
+    pos += n;
+  }
+  // Defensive: if the hanzi didn't line up with the syllable count, don't
+  // mangle the token — fall back to rendering it whole.
+  if (pos !== chars.length) return [token];
+  return out;
+}
+
 // Render a pattern card with a specific infill chosen (used during review)
 function renderPattern(card, infillIdx) {
   const fill = card.slot.options[infillIdx];
@@ -259,6 +292,6 @@ function tokensToSay(tokens) {
 
 Object.assign(window, {
   sayAs, stripTones, renderPattern,
-  splitPinyinSyllables, pinyinSpaced,
+  splitPinyinSyllables, pinyinSpaced, splitWordTokens,
   tokensToPinyin, tokensToSay,
 });

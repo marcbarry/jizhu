@@ -52,17 +52,15 @@ function Settings() {
               <span className="tag-on">Deck</span>
             </div>
             <div className="panel">
-              <div style={{ padding: '14px 16px' }}>
-                <div style={{ fontSize: 14, fontWeight: 500 }}>This Deck</div>
-                <div className="mono" style={{ fontSize: 11, color: 'var(--ink-3)', marginTop: 2 }}>{deck.url}</div>
-              </div>
-              <div style={{ padding: '14px 16px', borderTop: '1px solid var(--rule)' }}>
-                <button onClick={() => { if (confirm('Reset your progress for this deck?')) { resetDeckProgress(); go('home'); } }}
-                        style={{ fontSize: 14, fontWeight: 500, color: 'var(--neg)' }}>
-                  Reset progress
-                </button>
-                <div style={{ fontSize: 11, color: 'var(--ink-3)', marginTop: 2 }}>Forget your stored progress for this deck</div>
-              </div>
+              <SettingRow label="This Deck" hint={<span className="mono">{deck.url}</span>} />
+              <SettingRow last
+                label={
+                  <button onClick={() => { if (confirm('Reset your progress for this deck?')) { resetDeckProgress(); go('home'); } }}
+                          style={{ color: 'var(--neg)' }}>
+                    Reset progress
+                  </button>
+                }
+                hint="Forget your stored progress for this deck" />
             </div>
           </div>
         )}
@@ -71,29 +69,35 @@ function Settings() {
   );
 }
 
-function ToggleRow({ label, hint, on, onChange, last }) {
+// The one settings-row frame: bottom-ruled (unless `last`), label + optional
+// hint on the left, an optional control as children on the right.
+function SettingRow({ label, hint, last = false, children }) {
   return (
-    <div className="flex items-center justify-between"
+    <div className="flex items-center justify-between gap-3"
          style={{ padding: '14px 16px', borderBottom: last ? 'none' : '1px solid var(--rule)' }}>
       <div style={{ minWidth: 0 }}>
         <div style={{ fontSize: 14, fontWeight: 500 }}>{label}</div>
-        {hint && <div style={{ fontSize: 11, color: 'var(--ink-3)', marginTop: 2 }}>{hint}</div>}
+        {hint != null && hint !== '' &&
+          <div style={{ fontSize: 11, color: 'var(--ink-3)', marginTop: 2 }}>{hint}</div>}
       </div>
+      {children}
+    </div>
+  );
+}
+
+function ToggleRow({ label, hint, on, onChange, last }) {
+  return (
+    <SettingRow label={label} hint={hint} last={last}>
       <button className={"toggle " + (on ? "on" : "")} onClick={() => onChange(!on)}>
         <span className="knob" />
       </button>
-    </div>
+    </SettingRow>
   );
 }
 
 function StepperRow({ label, hint, value, min, max, step = 1, onChange, last }) {
   return (
-    <div className="flex items-center justify-between gap-3"
-         style={{ padding: '14px 16px', borderBottom: last ? 'none' : '1px solid var(--rule)' }}>
-      <div style={{ minWidth: 0, paddingRight: 4 }}>
-        <div style={{ fontSize: 14, fontWeight: 500 }}>{label}</div>
-        {hint && <div style={{ fontSize: 11, color: 'var(--ink-3)', marginTop: 2 }}>{hint}</div>}
-      </div>
+    <SettingRow label={label} hint={hint} last={last}>
       <div className="flex items-center gap-2 flex-shrink-0">
         <button className="stepper-btn" onClick={() => onChange(Math.max(min, value - step))}
                 disabled={value <= min}>−</button>
@@ -101,33 +105,27 @@ function StepperRow({ label, hint, value, min, max, step = 1, onChange, last }) 
         <button className="stepper-btn" onClick={() => onChange(Math.min(max, value + step))}
                 disabled={value >= max}>+</button>
       </div>
-    </div>
+    </SettingRow>
   );
 }
 
 function ChoiceRow({ label, hint, value, options, onChange, last }) {
   return (
-    <div style={{ padding: '14px 16px', borderBottom: last ? 'none' : '1px solid var(--rule)' }}>
-      <div className="flex items-center justify-between gap-3">
-        <div style={{ minWidth: 0 }}>
-          <div style={{ fontSize: 14, fontWeight: 500 }}>{label}</div>
-          {hint && <div style={{ fontSize: 11, color: 'var(--ink-3)', marginTop: 2 }}>{hint}</div>}
-        </div>
-        <div className="flex gap-1 flex-shrink-0" style={{ background: 'var(--bg-2)', borderRadius: 8, padding: 2 }}>
-          {options.map(([v, lbl]) => (
-            <button key={v} onClick={() => onChange(v)}
-                    style={{
-                      fontSize: 12, fontWeight: 500, padding: '5px 10px', borderRadius: 6,
-                      background: value === v ? 'var(--bg)' : 'transparent',
-                      color: value === v ? 'var(--ink)' : 'var(--ink-3)',
-                      boxShadow: value === v ? '0 1px 2px rgba(0,0,0,0.08)' : 'none',
-                    }}>
-              {lbl}
-            </button>
-          ))}
-        </div>
+    <SettingRow label={label} hint={hint} last={last}>
+      <div className="flex gap-1 flex-shrink-0" style={{ background: 'var(--bg-2)', borderRadius: 8, padding: 2 }}>
+        {options.map(([v, lbl]) => (
+          <button key={v} onClick={() => onChange(v)}
+                  style={{
+                    fontSize: 12, fontWeight: 500, padding: '5px 10px', borderRadius: 6,
+                    background: value === v ? 'var(--bg)' : 'transparent',
+                    color: value === v ? 'var(--ink)' : 'var(--ink-3)',
+                    boxShadow: value === v ? '0 1px 2px rgba(0,0,0,0.08)' : 'none',
+                  }}>
+            {lbl}
+          </button>
+        ))}
       </div>
-    </div>
+    </SettingRow>
   );
 }
 

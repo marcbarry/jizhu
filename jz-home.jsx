@@ -92,16 +92,7 @@ function Home() {
       {/* Footer buttons */}
       <div className="px-6 pb-8 space-y-2.5">
         {showInput ? (
-          <button onClick={() => setShowInput(false)}
-                  style={{
-                    background: 'transparent',
-                    color: 'var(--ink)',
-                    border: '1.5px dashed var(--ink-3)',
-                    borderRadius: 10,
-                    padding: '12.5px 20px',
-                    font: '500 14px/1 Inter',
-                    width: '100%',
-                  }}>
+          <button className="btn-secondary" onClick={() => setShowInput(false)}>
             Back
           </button>
         ) : (
@@ -109,16 +100,7 @@ function Home() {
             <button className="btn-primary" onClick={start}>
               Try the starter deck
             </button>
-            <button onClick={() => setShowInput(true)}
-                    style={{
-                      background: 'transparent',
-                      color: 'var(--ink)',
-                      border: '1.5px dashed var(--ink-3)',
-                      borderRadius: 10,
-                      padding: '12.5px 20px',
-                      font: '500 14px/1 Inter',
-                      width: '100%',
-                    }}>
+            <button className="btn-secondary" onClick={() => setShowInput(true)}>
               Paste a deck URL...
             </button>
           </>
@@ -178,18 +160,9 @@ function DeckLanding() {
         </div>
 
         <div className="mt-5 grid grid-cols-3 gap-3">
-          <div>
-            <div className="mono" style={{ fontSize: 22, fontWeight: 500, color: 'var(--accent)' }}>{stats.due}</div>
-            <div className="tag" style={{ marginTop: 2 }}>Due</div>
-          </div>
-          <div>
-            <div className="mono" style={{ fontSize: 22, fontWeight: 500 }}>{stats.new}</div>
-            <div className="tag" style={{ marginTop: 2 }}>New</div>
-          </div>
-          <div>
-            <div className="mono" style={{ fontSize: 22, fontWeight: 500 }}>{stats.learned}</div>
-            <div className="tag" style={{ marginTop: 2 }}>Learned</div>
-          </div>
+          <Stat value={stats.due} label="Due" accent />
+          <Stat value={stats.new} label="New" />
+          <Stat value={stats.learned} label="Learned" />
         </div>
 
         <div className="mt-4 bar"><i className="accent" style={{ width: stats.reviewedPct + '%' }} /></div>
@@ -221,19 +194,9 @@ function DeckLanding() {
               <span style={{ lineHeight: 1 }}>Congratulations! You've finished for now.</span>
             )}
           </button>
-          <button onClick={() => { if (stats.new > 0) { studyMore(STUDY_MORE_BUMP); go('review'); } }}
-                  disabled={stats.new === 0}
-                  style={{
-                    background: 'transparent',
-                    color: 'var(--ink)',
-                    border: '1.5px dashed var(--ink-3)',
-                    borderRadius: 10,
-                    padding: '10px 20px',
-                    font: '500 13px/1 Inter',
-                    width: '100%',
-                    marginTop: 10,
-                    opacity: stats.new === 0 ? 0.4 : 1,
-                  }}>
+          <button className="btn-secondary" style={{ marginTop: 10 }}
+                  onClick={() => { if (stats.new > 0) { studyMore(STUDY_MORE_BUMP); go('review'); } }}
+                  disabled={stats.new === 0}>
             <span style={{ lineHeight: 1 }}>Study more</span>
             <span className="mono" style={{ fontSize: 11, opacity: 0.6, lineHeight: 1, marginLeft: 6 }}>
               · +{STUDY_MORE_BUMP} new

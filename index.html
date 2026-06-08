@@ -94,11 +94,16 @@
   }
   .btn-primary:hover:not(:disabled) { opacity: 0.9; }
   .btn-primary:active:not(:disabled) { transform: translateY(1px); }
+  /* Dashed "secondary" action — the quieter counterpart to .btn-primary,
+     used for cancel/back/paste/study-more. */
   .btn-secondary {
-    background: var(--bg); color: var(--ink); border: 1px solid var(--rule); border-radius: 10px;
-    padding: 13px 20px; font: 500 14px/1 'Inter'; width: 100%;
+    background: transparent; color: var(--ink);
+    border: 1.5px dashed var(--ink-3); border-radius: 10px;
+    padding: 12.5px 20px; font: 500 14px/1 'Inter'; width: 100%;
+    transition: border-color .12s, opacity .12s;
   }
-  .btn-secondary:hover { border-color: var(--ink-3); }
+  .btn-secondary:hover:not(:disabled) { border-color: var(--ink-2); }
+  .btn-secondary:disabled { opacity: 0.4; cursor: default; }
 
   /* ─── Grade pills ─── */
   .grade {

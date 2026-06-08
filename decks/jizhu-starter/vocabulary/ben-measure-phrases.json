@@ -6,25 +6,45 @@
       "id": "055eb8a2-b658-459d-bdad-fde9fa8a8137",
       "hanzi": "一本书",
       "pinyin": "yì běn shū",
-      "gloss": "one book"
+      "gloss": "one book",
+      "tokens": [
+        { "hanzi": "一", "pinyin": "yì", "gloss": "one" },
+        { "hanzi": "本", "pinyin": "běn", "gloss": "(measure word)" },
+        { "hanzi": "书", "pinyin": "shū", "gloss": "book" }
+      ]
     },
     {
       "id": "864cfc4c-fc87-4176-a51b-0d11223ccdc1",
       "hanzi": "两本书",
       "pinyin": "liǎng běn shū",
-      "gloss": "two books"
+      "gloss": "two books",
+      "tokens": [
+        { "hanzi": "两", "pinyin": "liǎng", "gloss": "two" },
+        { "hanzi": "本", "pinyin": "běn", "gloss": "(measure word)" },
+        { "hanzi": "书", "pinyin": "shū", "gloss": "book" }
+      ]
     },
     {
       "id": "784b8606-1680-4f1d-bee5-58df5f7499f0",
       "hanzi": "一本杂志",
       "pinyin": "yì běn zázhì",
-      "gloss": "one magazine"
+      "gloss": "one magazine",
+      "tokens": [
+        { "hanzi": "一", "pinyin": "yì", "gloss": "one" },
+        { "hanzi": "本", "pinyin": "běn", "gloss": "(measure word)" },
+        { "hanzi": "杂志", "pinyin": "zázhì", "gloss": "magazine" }
+      ]
     },
     {
       "id": "7b7c11ed-239c-4759-a76c-a7ef816a028a",
       "hanzi": "一本词典",
       "pinyin": "yì běn cídiǎn",
-      "gloss": "one dictionary"
+      "gloss": "one dictionary",
+      "tokens": [
+        { "hanzi": "一", "pinyin": "yì", "gloss": "one" },
+        { "hanzi": "本", "pinyin": "běn", "gloss": "(measure word)" },
+        { "hanzi": "词典", "pinyin": "cídiǎn", "gloss": "dictionary" }
+      ]
     }
   ]
 }

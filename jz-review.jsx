@@ -2,21 +2,18 @@
 
 function ReviewTopBar({ progress, onExit }) {
   return (
-    <div className="px-5 py-3 flex items-center justify-between"
-         style={{ borderBottom: '1px solid var(--rule)' }}>
-      <button className="flex items-center gap-1.5" onClick={onExit}
-              style={{ color: 'var(--ink-2)', fontSize: 13, fontWeight: 500 }}>
-        <IconChevLeft size={18} />
-        <span style={{ fontSize: 11, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.06em' }}>Pause</span>
-      </button>
-      <div className="flex items-center gap-2.5">
-        <div className="bar" style={{ width: 64 }}>
-          <i style={{ width: progress + '%' }} />
+    <TopBar
+      left={<BackButton label="Pause" onBack={onExit} tag />}
+      center={
+        <div className="flex items-center gap-2.5">
+          <div className="bar" style={{ width: 64 }}>
+            <i style={{ width: progress + '%' }} />
+          </div>
+          <span className="mono" style={{ fontSize: 11, color: 'var(--ink-2)' }}>{progress}%</span>
         </div>
-        <span className="mono" style={{ fontSize: 11, color: 'var(--ink-2)' }}>{progress}%</span>
-      </div>
-      <span style={{ width: 60 }} />
-    </div>
+      }
+      right={<span style={{ width: 60 }} />}
+    />
   );
 }
 
@@ -250,82 +247,55 @@ function PatternCard({ card, onGrade, setLastInfill, cardState, settings, idxInS
 
   const [chosen, setChosen] = React.useState(null); // index or null
 
+  // Per-(non-slot)-token hint: tapping a fixed word reveals its phonetic +
+  // English early, mirroring the phrase card. The slot is revealed by picking
+  // an answer, not by tapping. Keyed by template index.
+  const [hinted, setHinted] = React.useState(() => card.template.map(() => false));
+
   // Reset on card change
   React.useEffect(() => {
     setChosen(null);
+    setHinted(card.template.map(() => false));
   }, [card.id]);
 
-  // Per-token chip: hanzi · pinyin · phonetic · english stacked vertically,
-  // matching the phrase-card HintToken layout. The slot chip shows a blank
-  // placeholder pre-pick and the chosen answer (accent-highlighted) post-pick.
-  // Phonetic + english reveal when `chosen != null`.
+  function hintToken(i) {
+    setHinted(H => H.map((v, j) => j === i ? true : v));
+  }
+
+  // Each sentence word is the shared HintToken, so a single word looks identical
+  // here and on the phrase card. The slot uses the accent/dim placeholder states
+  // and is driven by picking an answer; fixed words tap to reveal their hint.
   function renderChip(t, i) {
-    const isSlot = !!t.slot;
-    const filled = !isSlot || chosen != null;
-    const content = isSlot && filled ? target : (isSlot ? null : t);
-    const revealed = chosen != null && filled;
-    const slotAccent = isSlot && filled;
-    const dim = !filled;
-
-    const charText   = filled ? content.char   : '?';
-    const pinyinText = filled ? pinyinSpaced(content.pinyin) : '__';
-    const sayText    = filled ? sayAs(content.pinyin) : '';
-    const glossText  = filled ? content.gloss  : '';
-
-    const pillStyle = slotAccent
-      ? { background: 'var(--accent-2)', padding: '0 8px', borderRadius: 4 }
-      : null;
-
-    if (settings.showHanzi) {
-      return (
-        <div key={i} className="flex flex-col items-center" style={{ padding: '0 6px', minWidth: 88 }}>
-          <span className="sc" style={{
-            fontSize: 80, lineHeight: 1, fontWeight: 500,
-            color: dim ? 'var(--ink-4)' : (slotAccent ? 'var(--accent)' : 'var(--ink)'),
-            ...pillStyle,
-          }}>{charText}</span>
-          <span style={{
-            marginTop: 14, fontSize: 18, fontWeight: 500, lineHeight: 1,
-            color: dim ? 'var(--ink-4)' : (slotAccent ? 'var(--accent)' : 'var(--ink-2)'),
-            ...pillStyle,
-          }}>{pinyinText}</span>
-          <span style={{
-            marginTop: 10, height: 16, fontSize: 13, fontWeight: 500, lineHeight: 1,
-            color: 'var(--accent)', fontStyle: 'italic',
-            opacity: revealed ? 1 : 0,
-          }}>{revealed ? `"${sayText}"` : ''}</span>
-          <span style={{
-            marginTop: 8, height: 16, fontSize: 13, lineHeight: 1.1,
-            color: 'var(--ink-3)',
-            opacity: revealed ? 1 : 0,
-          }}>{glossText}</span>
-        </div>
-      );
+    if (t.slot) {
+      // Unfilled: one dim placeholder. Filled: the picked answer, split into
+      // one accent chip per word so a multi-word answer (一 本 书) reads as
+      // discrete blocks like the rest of the sentence rather than one clump.
+      if (chosen == null) {
+        return (
+          <HintToken key={i} char="?" pinyin="__" say="" gloss=""
+            hinted={false} hanziOff={!settings.showHanzi} tone="dim" pinyinAlways />
+        );
+      }
+      // Generator fills (numbers) are one unit and space their syllables, so
+      // only split vocab-group phrases into words; keep numbers whole.
+      const parts = card.slot.generator ? [target] : splitWordTokens(target);
+      return parts.map((w, j) => (
+        <HintToken key={`${i}-${j}`}
+          char={w.char} pinyin={w.pinyin} say={sayAs(w.pinyin)} gloss={w.gloss}
+          hinted hanziOff={!settings.showHanzi} tone="accent" pinyinAlways />
+      ));
     }
-    // pinyin-test mode: pinyin emphasized, hanzi small/dim above
+    // Fixed words are sentence context for the slot, so their pinyin stays
+    // visible (unlike the phrase card, which hides it to test recall). Tapping
+    // still reveals the phonetic + English.
+    const revealed = hinted[i] || chosen != null;
     return (
-      <div key={i} className="flex flex-col items-center" style={{ padding: '0 6px', minWidth: 88 }}>
-        <span className="sc" style={{
-          fontSize: 22, lineHeight: 1, fontWeight: 400,
-          color: dim ? 'var(--ink-4)' : (slotAccent ? 'var(--accent)' : 'var(--ink-3)'),
-          ...pillStyle,
-        }}>{charText}</span>
-        <span style={{
-          marginTop: 8, fontSize: 44, lineHeight: 1.02, fontWeight: 500,
-          color: dim ? 'var(--ink-4)' : (slotAccent ? 'var(--accent)' : 'var(--ink)'),
-          ...pillStyle,
-        }}>{pinyinText}</span>
-        <span style={{
-          marginTop: 10, height: 16, fontSize: 13, fontWeight: 500, lineHeight: 1,
-          color: 'var(--accent)', fontStyle: 'italic',
-          opacity: revealed ? 1 : 0,
-        }}>{revealed ? `"${sayText}"` : ''}</span>
-        <span style={{
-          marginTop: 8, height: 16, fontSize: 13, lineHeight: 1.1,
-          color: 'var(--ink-3)',
-          opacity: revealed ? 1 : 0,
-        }}>{glossText}</span>
-      </div>
+      <button key={i} onClick={() => hintToken(i)} disabled={revealed} style={{ userSelect: 'text' }}>
+        <HintToken
+          char={t.char} pinyin={t.pinyin} say={sayAs(t.pinyin)} gloss={t.gloss}
+          hinted={revealed} hanziOff={!settings.showHanzi} pinyinAlways
+        />
+      </button>
     );
   }
 
@@ -345,12 +315,12 @@ function PatternCard({ card, onGrade, setLastInfill, cardState, settings, idxInS
       </div>
 
       <div className="flex-1 flex flex-col justify-evenly min-h-0">
-        {/* Sentence — per-token chips: hanzi · pinyin · phonetic · english,
-            stacked vertically. Slot is highlighted; phonetic + english reveal
-            on pick. Mirrors the phrase-card HintToken layout. */}
+        {/* Sentence — each word is the shared HintToken. The slot is
+            accent-highlighted and revealed by picking; fixed words tap to
+            reveal, exactly as on the phrase card. */}
         <div className="flex flex-wrap items-start justify-center"
              style={{ rowGap: 18, columnGap: 4 }}>
-          {card.template.map((t, i) => renderChip(t, i))}
+          {card.template.flatMap((t, i) => renderChip(t, i))}
         </div>
 
         {/* English clue / answer state */}

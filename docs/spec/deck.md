@@ -236,8 +236,9 @@ Top-level `vocabulary` is an object mapping each **group id** (string) to an arr
 | `hanzi`  | string | yes      | The hanzi for this item.                                             |
 | `pinyin` | string | yes      | The pinyin for this item, with tone marks.                           |
 | `gloss`  | string | yes      | Short English gloss. Use ` / ` for multiple senses.                  |
+| `tokens` | array of literal Token | no | Optional per-word breakdown for a multi-word item. When a slot using this item renders inside a sentence, the app shows one chip per token (so `一本书` reads as `一 · 本 · 书` with individual glosses) instead of one merged block. Omit for single-word items. Concatenating tokens should reconstruct `hanzi`/`pinyin`. |
 
-A `VocabItem` has the same language fields as a literal `Token`, plus an `id` so individual vocabulary entries can be referenced consistently.
+A `VocabItem` has the same language fields as a literal `Token`, plus an `id` so individual vocabulary entries can be referenced consistently. The option tile (when picking) always shows the whole item (`hanzi`/`pinyin`/`gloss`); `tokens` only affects how a chosen multi-word answer is broken up within the sentence.
 
 ## Identifiers and stability
 

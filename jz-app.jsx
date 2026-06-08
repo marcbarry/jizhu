@@ -51,12 +51,7 @@ function LoadingScreen({ onCancel }) {
         </div>
       </div>
       <div className="px-6 pb-8">
-        <button onClick={onCancel}
-                style={{
-                  background: 'transparent', color: 'var(--ink)',
-                  border: '1.5px dashed var(--ink-3)', borderRadius: 10,
-                  padding: '12.5px 20px', font: '500 14px/1 Inter', width: '100%',
-                }}>
+        <button className="btn-secondary" onClick={onCancel}>
           Cancel
         </button>
       </div>
@@ -92,12 +87,7 @@ function DeckErrorScreen({ error, onRetry, onHome }) {
       </div>
       <div className="px-6 pb-8 space-y-2.5">
         <button className="btn-primary" onClick={onRetry}>Try again</button>
-        <button onClick={onHome}
-                style={{
-                  background: 'transparent', color: 'var(--ink)',
-                  border: '1.5px dashed var(--ink-3)', borderRadius: 10,
-                  padding: '12.5px 20px', font: '500 14px/1 Inter', width: '100%',
-                }}>
+        <button className="btn-secondary" onClick={onHome}>
           Back
         </button>
       </div>

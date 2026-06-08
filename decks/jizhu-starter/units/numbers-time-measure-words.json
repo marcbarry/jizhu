@@ -150,15 +150,16 @@
     },
     {
       "id": "d1faa93b-6b19-41f6-af4e-279e73255404",
-      "hanzi": "我需要{someThing}",
-      "pinyin": "Wǒ xūyào {someThing}",
-      "translation": "I need {someThing}",
+      "hanzi": "我需要一些{someThing}",
+      "pinyin": "Wǒ xūyào yìxiē {someThing}",
+      "translation": "I need some {someThing}",
       "slots": {
         "someThing": { "group": "xie-quantity-phrases" }
       },
       "tokens": [
         { "hanzi": "我", "pinyin": "wǒ", "gloss": "I" },
         { "hanzi": "需要", "pinyin": "xūyào", "gloss": "need" },
+        { "hanzi": "一些", "pinyin": "yìxiē", "gloss": "some" },
         { "slot": "someThing" }
       ]
     },
@@ -166,7 +167,7 @@
       "id": "11f82833-7530-4ed8-8681-0cb51b4ab41a",
       "hanzi": "桌子上有{bookThing}",
       "pinyin": "Zhuōzi shang yǒu {bookThing}",
-      "translation": "There is {bookThing} on the table",
+      "translation": "The table has {bookThing}",
       "slots": {
         "bookThing": { "group": "ben-measure-phrases" }
       },
@@ -180,9 +181,9 @@
     },
     {
       "id": "40aeeaaa-c323-4d3f-a3af-2dfa8b89249b",
-      "hanzi": "请给我{someThing}",
-      "pinyin": "Qǐng gěi wǒ {someThing}",
-      "translation": "Please give me {someThing}",
+      "hanzi": "请给我一些{someThing}",
+      "pinyin": "Qǐng gěi wǒ yìxiē {someThing}",
+      "translation": "Please give me some {someThing}",
       "slots": {
         "someThing": { "group": "xie-quantity-phrases" }
       },
@@ -190,6 +191,7 @@
         { "hanzi": "请", "pinyin": "qǐng", "gloss": "please" },
         { "hanzi": "给", "pinyin": "gěi", "gloss": "give" },
         { "hanzi": "我", "pinyin": "wǒ", "gloss": "me" },
+        { "hanzi": "一些", "pinyin": "yìxiē", "gloss": "some" },
         { "slot": "someThing" }
       ]
     },
@@ -265,11 +267,13 @@
     },
     {
       "id": "9426c98c-6cb2-4987-992a-c3ef5e2380ee",
-      "hanzi": "快",
-      "pinyin": "kuài",
-      "translation": "soon",
+      "hanzi": "请快一点",
+      "pinyin": "Qǐng kuài yìdiǎn",
+      "translation": "A little faster, please",
       "tokens": [
-        { "hanzi": "快", "pinyin": "kuài", "gloss": "soon / fast" }
+        { "hanzi": "请", "pinyin": "qǐng",  "gloss": "please" },
+        { "hanzi": "快", "pinyin": "kuài",  "gloss": "fast / quick" },
+        { "hanzi": "一点", "pinyin": "yìdiǎn", "gloss": "a little" }
       ]
     },
     {

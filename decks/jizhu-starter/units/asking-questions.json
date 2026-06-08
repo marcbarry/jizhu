@@ -4,15 +4,6 @@
   "description": "Core question words and simple questions for prices, places, and destinations.",
   "cards": [
     {
-      "id": "0c62a834-5ca5-41f6-9e20-064e3e8823b8",
-      "hanzi": "谁",
-      "pinyin": "shéi",
-      "translation": "who",
-      "tokens": [
-        { "hanzi": "谁", "pinyin": "shéi", "gloss": "who" }
-      ]
-    },
-    {
       "id": "133564c4-e183-4c96-875f-dc52ebfc49d1",
       "hanzi": "什么",
       "pinyin": "shénme",
@@ -20,56 +11,6 @@
       "tokens": [
         { "hanzi": "什", "pinyin": "shén", "gloss": "what" },
         { "hanzi": "么", "pinyin": "me",   "gloss": "(suffix)" }
-      ]
-    },
-    {
-      "id": "6d9ce2e2-58f6-4039-b3ae-97cb9f3b806f",
-      "hanzi": "哪里",
-      "pinyin": "nǎlǐ",
-      "translation": "where",
-      "tokens": [
-        { "hanzi": "哪", "pinyin": "nǎ", "gloss": "which / where" },
-        { "hanzi": "里", "pinyin": "lǐ", "gloss": "inside / place" }
-      ]
-    },
-    {
-      "id": "f13c32f0-aae4-4214-b33b-0485a8a2feb4",
-      "hanzi": "哪",
-      "pinyin": "nǎ",
-      "translation": "which",
-      "tokens": [
-        { "hanzi": "哪", "pinyin": "nǎ", "gloss": "which" }
-      ]
-    },
-    {
-      "id": "c334eabc-f650-4887-915e-ca2428e89e2c",
-      "hanzi": "怎么样",
-      "pinyin": "zěnmeyàng",
-      "translation": "how",
-      "tokens": [
-        { "hanzi": "怎", "pinyin": "zěn",  "gloss": "how" },
-        { "hanzi": "么", "pinyin": "me",   "gloss": "(suffix)" },
-        { "hanzi": "样", "pinyin": "yàng", "gloss": "kind / way" }
-      ]
-    },
-    {
-      "id": "848db6e0-8860-4852-84a6-4538b25e85e5",
-      "hanzi": "怎么样？",
-      "pinyin": "zěnmeyàng?",
-      "translation": "how about?",
-      "tokens": [
-        { "hanzi": "怎",   "pinyin": "zěn",  "gloss": "how" },
-        { "hanzi": "么",   "pinyin": "me",   "gloss": "(suffix)" },
-        { "hanzi": "样？", "pinyin": "yàng", "gloss": "kind / way" }
-      ]
-    },
-    {
-      "id": "8f5565e0-7a9c-40eb-8eda-b3ba29a0a2f0",
-      "hanzi": "几",
-      "pinyin": "jǐ",
-      "translation": "how many (small)",
-      "tokens": [
-        { "hanzi": "几", "pinyin": "jǐ", "gloss": "how many (small)" }
       ]
     },
     {

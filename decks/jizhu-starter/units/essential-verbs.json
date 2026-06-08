@@ -1,320 +1,196 @@
 {
   "id": "essential-verbs",
   "title": "Essential Verbs",
-  "description": "High-frequency verbs, adverbs, negatives, and particles that support many beginner sentences.",
+  "description": "High-frequency verbs taught in short beginner sentences.",
   "cards": [
     {
-      "id": "e850a8b1-2339-4570-ad57-19c4ed0b8b87",
-      "hanzi": "是",
-      "pinyin": "shì",
-      "translation": "to be",
-      "tokens": [
-        { "hanzi": "是", "pinyin": "shì", "gloss": "to be" }
-      ]
-    },
-    {
-      "id": "4146aa8b-bf6d-47fa-a4da-64fa6c103814",
-      "hanzi": "有",
-      "pinyin": "yǒu",
-      "translation": "to have / there is",
-      "tokens": [
-        { "hanzi": "有", "pinyin": "yǒu", "gloss": "to have / there is" }
-      ]
-    },
-    {
-      "id": "e0fce33a-36b6-4aa4-aa6f-f93594041d8b",
-      "hanzi": "在",
-      "pinyin": "zài",
-      "translation": "to be at / in",
-      "tokens": [
-        { "hanzi": "在", "pinyin": "zài", "gloss": "to be at / in" }
-      ]
-    },
-    {
-      "id": "e490767d-3379-46ba-928f-4e14d76b727d",
-      "hanzi": "要",
-      "pinyin": "yào",
-      "translation": "to want / would like",
-      "tokens": [
-        { "hanzi": "要", "pinyin": "yào", "gloss": "to want / would like" }
-      ]
-    },
-    {
       "id": "687d568d-53f4-4d2b-87a0-cd81f8f1667c",
-      "hanzi": "喜欢",
-      "pinyin": "xǐhuan",
-      "translation": "to like",
+      "hanzi": "我喜欢喝茶",
+      "pinyin": "Wǒ xǐhuan hē chá",
+      "translation": "I like to drink tea",
       "tokens": [
-        { "hanzi": "喜", "pinyin": "xǐ",   "gloss": "like / happy" },
-        { "hanzi": "欢", "pinyin": "huan", "gloss": "joyful / pleased" }
+        { "hanzi": "我",   "pinyin": "wǒ",     "gloss": "I" },
+        { "hanzi": "喜欢", "pinyin": "xǐhuan", "gloss": "to like" },
+        { "hanzi": "喝",   "pinyin": "hē",     "gloss": "to drink" },
+        { "hanzi": "茶",   "pinyin": "chá",    "gloss": "tea" }
       ]
     },
     {
       "id": "0c69c368-a456-40c6-82a8-c7bc87a59a8f",
-      "hanzi": "爱",
-      "pinyin": "ài",
-      "translation": "to love",
+      "hanzi": "我爱你",
+      "pinyin": "Wǒ ài nǐ",
+      "translation": "I love you",
       "tokens": [
-        { "hanzi": "爱", "pinyin": "ài", "gloss": "to love" }
-      ]
-    },
-    {
-      "id": "b5db8fdb-1534-45da-bdba-6348e55ecfc2",
-      "hanzi": "去",
-      "pinyin": "qù",
-      "translation": "to go",
-      "tokens": [
-        { "hanzi": "去", "pinyin": "qù", "gloss": "to go" }
-      ]
-    },
-    {
-      "id": "d14ea164-5f15-4dfe-8553-fc6bde9a2b9e",
-      "hanzi": "来",
-      "pinyin": "lái",
-      "translation": "to come",
-      "tokens": [
-        { "hanzi": "来", "pinyin": "lái", "gloss": "to come" }
+        { "hanzi": "我", "pinyin": "wǒ", "gloss": "I" },
+        { "hanzi": "爱", "pinyin": "ài", "gloss": "to love" },
+        { "hanzi": "你", "pinyin": "nǐ", "gloss": "you" }
       ]
     },
     {
       "id": "3aebb470-1c0d-4377-bd31-89fd86f7ff7a",
-      "hanzi": "回",
-      "pinyin": "huí",
-      "translation": "to return",
+      "hanzi": "我回家",
+      "pinyin": "Wǒ huí jiā",
+      "translation": "I'm going home",
       "tokens": [
-        { "hanzi": "回", "pinyin": "huí", "gloss": "to return" }
-      ]
-    },
-    {
-      "id": "ce77c0a4-b586-49eb-9f68-f42ed4c6e8c4",
-      "hanzi": "吃",
-      "pinyin": "chī",
-      "translation": "to eat",
-      "tokens": [
-        { "hanzi": "吃", "pinyin": "chī", "gloss": "to eat" }
-      ]
-    },
-    {
-      "id": "98546f5b-7fe8-424b-a5eb-ca79ebea8f6f",
-      "hanzi": "喝",
-      "pinyin": "hē",
-      "translation": "to drink",
-      "tokens": [
-        { "hanzi": "喝", "pinyin": "hē", "gloss": "to drink" }
-      ]
-    },
-    {
-      "id": "e5d2a28f-d388-44be-a498-adba42832f4a",
-      "hanzi": "看",
-      "pinyin": "kàn",
-      "translation": "to look / watch",
-      "tokens": [
-        { "hanzi": "看", "pinyin": "kàn", "gloss": "to look / watch" }
+        { "hanzi": "我", "pinyin": "wǒ",  "gloss": "I" },
+        { "hanzi": "回", "pinyin": "huí", "gloss": "to return" },
+        { "hanzi": "家", "pinyin": "jiā", "gloss": "home" }
       ]
     },
     {
       "id": "2b4fbbfb-fc41-4670-9f01-e6c6913a7e60",
-      "hanzi": "看见",
-      "pinyin": "kànjiàn",
-      "translation": "to see",
+      "hanzi": "我看见他",
+      "pinyin": "Wǒ kànjiàn tā",
+      "translation": "I see him",
       "tokens": [
-        { "hanzi": "看", "pinyin": "kàn",  "gloss": "look / watch" },
-        { "hanzi": "见", "pinyin": "jiàn", "gloss": "see / perceive" }
+        { "hanzi": "我",   "pinyin": "wǒ",      "gloss": "I" },
+        { "hanzi": "看见", "pinyin": "kànjiàn", "gloss": "to see" },
+        { "hanzi": "他",   "pinyin": "tā",      "gloss": "him" }
       ]
     },
     {
       "id": "31bd1693-0f0d-4556-b696-d5176343b3df",
-      "hanzi": "听",
-      "pinyin": "tīng",
-      "translation": "to listen",
+      "hanzi": "我听音乐",
+      "pinyin": "Wǒ tīng yīnyuè",
+      "translation": "I listen to music",
       "tokens": [
-        { "hanzi": "听", "pinyin": "tīng", "gloss": "to listen" }
-      ]
-    },
-    {
-      "id": "31e0d61b-2791-41a2-9d5b-cf3ff68b6089",
-      "hanzi": "说",
-      "pinyin": "shuō",
-      "translation": "to speak",
-      "tokens": [
-        { "hanzi": "说", "pinyin": "shuō", "gloss": "to speak" }
+        { "hanzi": "我",   "pinyin": "wǒ",     "gloss": "I" },
+        { "hanzi": "听",   "pinyin": "tīng",   "gloss": "to listen" },
+        { "hanzi": "音乐", "pinyin": "yīnyuè", "gloss": "music" }
       ]
     },
     {
       "id": "8d378f03-fdf4-4c44-a3f4-b3de4be53e02",
-      "hanzi": "读",
-      "pinyin": "dú",
-      "translation": "to read",
+      "hanzi": "我读书",
+      "pinyin": "Wǒ dú shū",
+      "translation": "I read",
       "tokens": [
-        { "hanzi": "读", "pinyin": "dú", "gloss": "to read" }
+        { "hanzi": "我", "pinyin": "wǒ", "gloss": "I" },
+        { "hanzi": "读", "pinyin": "dú", "gloss": "to read" },
+        { "hanzi": "书", "pinyin": "shū", "gloss": "book" }
       ]
     },
     {
       "id": "7a2273b1-d627-4085-b027-52ffab0a6e49",
-      "hanzi": "写",
-      "pinyin": "xiě",
-      "translation": "to write",
+      "hanzi": "我写字",
+      "pinyin": "Wǒ xiě zì",
+      "translation": "I write characters",
       "tokens": [
-        { "hanzi": "写", "pinyin": "xiě", "gloss": "to write" }
-      ]
-    },
-    {
-      "id": "d0949d79-877a-4c47-bb67-66c7d60185e6",
-      "hanzi": "叫",
-      "pinyin": "jiào",
-      "translation": "to be called / named",
-      "tokens": [
-        { "hanzi": "叫", "pinyin": "jiào", "gloss": "to be called / named" }
+        { "hanzi": "我", "pinyin": "wǒ", "gloss": "I" },
+        { "hanzi": "写", "pinyin": "xiě", "gloss": "to write" },
+        { "hanzi": "字", "pinyin": "zì", "gloss": "character" }
       ]
     },
     {
       "id": "8b855cad-8f70-4d9e-aced-a0e0e9547523",
-      "hanzi": "坐",
-      "pinyin": "zuò",
-      "translation": "to sit",
+      "hanzi": "请坐",
+      "pinyin": "Qǐng zuò",
+      "translation": "Please sit",
       "tokens": [
-        { "hanzi": "坐", "pinyin": "zuò", "gloss": "to sit" }
-      ]
-    },
-    {
-      "id": "744a99fa-e1df-4e85-9229-14b10e4a684e",
-      "hanzi": "住",
-      "pinyin": "zhù",
-      "translation": "to live / reside",
-      "tokens": [
-        { "hanzi": "住", "pinyin": "zhù", "gloss": "to live / reside" }
+        { "hanzi": "请", "pinyin": "qǐng", "gloss": "please" },
+        { "hanzi": "坐", "pinyin": "zuò",  "gloss": "to sit" }
       ]
     },
     {
       "id": "ebe5a173-e62a-4e37-be75-29de57b3691b",
-      "hanzi": "做",
-      "pinyin": "zuò",
-      "translation": "to do / make",
+      "hanzi": "你做什么？",
+      "pinyin": "Nǐ zuò shénme?",
+      "translation": "What are you doing?",
       "tokens": [
-        { "hanzi": "做", "pinyin": "zuò", "gloss": "to do / make" }
+        { "hanzi": "你",   "pinyin": "nǐ",     "gloss": "you" },
+        { "hanzi": "做",   "pinyin": "zuò",    "gloss": "to do / make" },
+        { "hanzi": "什么？", "pinyin": "shénme", "gloss": "what" }
       ]
     },
     {
       "id": "3c5ce966-2fa2-44ad-8ae7-c430d47baed9",
-      "hanzi": "开",
-      "pinyin": "kāi",
-      "translation": "to open",
+      "hanzi": "我开车",
+      "pinyin": "Wǒ kāi chē",
+      "translation": "I drive",
       "tokens": [
-        { "hanzi": "开", "pinyin": "kāi", "gloss": "to open" }
+        { "hanzi": "我", "pinyin": "wǒ",  "gloss": "I" },
+        { "hanzi": "开", "pinyin": "kāi", "gloss": "to drive / open" },
+        { "hanzi": "车", "pinyin": "chē", "gloss": "car" }
       ]
     },
     {
       "id": "e47f4b1e-8db0-4b91-9b9c-90990933e3ff",
-      "hanzi": "睡觉",
-      "pinyin": "shuìjiào",
-      "translation": "to sleep",
+      "hanzi": "我要睡觉",
+      "pinyin": "Wǒ yào shuìjiào",
+      "translation": "I want to sleep",
       "tokens": [
-        { "hanzi": "睡", "pinyin": "shuì", "gloss": "sleep" },
-        { "hanzi": "觉", "pinyin": "jiào", "gloss": "sleep / nap" }
-      ]
-    },
-    {
-      "id": "cc6e3d1f-5390-49db-9493-e0a5967d8d02",
-      "hanzi": "打电话",
-      "pinyin": "dǎ diànhuà",
-      "translation": "to make a phone call",
-      "tokens": [
-        { "hanzi": "打", "pinyin": "dǎ",   "gloss": "hit / make" },
-        { "hanzi": "电", "pinyin": "diàn", "gloss": "electric" },
-        { "hanzi": "话", "pinyin": "huà",  "gloss": "speech / talk" }
+        { "hanzi": "我",   "pinyin": "wǒ",       "gloss": "I" },
+        { "hanzi": "要",   "pinyin": "yào",      "gloss": "to want" },
+        { "hanzi": "睡觉", "pinyin": "shuìjiào", "gloss": "to sleep" }
       ]
     },
     {
       "id": "820ea361-7a17-495d-90a2-03abc2fc460a",
-      "hanzi": "懂",
-      "pinyin": "dǒng",
-      "translation": "to understand",
+      "hanzi": "我不懂",
+      "pinyin": "Wǒ bù dǒng",
+      "translation": "I don't understand",
       "tokens": [
+        { "hanzi": "我", "pinyin": "wǒ",   "gloss": "I" },
+        { "hanzi": "不", "pinyin": "bù",   "gloss": "not" },
         { "hanzi": "懂", "pinyin": "dǒng", "gloss": "to understand" }
       ]
     },
     {
       "id": "3416dd79-15a1-4453-9e7a-651001c602d9",
-      "hanzi": "认识",
-      "pinyin": "rènshi",
-      "translation": "to know / recognize people",
+      "hanzi": "很高兴认识你",
+      "pinyin": "Hěn gāoxìng rènshi nǐ",
+      "translation": "Nice to meet you",
       "tokens": [
-        { "hanzi": "认", "pinyin": "rèn", "gloss": "recognize" },
-        { "hanzi": "识", "pinyin": "shi", "gloss": "know" }
+        { "hanzi": "很",   "pinyin": "hěn",     "gloss": "very" },
+        { "hanzi": "高兴", "pinyin": "gāoxìng", "gloss": "happy / pleased" },
+        { "hanzi": "认识", "pinyin": "rènshi",  "gloss": "to know / meet" },
+        { "hanzi": "你",   "pinyin": "nǐ",      "gloss": "you" }
       ]
     },
     {
       "id": "d2702797-e810-44c3-9374-d71c36e3cb20",
-      "hanzi": "学习",
-      "pinyin": "xuéxí",
-      "translation": "to study",
+      "hanzi": "我学习中文",
+      "pinyin": "Wǒ xuéxí Zhōngwén",
+      "translation": "I study Chinese",
       "tokens": [
-        { "hanzi": "学", "pinyin": "xué", "gloss": "study / learn" },
-        { "hanzi": "习", "pinyin": "xí",  "gloss": "practice" }
+        { "hanzi": "我",   "pinyin": "wǒ",       "gloss": "I" },
+        { "hanzi": "学习", "pinyin": "xuéxí",    "gloss": "to study" },
+        { "hanzi": "中文", "pinyin": "Zhōngwén", "gloss": "Chinese (language)" }
       ]
     },
     {
       "id": "ca383909-4d18-419c-beed-e9b292d909ad",
-      "hanzi": "工作",
-      "pinyin": "gōngzuò",
-      "translation": "to work",
+      "hanzi": "你工作吗？",
+      "pinyin": "Nǐ gōngzuò ma?",
+      "translation": "Do you work?",
       "tokens": [
-        { "hanzi": "工", "pinyin": "gōng", "gloss": "work" },
-        { "hanzi": "作", "pinyin": "zuò",  "gloss": "do / make" }
+        { "hanzi": "你",   "pinyin": "nǐ",      "gloss": "you" },
+        { "hanzi": "工作", "pinyin": "gōngzuò", "gloss": "to work" },
+        { "hanzi": "吗？", "pinyin": "ma",      "gloss": "(yes/no question particle)" }
       ]
     },
     {
       "id": "b72aa7b3-02d9-4bc3-9ee3-cf6646e5b2f8",
-      "hanzi": "买",
-      "pinyin": "mǎi",
-      "translation": "to buy",
+      "hanzi": "我想买水",
+      "pinyin": "Wǒ xiǎng mǎi shuǐ",
+      "translation": "I want to buy water",
       "tokens": [
-        { "hanzi": "买", "pinyin": "mǎi", "gloss": "to buy" }
+        { "hanzi": "我", "pinyin": "wǒ",    "gloss": "I" },
+        { "hanzi": "想", "pinyin": "xiǎng", "gloss": "want / would like" },
+        { "hanzi": "买", "pinyin": "mǎi",   "gloss": "to buy" },
+        { "hanzi": "水", "pinyin": "shuǐ",  "gloss": "water" }
       ]
     },
     {
       "id": "f3ef00dc-8a9a-4df4-9da7-a073bfabba30",
-      "hanzi": "问",
-      "pinyin": "wèn",
-      "translation": "to ask",
+      "hanzi": "我想问你",
+      "pinyin": "Wǒ xiǎng wèn nǐ",
+      "translation": "I want to ask you",
       "tokens": [
-        { "hanzi": "问", "pinyin": "wèn", "gloss": "to ask" }
-      ]
-    },
-    {
-      "id": "7c1743b3-15fb-493b-8d78-b9228f17d721",
-      "hanzi": "会",
-      "pinyin": "huì",
-      "translation": "to be able to (learned skill)",
-      "tokens": [
-        { "hanzi": "会", "pinyin": "huì", "gloss": "to be able to (learned skill)" }
-      ]
-    },
-    {
-      "id": "c68b34a3-b96d-4be6-b7dd-fdf5d48f3aa2",
-      "hanzi": "能",
-      "pinyin": "néng",
-      "translation": "to be able to (capability / permission)",
-      "tokens": [
-        { "hanzi": "能", "pinyin": "néng", "gloss": "to be able to (capability / permission)" }
-      ]
-    },
-    {
-      "id": "a6336cd7-e1f2-4800-a599-4d1c8d896344",
-      "hanzi": "请",
-      "pinyin": "qǐng",
-      "translation": "please / to invite",
-      "tokens": [
-        { "hanzi": "请", "pinyin": "qǐng", "gloss": "please / to invite" }
-      ]
-    },
-    {
-      "id": "17aa96cf-25fa-4bd3-8e58-e6b4ab427b83",
-      "hanzi": "不",
-      "pinyin": "bù",
-      "translation": "not",
-      "tokens": [
-        { "hanzi": "不", "pinyin": "bù", "gloss": "not" }
+        { "hanzi": "我", "pinyin": "wǒ",    "gloss": "I" },
+        { "hanzi": "想", "pinyin": "xiǎng", "gloss": "want / would like" },
+        { "hanzi": "问", "pinyin": "wèn",   "gloss": "to ask" },
+        { "hanzi": "你", "pinyin": "nǐ",    "gloss": "you" }
       ]
     },
     {
@@ -325,42 +201,6 @@
       "tokens": [
         { "hanzi": "没", "pinyin": "méi", "gloss": "not / without" },
         { "hanzi": "有", "pinyin": "yǒu", "gloss": "to have" }
-      ]
-    },
-    {
-      "id": "8528dd74-b211-40e9-93f9-2864cfd65232",
-      "hanzi": "也",
-      "pinyin": "yě",
-      "translation": "also",
-      "tokens": [
-        { "hanzi": "也", "pinyin": "yě", "gloss": "also" }
-      ]
-    },
-    {
-      "id": "2897721e-270e-4631-abf2-f286891ed8c8",
-      "hanzi": "都",
-      "pinyin": "dōu",
-      "translation": "all / both",
-      "tokens": [
-        { "hanzi": "都", "pinyin": "dōu", "gloss": "all / both" }
-      ]
-    },
-    {
-      "id": "cfaf9f0b-e4e0-4af2-87ea-da0b485c01b8",
-      "hanzi": "很",
-      "pinyin": "hěn",
-      "translation": "very",
-      "tokens": [
-        { "hanzi": "很", "pinyin": "hěn", "gloss": "very" }
-      ]
-    },
-    {
-      "id": "cc45eb69-23d1-4df1-b469-68c0b59f1729",
-      "hanzi": "太",
-      "pinyin": "tài",
-      "translation": "too / excessively",
-      "tokens": [
-        { "hanzi": "太", "pinyin": "tài", "gloss": "too / excessively" }
       ]
     },
     {

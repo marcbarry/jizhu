@@ -58,14 +58,24 @@ function toMemToken(t) {
   };
 }
 
-// Convert a spec-format VocabItem to the in-memory token shape.
+// Convert a spec-format VocabItem to the in-memory token shape. A multi-word
+// item may carry an optional `tokens` breakdown (per-word hanzi/pinyin/gloss)
+// so the slot can render as discrete word chips with real glosses.
 function vocabItemToToken(item) {
-  return {
+  const token = {
     id: item?.id,
     char: item?.hanzi ?? '',
     pinyin: normalizePinyin(item?.pinyin),
     gloss: item?.gloss ?? '',
   };
+  if (Array.isArray(item?.tokens) && item.tokens.length) {
+    token.tokens = item.tokens.map(t => ({
+      char: t?.hanzi ?? '',
+      pinyin: normalizePinyin(t?.pinyin),
+      gloss: t?.gloss ?? '',
+    }));
+  }
+  return token;
 }
 
 // Spec card → in-memory card. v1 supports a single slot per pattern card
